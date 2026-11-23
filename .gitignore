@@ -1,0 +1,6 @@
+*.pdf
+drafts/
+build/
+*.aux
+*.log
+.DS_Store
