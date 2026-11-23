@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Privacy Tech Companies</title>
-<meta name="description" content="A searchable directory of privacy technology companies, with a focus on Israel.">
+<meta name="description" content="A searchable directory of privacy technology companies worldwide.">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <!-- Bunny Fonts: GDPR-friendly Google Fonts mirror (no visitor tracking) -->
@@ -147,7 +147,7 @@ footer b{color:var(--ink);font-family:var(--head)}
     <g stroke="var(--hi)" stroke-width="9" stroke-linecap="round"><path d="M50 8v84"/><path d="M14 28l72 44"/><path d="M14 72l72-44"/></g>
   </svg>
   <h1>Who's building <span class="mark">privacy</span>?</h1>
-  <p>A living directory of the companies making privacy work: compliance tools, encrypted computation, synthetic data, consumer apps and more. Deepest coverage for Israel. <span id="gen"></span></p>
+  <p>A living directory of the companies making privacy work: compliance tools, encrypted computation, synthetic data, consumer apps and more. <span id="gen"></span></p>
   <div class="stats" id="stats"></div>
 </section>
 
@@ -201,7 +201,6 @@ const STATUS = {active:"Active", acquired:"Acquired", pending:"Pending acquisiti
   "merged/pivoted":"Merged / pivoted", "shut down":"Shut down", unclear:"Unclear"};
 const REPO = "https://github.com/eranto/privacy-tech-companies/issues/new";
 const issueUrl = (template, params) => REPO + "?" + new URLSearchParams({template, ...params}).toString();
-const isIL = c => c.israel_presence === "founded" || c.israel_presence === "founders";
 const country = c => c.hq_country || "Unknown";
 const inCountry = c => !state.isr || country(c) === state.isr;
 const $ = id => document.getElementById(id);
@@ -285,7 +284,7 @@ function render(){
         ${c.basis === "model" ? '<span class="sticker">✱ unverified</span>' : ""}
       </div>
       <div class="tbody">
-        <div class="where">${esc(country(c))}${c.hq && !/^(USA|Israel|UK)$/.test(c.hq) ? " · " + esc(c.hq.split(/[,/(]/)[0].trim()) : ""}</div>
+        <div class="where">${esc(country(c))}${c.hq && c.hq !== country(c) ? " · " + esc(c.hq.split(/[,/(]/)[0].trim()) : ""}</div>
         <h3>${esc(c.name)}</h3>
         <p>${esc(c.description)}</p>
         <div class="pills">${statusPill(c)}${catPill(c)}</div>
@@ -299,7 +298,7 @@ function renderStats(){
   const items = [
     [ALL.length, "companies", "./"],
     [new Set(ALL.map(country)).size, "countries", "stats.html"],
-    [ALL.filter(isIL).length, "Israeli-founded", "#isr=Israel"],
+    [new Set(ALL.map(c => c.primary_category)).size, "categories", "stats.html"],
     [acq, "acquired so far", "#status=acquired"]
   ];
   $("stats").innerHTML = items.map(([v, l, h]) => `<div class="stat"><a href="${h}"><b>${v}</b><span>${l}</span></a></div>`).join("");
@@ -322,7 +321,6 @@ function openCompany(slug){
       ${c.basis === "model" ? '<div class="notice">✱ Unverified: added from model knowledge. Check status and details against a primary source.</div>' : ""}
       <dl class="facts">
         ${row("Website", c.website ? `<a href="${esc(c.website)}" target="_blank" rel="noopener">${esc(c.website)}</a>` : "")}
-        ${c.israel_presence === "founders" ? row("Israel link", "Israeli founders / R&amp;D in Israel") : ""}
         ${row("Status", esc(c.status))}
         ${row("Acquirer", esc(c.acquirer))}
         ${row("Techniques", c.techniques)}
@@ -345,7 +343,7 @@ function openCompany(slug){
 
 function writeHash(){
   const p = new URLSearchParams();
-  for (const k of ["q","cat","isr","status","rel","basis"]) if (state[k]) p.set(k, state[k]);
+  for (const k of ["q","cat","isr","status","rel","basis"]) if (state[k]) p.set(k === "isr" ? "country" : k, state[k]);
   if (state.sort !== "name") p.set("sort", state.sort);
   if (state.open) p.set("c", state.open);
   const h = p.toString();
@@ -354,7 +352,8 @@ function writeHash(){
 function readHash(){
   const p = new URLSearchParams(location.hash.slice(1));
   state = {q:"", cat:"", isr:"", status:"", rel:"", basis:"", sort:"name"};
-  for (const k of ["q","cat","isr","status","rel","basis","sort"]) if (p.get(k)) state[k] = p.get(k);
+  for (const k of ["q","cat","status","rel","basis","sort"]) if (p.get(k)) state[k] = p.get(k);
+  state.isr = p.get("country") || p.get("isr") || "";  // "isr" kept for old links
   $("q").value = state.q; $("f-isr").value = state.isr; $("f-status").value = state.status;
   $("f-rel").value = state.rel; $("f-basis").value = state.basis; $("sort").value = state.sort;
   return p.get("c");

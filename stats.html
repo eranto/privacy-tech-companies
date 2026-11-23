@@ -110,7 +110,7 @@ footer{max-width:1200px;margin:0 auto;padding:8px 16px 32px;color:var(--muted);f
   </div>
   <section class="card"><h2>Category × country</h2><p class="note">Top countries by company count; darker means more companies</p><div class="heat" id="c-heat"></div></section>
 </main>
-<footer>Counts reflect what the directory contains, not the whole market: coverage is deliberately deeper for Israel, and unverified profiles are included unless filtered out.</footer>
+<footer>Counts reflect what the directory contains, not the whole market, and unverified profiles are included unless filtered out.</footer>
 <div id="tip" role="tooltip"></div>
 
 <script>
@@ -133,7 +133,7 @@ let ALL = [], F = {country:"", rel:"", basis:""};
 
 function link(extra){
   const p = new URLSearchParams();
-  if (F.country) p.set("isr", F.country);
+  if (F.country) p.set("country", F.country);
   if (F.rel) p.set("rel", F.rel);
   if (F.basis) p.set("basis", F.basis);
   for (const [k,v] of Object.entries(extra)) if (v) p.set(k, v);
@@ -166,17 +166,16 @@ function render(){
   const n = list.length;
   const acq = list.filter(c => c.status_code === "acquired");
   const countries = new Set(list.map(country)).size;
-  const il = list.filter(c => c.israel_presence === "founded" || c.israel_presence === "founders").length;
   const pct = x => n ? Math.round(100*x/n) + "%" : "–";
   $("tiles").innerHTML = [
     [n, "companies"], [countries, "countries"],
     [list.filter(c => c.status_code === "active").length, `active (${pct(list.filter(c => c.status_code === "active").length)})`],
     [acq.length, `acquired (${pct(acq.length)})`],
-    [il, "Israeli-founded or Israeli founders"],
+    [new Set(list.map(c => c.primary_category)).size, "categories"],
     [list.filter(c => c.basis !== "model").length, "with a source"]
   ].map(([v,l]) => `<div class="tile"><div class="v">${v}</div><div class="l">${esc(l)}</div></div>`).join("");
 
-  bars($("c-country"), count(list, country), {href: k => link({isr:k}), total:n});
+  bars($("c-country"), count(list, country), {href: k => link({country:k}), total:n});
   bars($("c-cat"), count(list, c => c.primary_category), {label: k => CATS[k] || k, href: k => link({cat:k}), limit:18, total:n});
   bars($("c-status"), count(list, c => c.status_code || "unclear"), {label: k => STATUS[k] || k, href: k => link({status:k}), total:n});
   bars($("c-tech"), count(list, c => c.techniques || []), {href: k => link({q:k})});
@@ -202,7 +201,7 @@ function render(){
       const v = cell[cat + "|" + k] || 0, a = v ? 0.15 + 0.85 * v / hmax : 0;
       const bg = v ? `color-mix(in srgb, var(--accent) ${Math.round(a*100)}%, var(--panel))` : "var(--track)";
       const fg = a > 0.55 ? "var(--panel)" : "var(--ink)";
-      return `<td style="background:${bg};color:${fg}">${v ? `<a href="${esc(link({cat, isr:k}))}" data-tip="${esc((CATS[cat]||cat) + " · " + k + ": " + v)}">${v}</a>` : ""}</td>`;
+      return `<td style="background:${bg};color:${fg}">${v ? `<a href="${esc(link({cat, country:k}))}" data-tip="${esc((CATS[cat]||cat) + " · " + k + ": " + v)}">${v}</a>` : ""}</td>`;
     }).join("")}</tr>`).join("")}</tbody></table>`;
 }
 
