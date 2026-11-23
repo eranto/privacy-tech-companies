@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Privacy Tech Statistics</title>
-<meta name="description" content="Live statistics computed from the privacy tech companies directory.">
+<meta name="description" content="Live statistics computed from the privacy tech startups directory.">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.bunny.net">
@@ -77,12 +77,12 @@ footer{max-width:1200px;margin:0 auto;padding:8px 16px 32px;color:var(--muted);f
 </head>
 <body>
 <div class="top">
-  <a class="brand" href="./"><img src="favicon.svg" alt="">Privacy Tech Companies</a>
+  <a class="brand" href="./"><img src="favicon.svg" alt="">Privacy Tech Startups</a>
   <nav><a href="./">Directory</a><a class="here" href="stats.html">Statistics</a></nav>
 </div>
 <header>
   <h1>The <span class="mark">numbers</span></h1>
-  <p class="sub">Computed live from the directory data. <span id="gen"></span> Click any bar or cell to see those companies.</p>
+  <p class="sub">Computed live from the directory data. <span id="gen"></span> Click any bar or cell to see those startups.</p>
 </header>
 <main>
   <div class="controls">
@@ -97,18 +97,18 @@ footer{max-width:1200px;margin:0 auto;padding:8px 16px 32px;color:var(--muted);f
   </div>
   <div class="tiles" id="tiles"></div>
   <div class="grid">
-    <section class="card"><h2>Companies by HQ country</h2><p class="note">Main headquarters</p><div id="c-country"></div></section>
-    <section class="card"><h2>Companies by category</h2><p class="note">Primary category</p><div id="c-cat"></div></section>
+    <section class="card"><h2>Startups by HQ country</h2><p class="note">Main headquarters</p><div id="c-country"></div></section>
+    <section class="card"><h2>Startups by category</h2><p class="note">Primary category</p><div id="c-cat"></div></section>
   </div>
   <div class="grid">
     <section class="card"><h2>Status</h2><p class="note">As recorded in each profile</p><div id="c-status"></div></section>
-    <section class="card"><h2>Privacy techniques</h2><p class="note">A company can use several</p><div id="c-tech"></div></section>
+    <section class="card"><h2>Privacy techniques</h2><p class="note">A startup can use several</p><div id="c-tech"></div></section>
   </div>
   <div class="grid">
     <section class="card"><h2>Acquisitions by year</h2><p class="note">Year parsed from the status text; acquisitions without a year are excluded</p><div id="c-acqyear"></div></section>
     <section class="card"><h2>Top acquirers</h2><p class="note">Acquirers with the most deals in the directory</p><div id="c-acquirer"></div></section>
   </div>
-  <section class="card"><h2>Category × country</h2><p class="note">Top countries by company count; darker means more companies</p><div class="heat" id="c-heat"></div></section>
+  <section class="card"><h2>Category × country</h2><p class="note">Top countries by startup count; darker means more startups</p><div class="heat" id="c-heat"></div></section>
 </main>
 <footer>Counts reflect what the directory contains, not the whole market, and unverified profiles are included unless filtered out.</footer>
 <div id="tip" role="tooltip"></div>
@@ -168,7 +168,7 @@ function render(){
   const countries = new Set(list.map(country)).size;
   const pct = x => n ? Math.round(100*x/n) + "%" : "–";
   $("tiles").innerHTML = [
-    [n, "companies"], [countries, "countries"],
+    [n, "startups"], [countries, "countries"],
     [list.filter(c => c.status_code === "active").length, `active (${pct(list.filter(c => c.status_code === "active").length)})`],
     [acq.length, `acquired (${pct(acq.length)})`],
     [new Set(list.map(c => c.primary_category)).size, "categories"],

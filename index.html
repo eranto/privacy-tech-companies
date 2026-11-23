@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Privacy Tech Companies</title>
-<meta name="description" content="A searchable directory of privacy technology companies worldwide.">
+<title>Privacy Tech Startups</title>
+<meta name="description" content="A searchable directory of privacy technology startups worldwide.">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <!-- Bunny Fonts: GDPR-friendly Google Fonts mirror (no visitor tracking) -->
@@ -130,11 +130,11 @@ footer b{color:var(--ink);font-family:var(--head)}
 </head>
 <body>
 <div class="top">
-  <a class="brand" href="./"><img src="favicon.svg" alt="">Privacy Tech Companies</a>
+  <a class="brand" href="./"><img src="favicon.svg" alt="">Privacy Tech Startups</a>
   <nav class="nav">
     <a href="./">Directory</a>
     <a href="stats.html">Statistics</a>
-    <a class="pill-btn" id="suggest" href="#" target="_blank" rel="noopener">+ Suggest a company</a>
+    <a class="pill-btn" id="suggest" href="#" target="_blank" rel="noopener">+ Suggest a startup</a>
   </nav>
 </div>
 
@@ -143,14 +143,14 @@ footer b{color:var(--ink);font-family:var(--head)}
     <g stroke="var(--hi)" stroke-width="9" stroke-linecap="round"><path d="M50 8v84"/><path d="M14 28l72 44"/><path d="M14 72l72-44"/></g>
   </svg>
   <h1>Who's building <span class="mark">privacy</span>?</h1>
-  <p>A living directory of the companies making privacy work: compliance tools, encrypted computation, synthetic data, consumer apps and more. <span id="gen"></span></p>
+  <p>A living directory of the startups making privacy work: compliance tools, encrypted computation, synthetic data, consumer apps and more. <span id="gen"></span></p>
   <div class="stats" id="stats"></div>
 </section>
 
 <div class="cats" id="chips" role="toolbar" aria-label="Categories"></div>
 
 <div class="controls" role="search"><div class="in">
-  <input class="q" id="q" type="search" placeholder="Search companies, techniques, places…" aria-label="Search">
+  <input class="q" id="q" type="search" placeholder="Search startups, techniques, places…" aria-label="Search">
   <select id="f-isr" aria-label="Country"><option value="">All countries</option></select>
   <select id="f-status" aria-label="Status"><option value="">Any status</option></select>
   <select id="f-rel" aria-label="Relevance">
@@ -272,7 +272,7 @@ function renderChips(){
 function render(){
   const list = filtered();
   renderChips();
-  $("count").textContent = `Showing ${list.length} of ${ALL.length} companies`;
+  $("count").textContent = `Showing ${list.length} of ${ALL.length} startups`;
   $("grid").innerHTML = list.length ? list.map(c => `
     <button class="tile" type="button" data-slug="${esc(c.slug)}">
       <div class="art" style="background:${fam(c.primary_category)}">
@@ -285,14 +285,14 @@ function render(){
         <p>${esc(c.description)}</p>
         <div class="pills">${statusPill(c)}${catPill(c)}</div>
       </div>
-    </button>`).join("") : `<div class="empty">Nothing here yet. Try fewer filters, or <a href="${esc(issueUrl("new-company.yml", {title:"[New company] "}))}" target="_blank" rel="noopener">suggest a company</a>.</div>`;
+    </button>`).join("") : `<div class="empty">Nothing here yet. Try fewer filters, or <a href="${esc(issueUrl("new-company.yml", {title:"[New startup] "}))}" target="_blank" rel="noopener">suggest a startup</a>.</div>`;
   writeHash();
 }
 
 function renderStats(){
   const acq = ALL.filter(c => c.status_code === "acquired").length;
   const items = [
-    [ALL.length, "companies", "./"],
+    [ALL.length, "startups", "./"],
     [new Set(ALL.map(country)).size, "countries", "stats.html"],
     [new Set(ALL.map(c => c.primary_category)).size, "categories", "stats.html"],
     [acq, "acquired so far", "#status=acquired"]
@@ -320,7 +320,7 @@ function openCompany(slug){
         ${row("Status", esc(c.status))}
         ${row("Acquirer", esc(c.acquirer))}
         ${row("Techniques", c.techniques)}
-        ${row("Company type", esc(c.company_type))}
+        ${row("Type", esc(c.company_type))}
         ${row("Founded", esc(c.founded_year))}
         ${row("Funding (USD)", esc(c.total_funding_usd))}
         ${row("Investors", c.key_investors)}
@@ -360,7 +360,7 @@ async function init(){
   const data = await (await fetch("companies.json", {cache: "no-cache"})).json();
   ALL = data.companies.map(c => ({...c, _hay: hay(c)}));
   $("gen").textContent = `Updated ${data.generated}.`;
-  $("suggest").href = issueUrl("new-company.yml", {title: "[New company] "});
+  $("suggest").href = issueUrl("new-company.yml", {title: "[New startup] "});
   const cc = {};
   ALL.forEach(c => cc[country(c)] = (cc[country(c)] || 0) + 1);
   $("f-isr").innerHTML += Object.keys(cc)

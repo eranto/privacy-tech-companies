@@ -1,5 +1,5 @@
 name: Suggest a correction
-description: Report wrong or outdated information about a company in the directory.
+description: Report wrong or outdated information about a startup in the directory.
 title: "[Correction] "
 labels: ["correction"]
 body:
@@ -11,14 +11,14 @@ body:
   - type: input
     id: company
     attributes:
-      label: Company
+      label: Startup
     validations:
       required: true
   - type: input
     id: slug
     attributes:
       label: Directory ID
-      description: Filled in automatically when you use the button on the company's page.
+      description: Filled in automatically when you use the button on the startup's page.
   - type: checkboxes
     id: fields
     attributes:
@@ -43,11 +43,11 @@ body:
     id: sources
     attributes:
       label: Source
-      description: A link that supports the correction (press release, filing, news article, company page).
+      description: A link that supports the correction (press release, filing, news article, startup's own page).
   - type: dropdown
     id: affiliation
     attributes:
-      label: Your relationship to the company
+      label: Your relationship to the startup
       options:
         - No affiliation
         - I work there

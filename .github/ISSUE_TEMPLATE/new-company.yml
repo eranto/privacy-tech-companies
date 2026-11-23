@@ -1,6 +1,6 @@
-name: Suggest a company
-description: Propose a privacy technology company to add to the directory.
-title: "[New company] "
+name: Suggest a startup
+description: Propose a privacy technology startup to add to the directory.
+title: "[New startup] "
 labels: ["new-company"]
 body:
   - type: markdown
@@ -11,7 +11,7 @@ body:
   - type: input
     id: name
     attributes:
-      label: Company name
+      label: Startup name
     validations:
       required: true
   - type: input
@@ -29,7 +29,7 @@ body:
   - type: textarea
     id: what
     attributes:
-      label: What does the company do?
+      label: What does the startup do?
       description: One or two sentences on the product and how it relates to privacy.
     validations:
       required: true
@@ -61,11 +61,11 @@ body:
     id: sources
     attributes:
       label: Sources
-      description: Links to news coverage, funding announcements, or the company's own pages.
+      description: Links to news coverage, funding announcements, or the startup's own pages.
   - type: dropdown
     id: affiliation
     attributes:
-      label: Your relationship to the company
+      label: Your relationship to the startup
       options:
         - No affiliation
         - I work there
