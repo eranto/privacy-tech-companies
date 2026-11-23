@@ -256,7 +256,8 @@ function readHash(){
 }
 
 async function init(){
-  const res = await fetch("companies.json");
+  // no-cache: always revalidate (ETag), so a new deploy never pairs new code with stale data
+  const res = await fetch("companies.json", {cache: "no-cache"});
   const data = await res.json();
   ALL = data.companies.map(c => ({...c, _hay: hay(c)}));
   $("gen").textContent = `Last updated ${data.generated}.`;
