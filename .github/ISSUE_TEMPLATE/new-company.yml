@@ -1,0 +1,75 @@
+name: Suggest a company
+description: Propose a privacy technology company to add to the directory.
+title: "[New company] "
+labels: ["new-company"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the suggestion. Each submission is checked against public sources before it is added, so links help a lot.
+        Please do not include personal information about individuals.
+  - type: input
+    id: name
+    attributes:
+      label: Company name
+    validations:
+      required: true
+  - type: input
+    id: website
+    attributes:
+      label: Website
+      placeholder: https://
+    validations:
+      required: true
+  - type: input
+    id: country
+    attributes:
+      label: Headquarters country
+      placeholder: e.g. Israel, Germany, USA
+  - type: textarea
+    id: what
+    attributes:
+      label: What does the company do?
+      description: One or two sentences on the product and how it relates to privacy.
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Closest category
+      options:
+        - Not sure
+        - Privacy program management / compliance
+        - Consent management
+        - Data discovery / DSPM
+        - Access governance & masking
+        - De-identification & vaults
+        - Synthetic data
+        - Privacy-enhancing computation (FHE, MPC, TEE, federated, ZK)
+        - Clean rooms & collaboration
+        - Data subject rights & mapping
+        - Privacy engineering
+        - AI / LLM privacy
+        - Consumer privacy
+        - Privacy-preserving identity
+        - Health data sharing
+        - DLP / data security
+        - Privacy blockchains / ZK
+        - Services / consulting
+        - Other
+  - type: textarea
+    id: sources
+    attributes:
+      label: Sources
+      description: Links to news coverage, funding announcements, or the company's own pages.
+  - type: dropdown
+    id: affiliation
+    attributes:
+      label: Your relationship to the company
+      options:
+        - No affiliation
+        - I work there
+        - Investor or advisor
+        - Other
+    validations:
+      required: true

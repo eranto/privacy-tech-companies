@@ -1,0 +1,57 @@
+name: Suggest a correction
+description: Report wrong or outdated information about a company in the directory.
+title: "[Correction] "
+labels: ["correction"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping keep the directory accurate. Corrections are checked against a source before they are applied.
+        Please do not include personal information about individuals.
+  - type: input
+    id: company
+    attributes:
+      label: Company
+    validations:
+      required: true
+  - type: input
+    id: slug
+    attributes:
+      label: Directory ID
+      description: Filled in automatically when you use the button on the company's page.
+  - type: checkboxes
+    id: fields
+    attributes:
+      label: What is wrong?
+      options:
+        - label: Status (active, acquired, shut down…)
+        - label: Website
+        - label: Headquarters / country
+        - label: Description
+        - label: Category or techniques
+        - label: Funding or acquisition details
+        - label: It should not be in the directory
+        - label: Something else
+  - type: textarea
+    id: correction
+    attributes:
+      label: Correct information
+      description: What should it say instead?
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Source
+      description: A link that supports the correction (press release, filing, news article, company page).
+  - type: dropdown
+    id: affiliation
+    attributes:
+      label: Your relationship to the company
+      options:
+        - No affiliation
+        - I work there
+        - Investor or advisor
+        - Other
+    validations:
+      required: true
