@@ -64,12 +64,15 @@ h1,h2,h3{font-family:var(--head)}
 
 /* ---------- controls ---------- */
 .controls{position:sticky;top:0;z-index:5;background:var(--bg);border-top:2px solid var(--line);border-bottom:2px solid var(--line)}
-.controls .in{max-width:1280px;margin:0 auto;padding:10px 16px;display:grid;gap:8px;grid-template-columns:2.2fr repeat(5,1fr)}
+.controls .in{max-width:1280px;margin:0 auto;padding:10px 16px;display:grid;gap:8px;grid-template-columns:2.2fr repeat(4,1fr)}
 .controls input,.controls select{width:100%;min-width:0;padding:9px 12px;border:2px solid var(--line);border-radius:999px;
   background:var(--panel);color:var(--ink);font:500 14px var(--body)}
 .controls input{padding-left:38px;background:var(--panel) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23888' stroke-width='2.5'%3E%3Ccircle cx='10' cy='10' r='7'/%3E%3Cpath d='m20 20-5-5'/%3E%3C/svg%3E") 13px 50%/16px no-repeat}
 @media (max-width:960px){.controls .in{grid-template-columns:1fr 1fr}.controls .q{grid-column:1/-1}}
 .meta{max-width:1280px;margin:0 auto;padding:12px 16px;display:flex;justify-content:space-between;align-items:center;gap:8px;font-size:14px;color:var(--muted);flex-wrap:wrap}
+.meta-r{display:flex;gap:16px;align-items:center}
+.unv{display:inline-flex;align-items:center;gap:6px;font-weight:500;color:var(--ink);cursor:pointer}
+.unv input{width:16px;height:16px;accent-color:#141414}
 .meta button{font:600 14px var(--body);background:none;border:none;color:var(--ink);cursor:pointer;text-decoration:underline;text-underline-offset:3px;padding:0}
 
 /* ---------- tile grid ---------- */
@@ -156,20 +159,17 @@ footer b{color:var(--ink);font-family:var(--head)}
   <select id="f-rel" aria-label="Relevance">
     <option value="">Core + adjacent</option><option value="core">Core privacy</option><option value="adjacent">Adjacent</option>
   </select>
-  <select id="f-basis" aria-label="Verification">
-    <option value="">Any verification</option><option value="verified">Sourced only</option><option value="model">Unverified only</option>
-  </select>
   <select id="sort" aria-label="Sort">
     <option value="name">Sort: A–Z</option><option value="cat">Sort: category</option>
-    <option value="status">Sort: status</option><option value="added">Sort: newest added</option>
+    <option value="status">Sort: status</option>
   </select>
 </div></div>
-<div class="meta"><span id="count"></span><button id="reset" type="button">Clear filters</button></div>
+<div class="meta"><span id="count"></span><span class="meta-r"><label class="unv"><input type="checkbox" id="f-unv"> Show unverified <span id="unv-n"></span></label><button id="reset" type="button">Clear filters</button></span></div>
 <div class="wrap"><div class="grid" id="grid"></div></div>
 
 <footer><div class="in">
   <div><b>About.</b> Compiled at the iWit Lab, Tel Aviv University. Statuses change: check the listed sources before citing.</div>
-  <div><span class="p" style="background:#141414;color:var(--hi)">✱ unverified</span> profiles were added from model knowledge and not yet checked against a source.</div>
+  <div><span class="p" style="background:#141414;color:var(--hi)">✱ unverified</span> startups are ones for which we could not find a website matching the description. They are hidden unless you tick “Show unverified”.</div>
 </div></footer>
 
 <dialog id="dlg"><div class="dlg" id="dlgBody"></div></dialog>
@@ -201,7 +201,8 @@ const country = c => c.hq_country || "Unknown";
 const inCountry = c => !state.isr || country(c) === state.isr;
 const $ = id => document.getElementById(id);
 const esc = s => String(s ?? "").replace(/[&<>"']/g, ch => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));
-let ALL = [], state = {q:"", cat:"", isr:"", status:"", rel:"", basis:"", sort:"name"};
+let ALL = [], state = {q:"", cat:"", isr:"", status:"", rel:"", unv:"", sort:"name"};
+const shown = c => c.website_verified || state.unv;
 
 function initials(name){
   const w = name.replace(/\(.*?\)/g, "").replace(/[^A-Za-z0-9 .]/g, " ").split(/[\s.]+/).filter(Boolean);
@@ -248,19 +249,18 @@ function filtered(){
     (!state.cat || c.primary_category === state.cat) && inCountry(c) &&
     (!state.status || c.status_code === state.status) &&
     (!state.rel || c.privacy_relevance === state.rel) &&
-    (!state.basis || (state.basis === "model" ? c.basis === "model" : c.basis !== "model")) &&
+    shown(c) &&
     terms.every(t => c._hay.includes(t)));
   const by = {
     name: (a,b) => a.name.localeCompare(b.name),
     cat: (a,b) => (CATS[a.primary_category]||"").localeCompare(CATS[b.primary_category]||"") || a.name.localeCompare(b.name),
-    status: (a,b) => (a.status_code||"").localeCompare(b.status_code||"") || a.name.localeCompare(b.name),
-    added: (a,b) => String(b.added).localeCompare(String(a.added)) || a.name.localeCompare(b.name)
-  }[state.sort];
+    status: (a,b) => (a.status_code||"").localeCompare(b.status_code||"") || a.name.localeCompare(b.name)
+  }[state.sort] || ((a,b) => a.name.localeCompare(b.name));
   return out.sort(by);
 }
 
 function renderChips(){
-  const base = ALL.filter(c => inCountry(c) && (!state.status || c.status_code === state.status) && (!state.rel || c.privacy_relevance === state.rel));
+  const base = ALL.filter(c => shown(c) && inCountry(c) && (!state.status || c.status_code === state.status) && (!state.rel || c.privacy_relevance === state.rel));
   const counts = {};
   base.forEach(c => counts[c.primary_category] = (counts[c.primary_category]||0) + 1);
   $("chips").innerHTML = `<button class="cat all" type="button" data-cat="" aria-pressed="${!state.cat}">All<span class="n">${base.length}</span></button>` +
@@ -272,12 +272,14 @@ function renderChips(){
 function render(){
   const list = filtered();
   renderChips();
-  $("count").textContent = `Showing ${list.length} of ${ALL.length} startups`;
+  const nv = ALL.filter(c => c.website_verified).length;
+  $("count").textContent = `Showing ${list.length} of ${state.unv ? ALL.length : nv} startups`;
+  $("unv-n").textContent = `(${ALL.length - nv})`;
   $("grid").innerHTML = list.length ? list.map(c => `
     <button class="tile" type="button" data-slug="${esc(c.slug)}">
       <div class="art" style="background:${fam(c.primary_category)}">
         ${logo(c)}<span class="mono">${esc(initials(c.name))}</span>
-        ${c.basis === "model" ? '<span class="sticker">✱ unverified</span>' : ""}
+        ${c.website_verified ? "" : '<span class="sticker">✱ unverified</span>'}
       </div>
       <div class="tbody">
         <div class="where">${esc(country(c))}${c.hq && c.hq !== country(c) ? " · " + esc(c.hq.split(/[,/(]/)[0].trim()) : ""}</div>
@@ -290,11 +292,12 @@ function render(){
 }
 
 function renderStats(){
-  const acq = ALL.filter(c => c.status_code === "acquired").length;
+  const V = ALL.filter(c => c.website_verified);
+  const acq = V.filter(c => c.status_code === "acquired").length;
   const items = [
-    [ALL.length, "startups", "./"],
-    [new Set(ALL.map(country)).size, "countries", "stats.html"],
-    [new Set(ALL.map(c => c.primary_category)).size, "categories", "stats.html"],
+    [V.length, "startups", "./"],
+    [new Set(V.map(country)).size, "countries", "stats.html"],
+    [new Set(V.map(c => c.primary_category)).size, "categories", "stats.html"],
     [acq, "acquired so far", "#status=acquired"]
   ];
   $("stats").innerHTML = items.map(([v, l, h]) => `<div class="stat"><a href="${h}"><b>${v}</b><span>${l}</span></a></div>`).join("");
@@ -314,7 +317,7 @@ function openCompany(slug){
         ${c.privacy_relevance === "adjacent" ? '<span class="p" style="background:#fff;color:#141414">adjacent to privacy</span>' : ""}</div>
     </div>
     <div class="dcontent">
-      ${c.basis === "model" ? '<div class="notice">✱ Unverified: added from model knowledge. Check status and details against a primary source.</div>' : ""}
+      ${c.website_verified ? "" : `<div class="notice">✱ Unverified: we could not find a website that matches this description.${c.verification_note ? " " + esc(c.verification_note) : ""}</div>`}
       <dl class="facts">
         ${row("Website", c.website ? `<a href="${esc(c.website)}" target="_blank" rel="noopener">${esc(c.website)}</a>` : "")}
         ${row("Status", esc(c.status))}
@@ -324,8 +327,9 @@ function openCompany(slug){
         ${row("Founded", esc(c.founded_year))}
         ${row("Funding (USD)", esc(c.total_funding_usd))}
         ${row("Investors", c.key_investors)}
-        ${row("Source basis", esc({search:"Web search", model:"Model knowledge (unverified)", "xlsx-jul-2026":"Original sheet, Jul 2026 review"}[c.basis] || c.basis))}
-        ${row("Last verified", esc(c.last_verified))}
+        ${c.website_verified && c.verified_url && c.verified_url !== c.website ? row("Confirmed via", `<a href="${esc(c.verified_url)}" target="_blank" rel="noopener">${esc(domain(c.verified_url) || c.verified_url)}</a>`) : ""}
+        ${c.website_verified && c.verification_note ? row("Note", esc(c.verification_note)) : ""}
+        ${row("Website checked", esc(c.website_checked))}
       </dl>
       <div class="body">${md(c.body)}</div>
       ${c.sources?.length ? `<h3>Sources</h3><ul class="src">${c.sources.map(srcItem).join("")}</ul>` : ""}
@@ -339,7 +343,7 @@ function openCompany(slug){
 
 function writeHash(){
   const p = new URLSearchParams();
-  for (const k of ["q","cat","isr","status","rel","basis"]) if (state[k]) p.set(k === "isr" ? "country" : k, state[k]);
+  for (const k of ["q","cat","isr","status","rel","unv"]) if (state[k]) p.set(k === "isr" ? "country" : k, state[k]);
   if (state.sort !== "name") p.set("sort", state.sort);
   if (state.open) p.set("c", state.open);
   const h = p.toString();
@@ -347,11 +351,11 @@ function writeHash(){
 }
 function readHash(){
   const p = new URLSearchParams(location.hash.slice(1));
-  state = {q:"", cat:"", isr:"", status:"", rel:"", basis:"", sort:"name"};
-  for (const k of ["q","cat","status","rel","basis","sort"]) if (p.get(k)) state[k] = p.get(k);
+  state = {q:"", cat:"", isr:"", status:"", rel:"", unv:"", sort:"name"};
+  for (const k of ["q","cat","status","rel","unv","sort"]) if (p.get(k)) state[k] = p.get(k);
   state.isr = p.get("country") || p.get("isr") || "";  // "isr" kept for old links
   $("q").value = state.q; $("f-isr").value = state.isr; $("f-status").value = state.status;
-  $("f-rel").value = state.rel; $("f-basis").value = state.basis; $("sort").value = state.sort;
+  $("f-rel").value = state.rel; $("f-unv").checked = !!state.unv; $("sort").value = state.sort;
   return p.get("c");
 }
 
@@ -362,7 +366,7 @@ async function init(){
   $("gen").textContent = `Updated ${data.generated}.`;
   $("suggest").href = issueUrl("new-company.yml", {title: "[New startup] "});
   const cc = {};
-  ALL.forEach(c => cc[country(c)] = (cc[country(c)] || 0) + 1);
+  ALL.filter(c => c.website_verified).forEach(c => cc[country(c)] = (cc[country(c)] || 0) + 1);
   $("f-isr").innerHTML += Object.keys(cc)
     .sort((a,b) => (a === "Unknown") - (b === "Unknown") || cc[b] - cc[a] || a.localeCompare(b))
     .map(k => `<option value="${esc(k)}">${esc(k)} (${cc[k]})</option>`).join("");
@@ -377,8 +381,9 @@ async function init(){
 
   let t;
   $("q").addEventListener("input", e => { clearTimeout(t); t = setTimeout(() => { state.q = e.target.value.trim(); render(); }, 120); });
-  for (const [id, key] of [["f-isr","isr"],["f-status","status"],["f-rel","rel"],["f-basis","basis"],["sort","sort"]])
+  for (const [id, key] of [["f-isr","isr"],["f-status","status"],["f-rel","rel"],["sort","sort"]])
     $(id).addEventListener("change", e => { state[key] = e.target.value; render(); });
+  $("f-unv").addEventListener("change", e => { state.unv = e.target.checked ? "1" : ""; render(); });
   $("chips").addEventListener("click", e => {
     const b = e.target.closest(".cat"); if (!b) return;
     state.cat = (b.dataset.cat && state.cat !== b.dataset.cat) ? b.dataset.cat : ""; render();

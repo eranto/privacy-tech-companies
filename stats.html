@@ -39,6 +39,8 @@ h1{margin:0;font-size:clamp(34px,6vw,60px);line-height:1;letter-spacing:-.035em;
 .controls{position:sticky;top:0;z-index:5;background:var(--bg);padding:12px 0;border-bottom:2px solid var(--line);
   display:flex;gap:8px;flex-wrap:wrap;margin-top:20px}
 .controls select{padding:9px 12px;border:2px solid var(--line);border-radius:999px;background:var(--panel);color:var(--ink);font:500 14px var(--body)}
+.unv{display:inline-flex;align-items:center;gap:6px;font:500 14px var(--body);cursor:pointer}
+.unv input{width:16px;height:16px;accent-color:#141414}
 .controls button{font:600 14px var(--body);background:none;border:none;color:var(--ink);cursor:pointer;text-decoration:underline;text-underline-offset:3px}
 .tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:12px;margin:20px 0}
 .tile{background:var(--panel);border:2px solid var(--line);border-radius:16px;padding:14px}
@@ -90,9 +92,7 @@ footer{max-width:1200px;margin:0 auto;padding:8px 16px 32px;color:var(--muted);f
     <select id="f-rel" aria-label="Relevance">
       <option value="">Core + adjacent</option><option value="core">Core privacy</option><option value="adjacent">Adjacent</option>
     </select>
-    <select id="f-basis" aria-label="Verification">
-      <option value="">Any verification</option><option value="verified">Sourced only</option><option value="model">Unverified only</option>
-    </select>
+    <label class="unv"><input type="checkbox" id="f-unv"> Include unverified</label>
     <button id="reset" type="button">Clear</button>
   </div>
   <div class="tiles" id="tiles"></div>
@@ -110,7 +110,7 @@ footer{max-width:1200px;margin:0 auto;padding:8px 16px 32px;color:var(--muted);f
   </div>
   <section class="card"><h2>Category × country</h2><p class="note">Top countries by startup count; darker means more startups</p><div class="heat" id="c-heat"></div></section>
 </main>
-<footer>Counts reflect what the directory contains, not the whole market, and unverified profiles are included unless filtered out.</footer>
+<footer>Counts reflect what the directory contains, not the whole market. Unverified startups (no matching website found) are excluded unless you tick “Include unverified”.</footer>
 <div id="tip" role="tooltip"></div>
 
 <script>
@@ -129,13 +129,13 @@ const STATUS = {active:"Active", acquired:"Acquired", pending:"Pending acquisiti
 const $ = id => document.getElementById(id);
 const esc = s => String(s ?? "").replace(/[&<>"']/g, ch => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));
 const country = c => c.hq_country || "Unknown";
-let ALL = [], F = {country:"", rel:"", basis:""};
+let ALL = [], F = {country:"", rel:"", unv:false};
 
 function link(extra){
   const p = new URLSearchParams();
   if (F.country) p.set("country", F.country);
   if (F.rel) p.set("rel", F.rel);
-  if (F.basis) p.set("basis", F.basis);
+  if (F.unv) p.set("unv", "1");
   for (const [k,v] of Object.entries(extra)) if (v) p.set(k, v);
   return "./#" + p.toString();
 }
@@ -162,7 +162,7 @@ function render(){
   const list = ALL.filter(c =>
     (!F.country || country(c) === F.country) &&
     (!F.rel || c.privacy_relevance === F.rel) &&
-    (!F.basis || (F.basis === "model" ? c.basis === "model" : c.basis !== "model")));
+    (F.unv || c.website_verified));
   const n = list.length;
   const acq = list.filter(c => c.status_code === "acquired");
   const countries = new Set(list.map(country)).size;
@@ -172,7 +172,7 @@ function render(){
     [list.filter(c => c.status_code === "active").length, `active (${pct(list.filter(c => c.status_code === "active").length)})`],
     [acq.length, `acquired (${pct(acq.length)})`],
     [new Set(list.map(c => c.primary_category)).size, "categories"],
-    [list.filter(c => c.basis !== "model").length, "with a source"]
+    [ALL.filter(c => !c.website_verified).length, F.unv ? "unverified (included)" : "unverified (excluded)"]
   ].map(([v,l]) => `<div class="tile"><div class="v">${v}</div><div class="l">${esc(l)}</div></div>`).join("");
 
   bars($("c-country"), count(list, country), {href: k => link({country:k}), total:n});
@@ -219,11 +219,12 @@ document.addEventListener("mousemove", e => {
   const data = await (await fetch("companies.json", {cache: "no-cache"})).json();
   ALL = data.companies;
   $("gen").textContent = `Data updated ${data.generated}.`;
-  const cc = count(ALL, country);
+  const cc = count(ALL.filter(c => c.website_verified), country);
   $("f-country").innerHTML += cc.map(([k,v]) => `<option value="${esc(k)}">${esc(k)} (${v})</option>`).join("");
-  for (const [id, key] of [["f-country","country"],["f-rel","rel"],["f-basis","basis"]])
+  $("f-unv").addEventListener("change", e => { F.unv = e.target.checked; render(); });
+  for (const [id, key] of [["f-country","country"],["f-rel","rel"]])
     $(id).addEventListener("change", e => { F[key] = e.target.value; render(); });
-  $("reset").onclick = () => { F = {country:"", rel:"", basis:""}; ["f-country","f-rel","f-basis"].forEach(id => $(id).value = ""); render(); };
+  $("reset").onclick = () => { F = {country:"", rel:"", unv:false}; ["f-country","f-rel"].forEach(id => $(id).value = ""); $("f-unv").checked = false; render(); };
   render();
 })().catch(err => { $("tiles").innerHTML = `<p>Could not load companies.json (${esc(err.message)}).</p>`; });
 </script>
