@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Tech Statistics</title>
+<meta name="description" content="Live statistics computed from the privacy tech companies directory.">
+<style>
+:root{
+  --bg:#f7f7f5; --panel:#ffffff; --ink:#1d1d1b; --muted:#66655f; --line:#e3e2dc;
+  --accent:#2f5d8a; --accent-soft:#e6eef6; --track:#eeede8;
+}
+@media (prefers-color-scheme: dark){
+  :root{ --bg:#151614; --panel:#1e1f1d; --ink:#ecebe6; --muted:#a3a29b; --line:#33342f;
+    --accent:#8fb6e0; --accent-soft:#22303d; --track:#2a2b28; }
+}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--ink);
+  font:15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}
+a{color:var(--accent)}
+header,main{max-width:1200px;margin:0 auto;padding:0 16px}
+header{padding-top:28px}
+h1{margin:0 0 4px;font-size:26px}
+nav{margin:6px 0 0;font-size:14px}
+nav a{margin-right:14px}
+.sub{color:var(--muted);margin:4px 0 0}
+.controls{position:sticky;top:0;z-index:5;background:var(--bg);padding:12px 0;border-bottom:1px solid var(--line);
+  display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.controls select{padding:7px 10px;border:1px solid var(--line);border-radius:6px;background:var(--panel);color:var(--ink);font:inherit}
+.controls button{font:inherit;font-size:14px;background:none;border:none;color:var(--accent);cursor:pointer}
+.tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:12px;margin:18px 0}
+.tile{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:14px}
+.tile .v{font-size:30px;font-weight:600;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.tile .l{color:var(--muted);font-size:13px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,520px),1fr));gap:14px;margin-bottom:14px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px;min-width:0}
+.card h2{font-size:16px;margin:0 0 2px}
+.card .note{color:var(--muted);font-size:13px;margin:0 0 12px}
+.bars{display:grid;grid-template-columns:minmax(90px,max-content) 1fr max-content;gap:6px 10px;align-items:center;font-size:13px}
+.bars .lab{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:220px}
+.bars a.row{display:contents;color:inherit;text-decoration:none}
+.bars .track{height:14px;position:relative}
+.bars .fill{height:100%;background:var(--accent);border-radius:0 4px 4px 0;min-width:2px}
+.bars a.row:hover .fill,.bars a.row:focus-visible .fill{opacity:.75}
+.bars a.row:hover .lab{text-decoration:underline}
+.bars .n{font-variant-numeric:tabular-nums;color:var(--muted);text-align:right}
+.more{font:inherit;font-size:13px;background:none;border:none;color:var(--accent);cursor:pointer;padding:8px 0 0}
+.heat{overflow-x:auto}
+.heat table{border-collapse:separate;border-spacing:2px;font-size:12px}
+.heat th{font-weight:500;color:var(--muted);text-align:left;white-space:nowrap;padding:2px 6px}
+.heat th.col{writing-mode:vertical-rl;transform:rotate(180deg);text-align:left;height:130px;vertical-align:bottom;padding:6px 2px}
+.heat thead tr{height:140px}
+.heat td{width:34px;height:26px;text-align:center;border-radius:3px;font-variant-numeric:tabular-nums}
+.heat td a{display:block;color:inherit;text-decoration:none;line-height:26px}
+.cols{display:flex;align-items:flex-end;gap:4px;height:160px;padding-top:16px;border-bottom:1px solid var(--line)}
+.cols a{flex:1;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;height:100%;color:inherit;text-decoration:none;min-width:0}
+.cols .c{width:100%;max-width:38px;background:var(--accent);border-radius:4px 4px 0 0}
+.cols .cv{font-size:12px;color:var(--muted);margin-bottom:2px}
+.colx{display:flex;gap:4px;font-size:12px;color:var(--muted)}
+.colx span{flex:1;text-align:center}
+#tip{position:fixed;pointer-events:none;background:var(--ink);color:var(--bg);font-size:12px;padding:5px 8px;border-radius:5px;display:none;z-index:20;max-width:260px}
+footer{max-width:1200px;margin:0 auto;padding:8px 16px 32px;color:var(--muted);font-size:13px}
+</style>
+</head>
+<body>
+<header>
+  <h1>Privacy Tech Statistics</h1>
+  <nav><a href="./">← Directory</a></nav>
+  <p class="sub">Computed live from the directory data. <span id="gen"></span> Click any bar or cell to see those companies.</p>
+</header>
+<main>
+  <div class="controls">
+    <select id="f-country" aria-label="Country"><option value="">All countries</option></select>
+    <select id="f-rel" aria-label="Relevance">
+      <option value="">Core + adjacent</option><option value="core">Core privacy</option><option value="adjacent">Adjacent</option>
+    </select>
+    <select id="f-basis" aria-label="Verification">
+      <option value="">Any verification</option><option value="verified">Sourced only</option><option value="model">Unverified only</option>
+    </select>
+    <button id="reset" type="button">Clear</button>
+  </div>
+  <div class="tiles" id="tiles"></div>
+  <div class="grid">
+    <section class="card"><h2>Companies by HQ country</h2><p class="note">Main headquarters</p><div id="c-country"></div></section>
+    <section class="card"><h2>Companies by category</h2><p class="note">Primary category</p><div id="c-cat"></div></section>
+  </div>
+  <div class="grid">
+    <section class="card"><h2>Status</h2><p class="note">As recorded in each profile</p><div id="c-status"></div></section>
+    <section class="card"><h2>Privacy techniques</h2><p class="note">A company can use several</p><div id="c-tech"></div></section>
+  </div>
+  <div class="grid">
+    <section class="card"><h2>Acquisitions by year</h2><p class="note">Year parsed from the status text; acquisitions without a year are excluded</p><div id="c-acqyear"></div></section>
+    <section class="card"><h2>Top acquirers</h2><p class="note">Acquirers with the most deals in the directory</p><div id="c-acquirer"></div></section>
+  </div>
+  <section class="card"><h2>Category × country</h2><p class="note">Top countries by company count; darker means more companies</p><div class="heat" id="c-heat"></div></section>
+</main>
+<footer>Counts reflect what the directory contains, not the whole market: coverage is deliberately deeper for Israel, and unverified profiles are included unless filtered out.</footer>
+<div id="tip" role="tooltip"></div>
+
+<script>
+const CATS = {
+  program_mgmt:"Privacy program mgmt / compliance", consent:"Consent management",
+  discovery_dspm:"Data discovery / DSPM", access_governance:"Access governance & masking",
+  deid_vault:"De-identification & vaults", synthetic:"Synthetic data",
+  pec:"Privacy-enhancing computation", clean_room:"Clean rooms & collaboration",
+  dsr_mapping:"Data subject rights & mapping", privacy_eng:"Privacy engineering",
+  ai_privacy:"AI / LLM privacy", consumer:"Consumer privacy", identity:"Privacy-preserving identity",
+  health_data:"Health data sharing", dlp:"DLP / data security", privacy_chain:"Privacy blockchains / ZK",
+  services:"Services / consulting", other:"Other / adjacent"
+};
+const STATUS = {active:"Active", acquired:"Acquired", pending:"Pending acquisition", ipo:"IPO",
+  "merged/pivoted":"Merged / pivoted", "shut down":"Shut down", unclear:"Unclear"};
+const $ = id => document.getElementById(id);
+const esc = s => String(s ?? "").replace(/[&<>"']/g, ch => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));
+const country = c => c.hq_country || "Unknown";
+let ALL = [], F = {country:"", rel:"", basis:""};
+
+function link(extra){
+  const p = new URLSearchParams();
+  if (F.country) p.set("isr", F.country);
+  if (F.rel) p.set("rel", F.rel);
+  if (F.basis) p.set("basis", F.basis);
+  for (const [k,v] of Object.entries(extra)) if (v) p.set(k, v);
+  return "./#" + p.toString();
+}
+function count(list, keyFn){
+  const m = new Map();
+  for (const c of list) for (const k of [].concat(keyFn(c)).filter(Boolean)) m.set(k, (m.get(k)||0) + 1);
+  return [...m.entries()].sort((a,b) => b[1]-a[1] || String(a[0]).localeCompare(String(b[0])));
+}
+function bars(el, rows, {label = k => k, href = () => null, limit = 12, total} = {}){
+  const max = Math.max(1, ...rows.map(r => r[1]));
+  const draw = n => {
+    el.innerHTML = `<div class="bars">${rows.slice(0, n).map(([k, v]) => {
+      const h = href(k), tip = `${label(k)}: ${v}${total ? ` (${Math.round(100*v/total)}%)` : ""}`;
+      const inner = `<span class="lab">${esc(label(k))}</span><span class="track"><span class="fill" style="width:${100*v/max}%;display:block"></span></span><span class="n">${v}</span>`;
+      return h ? `<a class="row" href="${esc(h)}" data-tip="${esc(tip)}">${inner}</a>` : `<span class="row" style="display:contents" data-tip="${esc(tip)}">${inner}</span>`;
+    }).join("")}</div>` + (rows.length > n ? `<button class="more" type="button">Show all ${rows.length}</button>` : "")
+      + (!rows.length ? `<p class="note">No data for this selection.</p>` : "");
+    const b = el.querySelector(".more"); if (b) b.onclick = () => draw(rows.length);
+  };
+  draw(limit);
+}
+
+function render(){
+  const list = ALL.filter(c =>
+    (!F.country || country(c) === F.country) &&
+    (!F.rel || c.privacy_relevance === F.rel) &&
+    (!F.basis || (F.basis === "model" ? c.basis === "model" : c.basis !== "model")));
+  const n = list.length;
+  const acq = list.filter(c => c.status_code === "acquired");
+  const countries = new Set(list.map(country)).size;
+  const il = list.filter(c => c.israel_presence === "founded" || c.israel_presence === "founders").length;
+  const pct = x => n ? Math.round(100*x/n) + "%" : "–";
+  $("tiles").innerHTML = [
+    [n, "companies"], [countries, "countries"],
+    [list.filter(c => c.status_code === "active").length, `active (${pct(list.filter(c => c.status_code === "active").length)})`],
+    [acq.length, `acquired (${pct(acq.length)})`],
+    [il, "Israeli-founded or Israeli founders"],
+    [list.filter(c => c.basis !== "model").length, "with a source"]
+  ].map(([v,l]) => `<div class="tile"><div class="v">${v}</div><div class="l">${esc(l)}</div></div>`).join("");
+
+  bars($("c-country"), count(list, country), {href: k => link({isr:k}), total:n});
+  bars($("c-cat"), count(list, c => c.primary_category), {label: k => CATS[k] || k, href: k => link({cat:k}), limit:18, total:n});
+  bars($("c-status"), count(list, c => c.status_code || "unclear"), {label: k => STATUS[k] || k, href: k => link({status:k}), total:n});
+  bars($("c-tech"), count(list, c => c.techniques || []), {href: k => link({q:k})});
+
+  // acquisitions by year (column chart)
+  const years = count(acq, c => (String(c.status).match(/\((?:~)?((?:19|20)\d\d)\)/) || [])[1]).sort((a,b) => a[0]-b[0]);
+  const ymax = Math.max(1, ...years.map(r => r[1]));
+  $("c-acqyear").innerHTML = years.length ? `<div class="cols">${years.map(([y,v]) =>
+      `<a href="${esc(link({status:"acquired", q:y}))}" data-tip="${y}: ${v} acquisition${v>1?"s":""}"><span class="cv">${v}</span><span class="c" style="height:${100*v/ymax}%"></span></a>`).join("")}</div>
+      <div class="colx">${years.map(([y]) => `<span>${y}</span>`).join("")}</div>`
+    : `<p class="note">No dated acquisitions in this selection.</p>`;
+
+  bars($("c-acquirer"), count(acq, c => (c.acquirer || "").replace(/\s*\(.*$/, "").trim()), {href: k => link({q:k}), limit:10});
+
+  // heatmap: categories x top countries
+  const topC = count(list, country).slice(0, 10).map(r => r[0]);
+  const cats = count(list, c => c.primary_category).map(r => r[0]);
+  const cell = {}; let hmax = 1;
+  for (const c of list) { const k = c.primary_category + "|" + country(c); cell[k] = (cell[k]||0) + 1; }
+  for (const k in cell) if (topC.includes(k.split("|")[1])) hmax = Math.max(hmax, cell[k]);
+  $("c-heat").innerHTML = `<table><thead><tr><th></th>${topC.map(k => `<th class="col">${esc(k)}</th>`).join("")}</tr></thead><tbody>${
+    cats.map(cat => `<tr><th>${esc(CATS[cat]||cat)}</th>${topC.map(k => {
+      const v = cell[cat + "|" + k] || 0, a = v ? 0.15 + 0.85 * v / hmax : 0;
+      const bg = v ? `color-mix(in srgb, var(--accent) ${Math.round(a*100)}%, var(--panel))` : "var(--track)";
+      const fg = a > 0.55 ? "var(--panel)" : "var(--ink)";
+      return `<td style="background:${bg};color:${fg}">${v ? `<a href="${esc(link({cat, isr:k}))}" data-tip="${esc((CATS[cat]||cat) + " · " + k + ": " + v)}">${v}</a>` : ""}</td>`;
+    }).join("")}</tr>`).join("")}</tbody></table>`;
+}
+
+// tooltip
+const tip = $("tip");
+document.addEventListener("mousemove", e => {
+  const t = e.target.closest("[data-tip]");
+  if (!t) { tip.style.display = "none"; return; }
+  tip.textContent = t.dataset.tip; tip.style.display = "block";
+  tip.style.left = Math.min(e.clientX + 12, innerWidth - tip.offsetWidth - 8) + "px";
+  tip.style.top = (e.clientY + 14) + "px";
+});
+
+(async () => {
+  const data = await (await fetch("companies.json", {cache: "no-cache"})).json();
+  ALL = data.companies;
+  $("gen").textContent = `Data updated ${data.generated}.`;
+  const cc = count(ALL, country);
+  $("f-country").innerHTML += cc.map(([k,v]) => `<option value="${esc(k)}">${esc(k)} (${v})</option>`).join("");
+  for (const [id, key] of [["f-country","country"],["f-rel","rel"],["f-basis","basis"]])
+    $(id).addEventListener("change", e => { F[key] = e.target.value; render(); });
+  $("reset").onclick = () => { F = {country:"", rel:"", basis:""}; ["f-country","f-rel","f-basis"].forEach(id => $(id).value = ""); render(); };
+  render();
+})().catch(err => { $("tiles").innerHTML = `<p>Could not load companies.json (${esc(err.message)}).</p>`; });
+</script>
+</body>
+</html>
