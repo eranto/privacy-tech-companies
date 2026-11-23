@@ -7,118 +7,180 @@
 <meta name="description" content="A searchable directory of privacy technology companies, with a focus on Israel.">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
+<!-- Bunny Fonts: GDPR-friendly Google Fonts mirror (no visitor tracking) -->
+<link rel="preconnect" href="https://fonts.bunny.net">
+<link href="https://fonts.bunny.net/css?family=bricolage-grotesque:500,700,800|inter:400,500,600" rel="stylesheet">
 <style>
 :root{
-  --bg:#f7f7f5; --panel:#ffffff; --ink:#1d1d1b; --muted:#66655f; --line:#e3e2dc;
-  --accent:#2f5d8a; --accent-soft:#e6eef6; --warn:#9a5b00; --warn-soft:#fbf0de;
-  --ok:#2f6b3a; --ok-soft:#e5f1e7; --bad:#8a2f2f; --bad-soft:#f6e6e6;
-  --shadow:0 1px 2px rgba(0,0,0,.06);
+  --bg:#fffdf7; --panel:#ffffff; --ink:#141414; --muted:#5f5d57; --line:#141414; --soft-line:#e6e2d8;
+  --hi:#ffe14d; --red:#ff5a4e; --lav:#e3dcff; --chip:#f3f0e8;
+  --f-comply:#ffe48a; --f-datasec:#c4e4ff; --f-pets:#ddd4ff; --f-ai:#c3f1d7; --f-people:#ffcdbf; --f-other:#ebe8e1;
+  --ok:#1f7a3a; --warn:#a15c00; --bad:#b3261e;
+  --head:"Bricolage Grotesque", ui-sans-serif, system-ui, sans-serif;
+  --body:"Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
 }
 @media (prefers-color-scheme: dark){
-  :root{
-    --bg:#151614; --panel:#1e1f1d; --ink:#ecebe6; --muted:#a3a29b; --line:#33342f;
-    --accent:#8fb6e0; --accent-soft:#22303d; --warn:#e3b264; --warn-soft:#3a2f1d;
-    --ok:#8fcf99; --ok-soft:#1f3123; --bad:#e29a9a; --bad-soft:#3a2222;
-    --shadow:none;
-  }
+  :root{ --bg:#131312; --panel:#1b1b1a; --ink:#f4f2ec; --muted:#a9a69d; --line:#f4f2ec; --soft-line:#34332f;
+    --chip:#262523; --lav:#3a3360; --ok:#7fd49a; --warn:#f0b45a; --bad:#ff8a80; }
 }
 *{box-sizing:border-box}
-html,body{margin:0;background:var(--bg);color:var(--ink);
-  font:15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}
-a{color:var(--accent)}
-header{padding:28px 16px 8px;max-width:1200px;margin:0 auto}
-h1{margin:0 0 4px;font-size:26px;letter-spacing:-.01em}
-.sub{color:var(--muted);margin:0}
-main{max-width:1200px;margin:0 auto;padding:8px 16px 48px}
-.controls{position:sticky;top:0;z-index:5;background:var(--bg);padding:12px 0;border-bottom:1px solid var(--line);
-  display:grid;gap:8px;grid-template-columns:2fr repeat(5,1fr)}
-.controls input,.controls select{width:100%;padding:8px 10px;border:1px solid var(--line);border-radius:6px;
-  background:var(--panel);color:var(--ink);font:inherit;min-width:0}
-@media (max-width:900px){.controls{grid-template-columns:1fr 1fr}.controls .q{grid-column:1/-1}}
-.chips{display:flex;flex-wrap:wrap;gap:6px;margin:14px 0 6px}
-.chip{border:1px solid var(--line);background:var(--panel);color:var(--ink);border-radius:999px;padding:3px 10px;
-  font-size:13px;cursor:pointer}
-.chip[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--panel)}
-.chip .n{color:var(--muted);margin-left:4px}
-.chip[aria-pressed="true"] .n{color:inherit;opacity:.8}
-.meta{display:flex;justify-content:space-between;align-items:center;gap:8px;color:var(--muted);font-size:13px;margin:8px 0 12px;flex-wrap:wrap}
-.meta button{font:inherit;font-size:13px;background:none;border:none;color:var(--accent);cursor:pointer;padding:0}
-.grid{display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(280px,1fr))}
-.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:14px;box-shadow:var(--shadow);
-  cursor:pointer;display:flex;flex-direction:column;gap:6px;text-align:left;font:inherit;color:inherit}
-.card:hover,.card:focus-visible{border-color:var(--accent);outline:none}
-.card h3{margin:0;font-size:16px}
-.card .hq{color:var(--muted);font-size:13px}
-.card p{margin:0;font-size:14px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
-.tags{display:flex;flex-wrap:wrap;gap:4px;margin-top:auto;padding-top:4px}
-.tag{font-size:12px;padding:1px 8px;border-radius:4px;background:var(--accent-soft);color:var(--accent)}
-.tag.st-active{background:var(--ok-soft);color:var(--ok)}
-.tag.st-acquired,.tag.st-pending{background:var(--accent-soft);color:var(--accent)}
-.tag.st-shut{background:var(--bad-soft);color:var(--bad)}
-.tag.st-unclear,.tag.unv{background:var(--warn-soft);color:var(--warn)}
-.tag.il{background:transparent;border:1px solid var(--line);color:var(--muted)}
-.empty{color:var(--muted);padding:40px 0;text-align:center}
-dialog{border:none;border-radius:12px;padding:0;max-width:760px;width:calc(100% - 32px);background:var(--panel);color:var(--ink)}
-dialog::backdrop{background:rgba(0,0,0,.45)}
-.dlg{padding:22px 22px 18px;max-height:85vh;overflow:auto}
-.dlg h2{margin:0 0 2px;font-size:22px}
-.dlg .close{float:right;font-size:22px;line-height:1;background:none;border:none;color:var(--muted);cursor:pointer}
-.facts{display:grid;grid-template-columns:max-content 1fr;gap:4px 14px;margin:14px 0;font-size:14px}
-.facts dt{color:var(--muted)}
+html,body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.55 var(--body)}
+a{color:inherit}
+h1,h2,h3{font-family:var(--head)}
+
+/* ---------- top bar ---------- */
+.top{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;
+  max-width:1280px;margin:0 auto;padding:18px 16px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:var(--head);font-weight:800;font-size:20px;letter-spacing:-.02em}
+.brand img{width:32px;height:32px}
+.nav{display:flex;align-items:center;gap:18px;font-weight:600;font-size:15px}
+.nav a{text-decoration:none}
+.nav a:hover{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:4px}
+.pill-btn{display:inline-flex;align-items:center;gap:6px;background:var(--ink);color:var(--bg)!important;border-radius:999px;
+  padding:9px 16px;text-decoration:none!important;font-weight:600;border:2px solid var(--ink)}
+.pill-btn:hover{background:var(--hi);color:#141414!important}
+
+/* ---------- hero ---------- */
+.hero{position:relative;max-width:1280px;margin:0 auto;padding:36px 16px 28px;overflow:hidden}
+.hero h1{font-size:clamp(38px,7vw,76px);line-height:.98;letter-spacing:-.035em;font-weight:800;margin:0;max-width:880px}
+.mark{background:linear-gradient(transparent 58%, var(--hi) 58%, var(--hi) 92%, transparent 92%);padding:0 .08em;color:inherit}
+.hero p{font-size:clamp(16px,2vw,19px);max-width:640px;color:var(--muted);margin:18px 0 0}
+.doodle{position:absolute;pointer-events:none}
+.d-circle{right:8%;top:10px;width:170px;opacity:.9}
+.d-star{right:2%;bottom:6px;width:90px}
+@media (max-width:760px){.d-circle{width:110px;right:-20px;top:0}.d-star{display:none}}
+.stats{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+.stat{border:2px solid var(--line);border-radius:14px;padding:8px 14px;background:var(--panel)}
+.stat b{font-family:var(--head);font-size:26px;font-weight:800;letter-spacing:-.02em;display:block;line-height:1.1}
+.stat span{font-size:13px;color:var(--muted)}
+.stat a{text-decoration:none}
+
+/* ---------- category tabs ---------- */
+.cats{max-width:1280px;margin:0 auto;padding:6px 16px 10px;display:flex;gap:8px;overflow-x:auto;scrollbar-width:thin}
+.cat{flex:0 0 auto;border:2px solid var(--line);border-radius:999px;padding:6px 12px;font:600 13px var(--body);
+  cursor:pointer;color:#141414;white-space:nowrap}
+.cat .n{opacity:.6;margin-left:6px;font-weight:500}
+.cat.all{background:var(--panel);color:var(--ink)}
+.cat[aria-pressed="true"]{background:var(--ink)!important;color:var(--bg)!important}
+
+/* ---------- controls ---------- */
+.controls{position:sticky;top:0;z-index:5;background:var(--bg);border-top:2px solid var(--line);border-bottom:2px solid var(--line)}
+.controls .in{max-width:1280px;margin:0 auto;padding:10px 16px;display:grid;gap:8px;grid-template-columns:2.2fr repeat(5,1fr)}
+.controls input,.controls select{width:100%;min-width:0;padding:9px 12px;border:2px solid var(--line);border-radius:999px;
+  background:var(--panel);color:var(--ink);font:500 14px var(--body)}
+.controls input{padding-left:38px;background:var(--panel) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23888' stroke-width='2.5'%3E%3Ccircle cx='10' cy='10' r='7'/%3E%3Cpath d='m20 20-5-5'/%3E%3C/svg%3E") 13px 50%/16px no-repeat}
+@media (max-width:960px){.controls .in{grid-template-columns:1fr 1fr}.controls .q{grid-column:1/-1}}
+.meta{max-width:1280px;margin:0 auto;padding:12px 16px;display:flex;justify-content:space-between;align-items:center;gap:8px;font-size:14px;color:var(--muted);flex-wrap:wrap}
+.meta button{font:600 14px var(--body);background:none;border:none;color:var(--ink);cursor:pointer;text-decoration:underline;text-underline-offset:3px;padding:0}
+
+/* ---------- tile grid ---------- */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));border-top:2px solid var(--line);border-left:2px solid var(--line)}
+.wrap{max-width:1280px;margin:0 auto;padding:0 16px 56px}
+.tile{all:unset;box-sizing:border-box;cursor:pointer;display:flex;flex-direction:column;background:var(--panel);
+  border-right:2px solid var(--line);border-bottom:2px solid var(--line);min-width:0}
+.tile:focus-visible{outline:3px solid var(--red);outline-offset:-3px}
+.art{position:relative;aspect-ratio:16/10;display:flex;align-items:center;justify-content:center;border-bottom:2px solid var(--line);overflow:hidden;transition:filter .15s}
+.tile:hover .art{filter:saturate(1.4) brightness(.97)}
+.mono{font-family:var(--head);font-weight:800;font-size:54px;letter-spacing:-.04em;color:#141414;opacity:.88;transition:transform .2s}
+.tile:hover .mono{transform:rotate(-4deg) scale(1.06)}
+.logo{position:absolute;left:12px;top:12px;width:34px;height:34px;border-radius:9px;background:#fff;border:2px solid #141414;
+  display:flex;align-items:center;justify-content:center;overflow:hidden}
+.logo img{width:22px;height:22px}
+.sticker{position:absolute;right:10px;bottom:10px;background:#141414;color:var(--hi);font:700 11px var(--body);
+  letter-spacing:.02em;padding:4px 9px;border-radius:999px;transform:rotate(-3deg)}
+.tbody{padding:12px 14px 14px;display:flex;flex-direction:column;gap:4px;flex:1}
+.where{font-size:11.5px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:600}
+.tile h3{margin:0;font-size:21px;line-height:1.15;letter-spacing:-.02em;font-weight:700}
+.tile p{margin:2px 0 0;font-size:13.5px;color:var(--muted);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.pills{display:flex;flex-wrap:wrap;gap:6px;margin-top:auto;padding-top:10px}
+.p{font:600 12px var(--body);padding:3px 9px;border-radius:999px;background:var(--chip);color:var(--ink);display:inline-flex;align-items:center;gap:5px}
+.p .dot{width:7px;height:7px;border-radius:50%;background:currentColor}
+.p.st-active{color:var(--ok)} .p.st-acquired,.p.st-pending,.p.st-ipo{color:#4b3fb5} .p.st-shut{color:var(--bad)}
+.p.st-unclear,.p.st-merged{color:var(--warn)}
+@media (prefers-color-scheme: dark){ .p.st-acquired,.p.st-pending,.p.st-ipo{color:#b4abff} }
+.p.cat-p{color:#141414}
+.empty{grid-column:1/-1;padding:60px 16px;text-align:center;font-family:var(--head);font-size:22px;border-right:2px solid var(--line);border-bottom:2px solid var(--line)}
+
+/* ---------- detail dialog ---------- */
+dialog{border:2px solid var(--line);border-radius:20px;padding:0;max-width:780px;width:calc(100% - 24px);background:var(--panel);color:var(--ink);overflow:hidden}
+dialog::backdrop{background:rgba(20,20,20,.55)}
+.dlg{max-height:88vh;overflow:auto}
+.dhead{position:relative;padding:26px 24px 20px;border-bottom:2px solid var(--line);color:#141414}
+.dhead .mono{position:absolute;right:22px;top:6px;font-size:96px;opacity:.25}
+.dhead h2{margin:0;font-size:clamp(28px,5vw,40px);letter-spacing:-.03em;line-height:1.05;font-weight:800;position:relative}
+.dhead .where{color:#141414;opacity:.7;margin-bottom:6px;position:relative}
+.dhead .pills{padding-top:12px;position:relative}
+.close{position:absolute;right:14px;top:12px;z-index:2;width:36px;height:36px;border-radius:50%;border:2px solid #141414;background:#fff;
+  font-size:20px;line-height:1;cursor:pointer;color:#141414}
+.dcontent{padding:18px 24px 22px}
+.notice{background:#141414;color:var(--hi);padding:10px 14px;border-radius:12px;font-size:13.5px;margin:0 0 14px;font-weight:500}
+.facts{display:grid;grid-template-columns:max-content 1fr;gap:6px 16px;margin:0 0 6px;font-size:14px}
+.facts dt{color:var(--muted);font-weight:500}
 .facts dd{margin:0;overflow-wrap:anywhere}
-.body h2,.body h3{font-size:15px;margin:16px 0 4px}
+.facts a{text-decoration-thickness:2px;text-underline-offset:3px}
+.body h3,.dcontent h3{font-size:18px;margin:20px 0 6px;letter-spacing:-.01em}
 .body p{margin:6px 0}
-.src{font-size:13px;padding-left:18px;overflow-wrap:anywhere}
-.notice{background:var(--warn-soft);color:var(--warn);padding:8px 10px;border-radius:6px;font-size:13px;margin:10px 0}
-.btn{display:inline-block;margin-top:10px;padding:6px 12px;border:1px solid var(--accent);border-radius:6px;text-decoration:none;font-size:14px}
-.btn:hover{background:var(--accent-soft)}
-.hint{color:var(--muted);font-size:12px;margin-left:6px}
-.dlg .actions{margin-top:16px;padding-top:12px;border-top:1px solid var(--line)}
-footer{max-width:1200px;margin:0 auto;padding:0 16px 32px;color:var(--muted);font-size:13px}
+.src{font-size:13px;padding-left:18px;overflow-wrap:anywhere;color:var(--muted)}
+.actions{margin-top:20px;padding-top:16px;border-top:2px dashed var(--soft-line);display:flex;flex-wrap:wrap;align-items:center;gap:10px}
+.hint{color:var(--muted);font-size:12px}
+
+footer{border-top:2px solid var(--line);background:var(--panel)}
+footer .in{max-width:1280px;margin:0 auto;padding:22px 16px 36px;color:var(--muted);font-size:13.5px;display:flex;gap:24px;flex-wrap:wrap;justify-content:space-between}
+footer b{color:var(--ink);font-family:var(--head)}
 </style>
 </head>
 <body>
-<header>
-  <h1>Privacy Tech Companies</h1>
-  <p class="sub">A working directory of privacy technology companies, with full coverage of Israeli companies as a goal. <span id="gen"></span> <a href="stats.html">Statistics →</a></p>
-  <p class="sub"><a class="btn" id="suggest" href="#" target="_blank" rel="noopener">+ Suggest a company</a> <span class="hint">Opens a GitHub form; requires a GitHub account.</span></p>
-</header>
-<main>
-  <div class="controls" role="search">
-    <input class="q" id="q" type="search" placeholder="Search name, description, technique, location…" aria-label="Search">
-    <select id="f-isr" aria-label="Country">
-      <option value="">All countries</option>
-    </select>
-    <select id="f-status" aria-label="Status"><option value="">Any status</option></select>
-    <select id="f-rel" aria-label="Relevance">
-      <option value="">Core + adjacent</option>
-      <option value="core">Core privacy</option>
-      <option value="adjacent">Adjacent</option>
-    </select>
-    <select id="f-basis" aria-label="Verification">
-      <option value="">Any verification</option>
-      <option value="verified">Sourced (sheet or search)</option>
-      <option value="model">Unverified</option>
-    </select>
-    <select id="sort" aria-label="Sort">
-      <option value="name">Sort: name</option>
-      <option value="cat">Sort: category</option>
-      <option value="status">Sort: status</option>
-      <option value="added">Sort: recently added</option>
-    </select>
-  </div>
-  <div class="chips" id="chips" aria-label="Categories"></div>
-  <div class="meta"><span id="count"></span><button id="reset" type="button">Clear filters</button></div>
-  <div class="grid" id="grid"></div>
-</main>
-<footer>
-  Profiles marked <span class="tag unv">unverified</span> were added from model knowledge and have not been checked against a source. Statuses change; check the sources before citing.
-</footer>
+<div class="top">
+  <a class="brand" href="./"><img src="favicon.svg" alt="">Privacy Tech Companies</a>
+  <nav class="nav">
+    <a href="./">Directory</a>
+    <a href="stats.html">Statistics</a>
+    <a class="pill-btn" id="suggest" href="#" target="_blank" rel="noopener">+ Suggest a company</a>
+  </nav>
+</div>
+
+<section class="hero">
+  <svg class="doodle d-circle" viewBox="0 0 200 160" fill="none" aria-hidden="true">
+    <path d="M150 22C120 6 60 8 32 36 6 62 14 112 56 132c40 19 104 12 124-22 18-31 0-70-38-86-24-10-58-10-80 0" stroke="var(--red)" stroke-width="4" stroke-linecap="round"/>
+  </svg>
+  <svg class="doodle d-star" viewBox="0 0 100 100" aria-hidden="true">
+    <g stroke="var(--hi)" stroke-width="9" stroke-linecap="round"><path d="M50 8v84"/><path d="M14 28l72 44"/><path d="M14 72l72-44"/></g>
+  </svg>
+  <h1>Who's building <span class="mark">privacy</span>?</h1>
+  <p>A living directory of the companies making privacy work: compliance tools, encrypted computation, synthetic data, consumer apps and more. Deepest coverage for Israel. <span id="gen"></span></p>
+  <div class="stats" id="stats"></div>
+</section>
+
+<div class="cats" id="chips" role="toolbar" aria-label="Categories"></div>
+
+<div class="controls" role="search"><div class="in">
+  <input class="q" id="q" type="search" placeholder="Search companies, techniques, places…" aria-label="Search">
+  <select id="f-isr" aria-label="Country"><option value="">All countries</option></select>
+  <select id="f-status" aria-label="Status"><option value="">Any status</option></select>
+  <select id="f-rel" aria-label="Relevance">
+    <option value="">Core + adjacent</option><option value="core">Core privacy</option><option value="adjacent">Adjacent</option>
+  </select>
+  <select id="f-basis" aria-label="Verification">
+    <option value="">Any verification</option><option value="verified">Sourced only</option><option value="model">Unverified only</option>
+  </select>
+  <select id="sort" aria-label="Sort">
+    <option value="name">Sort: A–Z</option><option value="cat">Sort: category</option>
+    <option value="status">Sort: status</option><option value="added">Sort: newest added</option>
+  </select>
+</div></div>
+<div class="meta"><span id="count"></span><button id="reset" type="button">Clear filters</button></div>
+<div class="wrap"><div class="grid" id="grid"></div></div>
+
+<footer><div class="in">
+  <div><b>About.</b> Compiled at the iWit Lab, Tel Aviv University. Statuses change: check the listed sources before citing.</div>
+  <div><span class="p" style="background:#141414;color:var(--hi)">✱ unverified</span> profiles were added from model knowledge and not yet checked against a source.</div>
+</div></footer>
+
 <dialog id="dlg"><div class="dlg" id="dlgBody"></div></dialog>
 
 <script>
 const CATS = {
-  program_mgmt:"Privacy program mgmt / compliance", consent:"Consent management",
+  program_mgmt:"Privacy program & compliance", consent:"Consent management",
   discovery_dspm:"Data discovery / DSPM", access_governance:"Access governance & masking",
   deid_vault:"De-identification & vaults", synthetic:"Synthetic data",
   pec:"Privacy-enhancing computation", clean_room:"Clean rooms & collaboration",
@@ -127,9 +189,16 @@ const CATS = {
   health_data:"Health data sharing", dlp:"DLP / data security", privacy_chain:"Privacy blockchains / ZK",
   services:"Services / consulting", other:"Other / adjacent"
 };
+const FAMILY = {
+  program_mgmt:"comply", consent:"comply", dsr_mapping:"comply", services:"comply",
+  discovery_dspm:"datasec", access_governance:"datasec", dlp:"datasec", deid_vault:"datasec",
+  pec:"pets", synthetic:"pets", clean_room:"pets", privacy_chain:"pets",
+  ai_privacy:"ai", privacy_eng:"ai",
+  consumer:"people", identity:"people", health_data:"people", other:"other"
+};
+const fam = k => `var(--f-${FAMILY[k] || "other"})`;
 const STATUS = {active:"Active", acquired:"Acquired", pending:"Pending acquisition", ipo:"IPO",
   "merged/pivoted":"Merged / pivoted", "shut down":"Shut down", unclear:"Unclear"};
-const ISR = {founded:"Founded in Israel", founders:"Israeli founders / R&D", none:"No Israeli link"};
 const REPO = "https://github.com/eranto/privacy-tech-companies/issues/new";
 const issueUrl = (template, params) => REPO + "?" + new URLSearchParams({template, ...params}).toString();
 const isIL = c => c.israel_presence === "founded" || c.israel_presence === "founders";
@@ -139,8 +208,17 @@ const $ = id => document.getElementById(id);
 const esc = s => String(s ?? "").replace(/[&<>"']/g, ch => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));
 let ALL = [], state = {q:"", cat:"", isr:"", status:"", rel:"", basis:"", sort:"name"};
 
+function initials(name){
+  const w = name.replace(/\(.*?\)/g, "").replace(/[^A-Za-z0-9 .]/g, " ").split(/[\s.]+/).filter(Boolean);
+  return (w.length > 1 ? w[0][0] + w[1][0] : (w[0] || "?").slice(0, 2)).toUpperCase();
+}
+function domain(url){ try { return new URL(url).hostname.replace(/^www\./, ""); } catch { return ""; } }
+function logo(c){
+  const d = domain(c.website || "");
+  // DuckDuckGo icon service: no cookies; hidden on error
+  return d ? `<span class="logo"><img loading="lazy" alt="" src="https://icons.duckduckgo.com/ip3/${esc(d)}.ico" onerror="this.parentNode.remove()"></span>` : "";
+}
 function md(text){
-  // tiny, safe markdown: headings, bold, paragraphs, bare/markdown links
   return esc(text).split(/\n{2,}/).map(block => {
     let b = block.trim();
     if (!b) return "";
@@ -158,11 +236,12 @@ function srcItem(s){
   const url = m[1], [pre, post] = s.split(url).map(x => x.trim());
   return `<li>${esc(pre)} <a href="${esc(url)}" target="_blank" rel="noopener">${esc(url)}</a> ${esc(post)}</li>`;
 }
-function statusTag(c){
+function statusPill(c){
   const k = c.status_code || "unclear";
   const cls = k === "shut down" ? "st-shut" : "st-" + k.split("/")[0];
-  return `<span class="tag ${cls}">${esc(STATUS[k] || k)}</span>`;
+  return `<span class="p ${cls}"><span class="dot"></span>${esc(STATUS[k] || k)}</span>`;
 }
+const catPill = c => `<span class="p cat-p" style="background:${fam(c.primary_category)}">${esc(CATS[c.primary_category] || c.primary_category)}</span>`;
 function hay(c){
   return [c.name, c.description, c.hq, (c.techniques||[]).join(" "), CATS[c.primary_category],
           c.status, c.acquirer, c.body, (c.former_names||[]).join?.(" ")].join(" ").toLowerCase();
@@ -170,9 +249,8 @@ function hay(c){
 
 function filtered(){
   const terms = state.q.toLowerCase().split(/\s+/).filter(Boolean);
-  let out = ALL.filter(c =>
-    (!state.cat || c.primary_category === state.cat) &&
-    inCountry(c) &&
+  const out = ALL.filter(c =>
+    (!state.cat || c.primary_category === state.cat) && inCountry(c) &&
     (!state.status || c.status_code === state.status) &&
     (!state.rel || c.privacy_relevance === state.rel) &&
     (!state.basis || (state.basis === "model" ? c.basis === "model" : c.basis !== "model")) &&
@@ -187,34 +265,44 @@ function filtered(){
 }
 
 function renderChips(){
-  const base = ALL.filter(c =>
-    inCountry(c) &&
-    (!state.status || c.status_code === state.status) &&
-    (!state.rel || c.privacy_relevance === state.rel));
+  const base = ALL.filter(c => inCountry(c) && (!state.status || c.status_code === state.status) && (!state.rel || c.privacy_relevance === state.rel));
   const counts = {};
   base.forEach(c => counts[c.primary_category] = (counts[c.primary_category]||0) + 1);
-  $("chips").innerHTML = Object.keys(CATS).filter(k => counts[k]).map(k =>
-    `<button class="chip" type="button" data-cat="${k}" aria-pressed="${state.cat===k}">${esc(CATS[k])}<span class="n">${counts[k]}</span></button>`
-  ).join("");
+  $("chips").innerHTML = `<button class="cat all" type="button" data-cat="" aria-pressed="${!state.cat}">All<span class="n">${base.length}</span></button>` +
+    Object.keys(CATS).filter(k => counts[k]).sort((a,b) => counts[b] - counts[a]).map(k =>
+      `<button class="cat" type="button" data-cat="${k}" style="background:${fam(k)}" aria-pressed="${state.cat===k}">${esc(CATS[k])}<span class="n">${counts[k]}</span></button>`
+    ).join("");
 }
 
 function render(){
   const list = filtered();
   renderChips();
-  $("count").textContent = `${list.length} of ${ALL.length} companies`;
+  $("count").textContent = `Showing ${list.length} of ${ALL.length} companies`;
   $("grid").innerHTML = list.length ? list.map(c => `
-    <button class="card" type="button" data-slug="${esc(c.slug)}">
-      <h3>${esc(c.name)}</h3>
-      <div class="hq">${esc(c.hq || "Location unknown")}</div>
-      <p>${esc(c.description)}</p>
-      <div class="tags">
-        <span class="tag">${esc(CATS[c.primary_category] || c.primary_category)}</span>
-        ${statusTag(c)}
-        <span class="tag il">${esc(country(c))}</span>
-        ${c.basis === "model" ? '<span class="tag unv">unverified</span>' : ""}
+    <button class="tile" type="button" data-slug="${esc(c.slug)}">
+      <div class="art" style="background:${fam(c.primary_category)}">
+        ${logo(c)}<span class="mono">${esc(initials(c.name))}</span>
+        ${c.basis === "model" ? '<span class="sticker">✱ unverified</span>' : ""}
       </div>
-    </button>`).join("") : `<div class="empty">No companies match these filters.</div>`;
+      <div class="tbody">
+        <div class="where">${esc(country(c))}${c.hq && !/^(USA|Israel|UK)$/.test(c.hq) ? " · " + esc(c.hq.split(/[,/(]/)[0].trim()) : ""}</div>
+        <h3>${esc(c.name)}</h3>
+        <p>${esc(c.description)}</p>
+        <div class="pills">${statusPill(c)}${catPill(c)}</div>
+      </div>
+    </button>`).join("") : `<div class="empty">Nothing here yet. Try fewer filters, or <a href="${esc(issueUrl("new-company.yml", {title:"[New company] "}))}" target="_blank" rel="noopener">suggest a company</a>.</div>`;
   writeHash();
+}
+
+function renderStats(){
+  const acq = ALL.filter(c => c.status_code === "acquired").length;
+  const items = [
+    [ALL.length, "companies", "./"],
+    [new Set(ALL.map(country)).size, "countries", "stats.html"],
+    [ALL.filter(isIL).length, "Israeli-founded", "#isr=Israel"],
+    [acq, "acquired so far", "#status=acquired"]
+  ];
+  $("stats").innerHTML = items.map(([v, l, h]) => `<div class="stat"><a href="${h}"><b>${v}</b><span>${l}</span></a></div>`).join("");
 }
 
 function openCompany(slug){
@@ -222,31 +310,35 @@ function openCompany(slug){
   if (!c) return;
   const row = (k, v) => v && (!Array.isArray(v) || v.length) ? `<dt>${k}</dt><dd>${Array.isArray(v) ? esc(v.join(", ")) : v}</dd>` : "";
   $("dlgBody").innerHTML = `
-    <button class="close" type="button" aria-label="Close">×</button>
-    <h2>${esc(c.name)}</h2>
-    <div class="tags">${statusTag(c)}<span class="tag">${esc(CATS[c.primary_category]||"")}</span>
-      ${c.privacy_relevance === "adjacent" ? '<span class="tag il">adjacent</span>' : ""}</div>
-    ${c.basis === "model" ? '<div class="notice">Unverified: added from model knowledge. Check status and details against a primary source.</div>' : ""}
-    <dl class="facts">
-      ${row("Website", c.website ? `<a href="${esc(c.website)}" target="_blank" rel="noopener">${esc(c.website)}</a>` : "")}
-      ${row("HQ", esc(c.hq))}
-      ${row("Country", esc(country(c)))}
-      ${c.israel_presence === "founders" ? row("Israel link", "Israeli founders / R&amp;D in Israel") : ""}
-      ${row("Status", esc(c.status))}
-      ${row("Acquirer", esc(c.acquirer))}
-      ${row("Techniques", c.techniques)}
-      ${row("Company type", esc(c.company_type))}
-      ${row("Founded", esc(c.founded_year))}
-      ${row("Funding (USD)", esc(c.total_funding_usd))}
-      ${row("Investors", c.key_investors)}
-      ${row("Source basis", esc({search:"Web search", model:"Model knowledge (unverified)", "xlsx-jul-2026":"Original sheet, Jul 2026 review"}[c.basis] || c.basis))}
-      ${row("Last verified", esc(c.last_verified))}
-    </dl>
-    <div class="body">${md(c.body)}</div>
-    ${c.sources?.length ? `<h3>Sources</h3><ul class="src">${c.sources.map(srcItem).join("")}</ul>` : ""}
-    <div class="actions"><a class="btn" target="_blank" rel="noopener"
-      href="${esc(issueUrl("correction.yml", {title: "[Correction] " + c.name, company: c.name, slug: c.slug}))}">Suggest a correction</a>
-      <span class="hint">Opens a GitHub form; requires a GitHub account.</span></div>`;
+    <div class="dhead" style="background:${fam(c.primary_category)}">
+      <button class="close" type="button" aria-label="Close">×</button>
+      <span class="mono">${esc(initials(c.name))}</span>
+      <div class="where">${esc(c.hq || country(c))}</div>
+      <h2>${esc(c.name)}</h2>
+      <div class="pills">${statusPill(c)}<span class="p" style="background:#fff;color:#141414">${esc(CATS[c.primary_category]||"")}</span>
+        ${c.privacy_relevance === "adjacent" ? '<span class="p" style="background:#fff;color:#141414">adjacent to privacy</span>' : ""}</div>
+    </div>
+    <div class="dcontent">
+      ${c.basis === "model" ? '<div class="notice">✱ Unverified: added from model knowledge. Check status and details against a primary source.</div>' : ""}
+      <dl class="facts">
+        ${row("Website", c.website ? `<a href="${esc(c.website)}" target="_blank" rel="noopener">${esc(c.website)}</a>` : "")}
+        ${c.israel_presence === "founders" ? row("Israel link", "Israeli founders / R&amp;D in Israel") : ""}
+        ${row("Status", esc(c.status))}
+        ${row("Acquirer", esc(c.acquirer))}
+        ${row("Techniques", c.techniques)}
+        ${row("Company type", esc(c.company_type))}
+        ${row("Founded", esc(c.founded_year))}
+        ${row("Funding (USD)", esc(c.total_funding_usd))}
+        ${row("Investors", c.key_investors)}
+        ${row("Source basis", esc({search:"Web search", model:"Model knowledge (unverified)", "xlsx-jul-2026":"Original sheet, Jul 2026 review"}[c.basis] || c.basis))}
+        ${row("Last verified", esc(c.last_verified))}
+      </dl>
+      <div class="body">${md(c.body)}</div>
+      ${c.sources?.length ? `<h3>Sources</h3><ul class="src">${c.sources.map(srcItem).join("")}</ul>` : ""}
+      <div class="actions"><a class="pill-btn" target="_blank" rel="noopener"
+        href="${esc(issueUrl("correction.yml", {title: "[Correction] " + c.name, company: c.name, slug: c.slug}))}">Suggest a correction</a>
+        <span class="hint">Opens a GitHub form; requires a GitHub account.</span></div>
+    </div>`;
   $("dlg").showModal();
   state.open = slug; writeHash();
 }
@@ -261,6 +353,7 @@ function writeHash(){
 }
 function readHash(){
   const p = new URLSearchParams(location.hash.slice(1));
+  state = {q:"", cat:"", isr:"", status:"", rel:"", basis:"", sort:"name"};
   for (const k of ["q","cat","isr","status","rel","basis","sort"]) if (p.get(k)) state[k] = p.get(k);
   $("q").value = state.q; $("f-isr").value = state.isr; $("f-status").value = state.status;
   $("f-rel").value = state.rel; $("f-basis").value = state.basis; $("sort").value = state.sort;
@@ -269,10 +362,9 @@ function readHash(){
 
 async function init(){
   // no-cache: always revalidate (ETag), so a new deploy never pairs new code with stale data
-  const res = await fetch("companies.json", {cache: "no-cache"});
-  const data = await res.json();
+  const data = await (await fetch("companies.json", {cache: "no-cache"})).json();
   ALL = data.companies.map(c => ({...c, _hay: hay(c)}));
-  $("gen").textContent = `Last updated ${data.generated}.`;
+  $("gen").textContent = `Updated ${data.generated}.`;
   $("suggest").href = issueUrl("new-company.yml", {title: "[New company] "});
   const cc = {};
   ALL.forEach(c => cc[country(c)] = (cc[country(c)] || 0) + 1);
@@ -282,24 +374,22 @@ async function init(){
   const present = new Set(ALL.map(c => c.status_code));
   $("f-status").innerHTML += Object.keys(STATUS).filter(k => present.has(k))
     .map(k => `<option value="${k}">${STATUS[k]}</option>`).join("");
+  renderStats();
   const open = readHash();
   render();
   if (open) openCompany(open);
+  addEventListener("hashchange", () => { if (!location.hash.includes("c=")) { readHash(); render(); } });
 
   let t;
   $("q").addEventListener("input", e => { clearTimeout(t); t = setTimeout(() => { state.q = e.target.value.trim(); render(); }, 120); });
   for (const [id, key] of [["f-isr","isr"],["f-status","status"],["f-rel","rel"],["f-basis","basis"],["sort","sort"]])
     $(id).addEventListener("change", e => { state[key] = e.target.value; render(); });
   $("chips").addEventListener("click", e => {
-    const b = e.target.closest(".chip"); if (!b) return;
-    state.cat = state.cat === b.dataset.cat ? "" : b.dataset.cat; render();
+    const b = e.target.closest(".cat"); if (!b) return;
+    state.cat = (b.dataset.cat && state.cat !== b.dataset.cat) ? b.dataset.cat : ""; render();
   });
-  $("grid").addEventListener("click", e => { const c = e.target.closest(".card"); if (c) openCompany(c.dataset.slug); });
-  $("reset").addEventListener("click", () => {
-    state = {q:"", cat:"", isr:"", status:"", rel:"", basis:"", sort:"name"};
-    $("q").value = ""; ["f-isr","f-status","f-rel","f-basis"].forEach(id => $(id).value = ""); $("sort").value = "name";
-    render();
-  });
+  $("grid").addEventListener("click", e => { const c = e.target.closest(".tile"); if (c) openCompany(c.dataset.slug); });
+  $("reset").addEventListener("click", () => { location.hash = ""; readHash(); render(); });
   $("dlg").addEventListener("click", e => { if (e.target.id === "dlg" || e.target.closest(".close")) $("dlg").close(); });
   $("dlg").addEventListener("close", () => { state.open = ""; writeHash(); });
 }
