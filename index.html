@@ -321,6 +321,7 @@ function openCompany(slug){
     <div class="dcontent">
       ${c.website_verified ? "" : `<div class="notice">✱ Unverified: we could not find a website that matches this description.${c.verification_note ? " " + esc(c.verification_note) : ""}</div>`}
       <dl class="facts">
+        ${row("Formerly", c.former_names)}
         ${row("Website", c.website ? `<a href="${esc(c.website)}" target="_blank" rel="noopener">${esc(c.website)}</a>` : "")}
         ${row("Status", esc(c.status))}
         ${row("Acquirer", esc(c.acquirer))}

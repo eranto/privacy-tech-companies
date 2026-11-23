@@ -36,8 +36,8 @@
 "masking",
 "tokenization"
 ],
-"status": "Unclear",
-"status_code": "unclear",
+"status": "Active (website live)",
+"status_code": "active",
 "website_verified": true,
 "verified_url": "https://accelario.com",
 "website_checked": "2026-11-23",
@@ -290,8 +290,8 @@
 "description": "Data-privacy company founded 2020; directory entry marked 'under review', details unconfirmed.",
 "primary_category": "deid_vault",
 "privacy_relevance": "core",
-"status": "Unclear",
-"status_code": "unclear",
+"status": "Active (website live)",
+"status_code": "active",
 "website_verified": true,
 "verified_url": "https://anonyflow.com",
 "website_checked": "2026-11-23",
@@ -350,16 +350,18 @@
 "description": "Just-in-time cloud access management (listed by CB Insights as a Velotix competitor).",
 "primary_category": "access_governance",
 "privacy_relevance": "adjacent",
-"status": "Active",
-"status_code": "active",
+"status": "Acquired by 1Password (2026)",
+"status_code": "acquired",
+"acquirer": "1Password",
 "website_verified": true,
 "verified_url": "https://1password.com/product/privileged-access",
-"verification_note": "Website now redirects to 1Password's privileged access product; possibly acquired by 1Password. Check.",
 "website_checked": "2026-11-23",
-"body": "## Summary\n\nJust-in-time cloud access management (listed by CB Insights as a Velotix competitor).",
+"body": "## Summary\n\nJust-in-time cloud access management (listed by CB Insights as a Velotix competitor).\n\n## Update (2026-11-23)\n\n1Password announced its acquisition of Apono on 15 June 2026; Calcalist reported a price of $250–300M.",
 "sources": [
 "Website: https://www.apono.io",
-"https://1password.com/product/privileged-access"
+"https://1password.com/product/privileged-access",
+"https://1password.com/press/2026/june/1password-acquires-apono",
+"https://www.securityweek.com/1password-acquires-apono-in-reported-250m-300m-deal/"
 ]
 },
 {
@@ -609,7 +611,7 @@
 "website": "https://bigid.com",
 "hq": "Israel",
 "hq_country": "Israel",
-"description": "Data Visibility & Control for a Hybrid World Automatically (and accurately) scan, find, and classify the data that matters most - wherever it lives, whatever it is, at petabyte scale. Uncover dark data, identify high risk data, and take action for security, compliance, privacy, and governance for modern data lifecycle management.",
+"description": "Data security, privacy and AI governance platform that discovers and classifies sensitive data across an organisation's systems.",
 "primary_category": "discovery_dspm",
 "privacy_relevance": "core",
 "status": "Active",
@@ -678,6 +680,7 @@
 "privacy_relevance": "core",
 "status": "Acquired by Atlassian (2025, reported)",
 "status_code": "acquired",
+"acquirer": "Atlassian",
 "website_verified": false,
 "verification_note": "borneo.io no longer resolves; reported acquired by Atlassian (May 2025).",
 "website_checked": "2026-11-23",
@@ -753,7 +756,7 @@
 "name": "briya",
 "website": "https://www.briya.com/",
 "hq_country": "Israel",
-"description": "Making healthcare data accessible and easily shareable to drive health innovation. An Israeli startup.",
+"description": "Platform that makes clinical and real-world health data shareable for research, with privacy controls built in.",
 "primary_category": "health_data",
 "privacy_relevance": "core",
 "status": "Active",
@@ -836,7 +839,7 @@
 "website": "https://chain-reaction.io",
 "hq": "Israel (Yoqneam)",
 "hq_country": "Israel",
-"description": "The Privacy Preserving Processing Unit (3PU™) dramatically accelerates real-time operations of Privacy Enhancing Technologies (PETs) in encrypted data. Designed for enterprise data centers and cloud service providers, the most advanced privacy processor in the market enables enterprise adoption of PETs in an easy-to-use, standard form factor.",
+"description": "Chip company developing a processor that accelerates privacy-enhancing technologies on encrypted data (3PU), alongside blockchain-mining silicon.",
 "primary_category": "pec",
 "privacy_relevance": "core",
 "techniques": [
@@ -1132,15 +1135,17 @@
 "FHE",
 "MPC"
 ],
-"status": "Active",
-"status_code": "active",
+"status": "Acquired by Atos Group (Eviden) (2025)",
+"status_code": "acquired",
+"acquirer": "Atos Group (Eviden)",
 "website_verified": true,
 "verified_url": "https://eviden.com/en/products/cybersecurity/data-protection",
-"verification_note": "Website now redirects to Eviden's data protection page.",
 "website_checked": "2026-11-23",
-"body": "## Summary\n\nApplied cryptography: encrypted search, key management, computation on encrypted data. Founded 2018.",
+"body": "## Summary\n\nApplied cryptography: encrypted search, key management, computation on encrypted data. Founded 2018.\n\n## Update (2026-11-23)\n\nThe Atos Group acquired Cosmian Tech in 2025, after Eviden and Cosmian partnered on sovereign encryption key management.",
 "sources": [
-"https://eviden.com/en/products/cybersecurity/data-protection"
+"https://eviden.com/en/products/cybersecurity/data-protection",
+"https://www.lemondedudroit.fr/deals/101577-harlay-avocats-intervient-comme-conseil-de-la-societe-et-des-cedants-dans-le-cadre-de-lacquisition-de-la-societe-cosmian-tech-par-le-groupe-ato",
+"https://eviden.com/insights/press-releases/eviden-strengthens-its-data-protection-offering-with-cosmians-technology/"
 ]
 },
 {
@@ -1382,7 +1387,7 @@
 "name": "Darrow",
 "website": "https://www.darrow.ai/",
 "hq_country": "Israel",
-"description": "Darrow has developed a machine learning-based platform which discovers legal violations by some of the biggest corporations in the world. Operating chiefly in the U.S., the company is focused on locating violations that have caused damage to millions of people on average – the threshold for a potential class-action lawsuit.",
+"description": "Uses machine learning to detect legal violations by large companies, including privacy violations, for plaintiffs' law firms.",
 "primary_category": "other",
 "privacy_relevance": "adjacent",
 "status": "Active",
@@ -1640,7 +1645,7 @@
 "website": "https://www.datomize.com/",
 "hq": "Israel",
 "hq_country": "Israel",
-"description": "Datomize’s AI-powered, generative models create superior synthetic replicas by extracting the behavior from your existing data. Advanced augmentation capabilities enable limitless resizing of your data, while dynamic validation tools visualize the similarity between original and replicated data sets.",
+"description": "Generative-model platform for creating synthetic replicas of tabular data for banks and other enterprises.",
 "primary_category": "synthetic",
 "privacy_relevance": "core",
 "techniques": [
@@ -1717,8 +1722,8 @@
 "techniques": [
 "de-identification"
 ],
-"status": "Unclear",
-"status_code": "unclear",
+"status": "Active (website live)",
+"status_code": "active",
 "website_verified": true,
 "verified_url": "https://deidentified.com.au",
 "website_checked": "2026-11-23",
@@ -1865,8 +1870,8 @@
 "description": "Consent management platform for the DPDP Act (from AbyM Technology). No funding information found.",
 "primary_category": "consent",
 "privacy_relevance": "core",
-"status": "Unclear",
-"status_code": "unclear",
+"status": "Active (website live)",
+"status_code": "active",
 "website_verified": true,
 "verified_url": "https://digitalanumati.com",
 "website_checked": "2026-11-23",
@@ -1904,7 +1909,7 @@
 "website": "https://dualitytech.com",
 "hq": "Israel",
 "hq_country": "Israel",
-"description": "Run secure queries on single or multiple datasets without exposing data or the query itself. The Duality Query engine allows multiple organizations to collaborate on decentralized data by performing privacy-enhanced SQL-like queries. Query parameters and results remain protected by homomorphic encryption while they are deployed, and the underlying data never leaves the owner’s environment. Our Query engine provides cooperating parties with a set of tools to define collaboration projects and controls, such as user roles, authorized queries, approval processes, data policies, as well as the ability to flexibly create custom queries using the out-of-the-box query builder.",
+"description": "Secure data collaboration platform that lets organisations query and analyse data without exposing it, using homomorphic encryption and other privacy-enhancing technologies.",
 "primary_category": "pec",
 "privacy_relevance": "core",
 "techniques": [
@@ -2185,7 +2190,7 @@
 "website": "https://ethyca.com",
 "hq": "New York",
 "hq_country": "USA",
-"description": "A better solution to full-stack data privacy governance. Programmatic Subject Requests Save time with automated DSRs for any law in any stack. It's not just that you can process subject requests in seconds with effortless integration to the full data stack. Privacy as Code means you can customize your workflows for new laws or policies. Protect users with privacy policies as code guardrails. Previously, legal and compliance teams had no way to ensure product releases adhered to stated privacy policies. Privacy as Code means automated checks to ensure ongoing compliance.",
+"description": "Privacy engineering platform for data mapping, automated data subject requests and consent orchestration.",
 "primary_category": "privacy_eng",
 "privacy_relevance": "core",
 "status": "Active",
@@ -2317,7 +2322,7 @@
 "website": "https://www.fhenix.io/",
 "hq": "Israel",
 "hq_country": "Israel",
-"description": "Fhenix is building a confidential smart contract platform using fully homomorphic encryption (FHE). FHE is a novel cryptographic scheme that enables direct computation over encrypted data without ever revealing the underlying data. Fhenix’s goal is to advance application development in the Ethereum ecosystem by bringing data encryption and encrypted-data computation to smart contracts, transactions and on-chain assets for the first time.",
+"description": "Confidential smart-contract platform for Ethereum built on fully homomorphic encryption.",
 "primary_category": "privacy_chain",
 "privacy_relevance": "core",
 "techniques": [
@@ -2449,8 +2454,8 @@
 "description": "Data compliance software for GDPR and privacy management. Founded 2018.",
 "primary_category": "program_mgmt",
 "privacy_relevance": "core",
-"status": "Unclear",
-"status_code": "unclear",
+"status": "Active (website live)",
+"status_code": "active",
 "website_verified": true,
 "verified_url": "https://www.gdprregister.eu",
 "website_checked": "2026-11-23",
@@ -2614,14 +2619,14 @@
 "company_type": "startup",
 "description": "Secure data exchange / collaboration platform; raised $38.5M.",
 "primary_category": "clean_room",
-"privacy_relevance": "core",
+"privacy_relevance": "adjacent",
 "status": "Active",
 "status_code": "active",
 "website_verified": true,
 "verified_url": "https://web.harbr.com",
 "verification_note": "Website now presents credit-onboarding software; pivot from secure data exchange.",
 "website_checked": "2026-11-23",
-"body": "## Summary\n\nSecure data exchange / collaboration platform; raised $38.5M.",
+"body": "## Summary\n\nSecure data exchange / collaboration platform; raised $38.5M.\n\n## Update (2026-11-23)\n\nHarbr began as a secure data-exchange platform; its website now presents credit-onboarding software for lenders.",
 "sources": [
 "https://techcrunch.com/?p=2038421",
 "https://web.harbr.com"
@@ -2751,8 +2756,8 @@
 "description": "AI-powered digital privacy for people (exposure monitoring and removal). $4M seed (2022).",
 "primary_category": "consumer",
 "privacy_relevance": "core",
-"status": "Unclear",
-"status_code": "unclear",
+"status": "Active (website live)",
+"status_code": "active",
 "website_verified": true,
 "verified_url": "https://www.gethush.ai",
 "website_checked": "2026-11-23",
@@ -2850,7 +2855,9 @@
 "slug": "incogni",
 "name": "Incogni",
 "website": "https://incogni.com/",
-"description": "Take back control of your personal information and reduce the risk of spam, scams, and identity theft. Choose the broadest data broker coverage on the market today.",
+"hq": "Amsterdam, Netherlands",
+"hq_country": "Netherlands",
+"description": "Personal data removal service that sends deletion requests to data brokers on users' behalf.",
 "primary_category": "consumer",
 "privacy_relevance": "core",
 "status": "Active",
@@ -3177,16 +3184,17 @@
 "description": "Privacy-preserving biometric authentication; its technology now runs as Ping Identity's PingOne Recognize.",
 "primary_category": "identity",
 "privacy_relevance": "core",
-"status": "Acquired by Ping Identity",
+"status": "Acquired by Ping Identity (2026)",
 "status_code": "acquired",
 "acquirer": "Ping Identity",
 "website_verified": true,
 "verified_url": "https://www.pingidentity.com/en/product/pingone-recognize.html",
 "verification_note": "keyless.io redirects to Ping Identity.",
 "website_checked": "2026-11-23",
-"body": "## Summary\n\nPrivacy-preserving biometric authentication; its technology now runs as Ping Identity's PingOne Recognize.",
+"body": "## Summary\n\nPrivacy-preserving biometric authentication; its technology now runs as Ping Identity's PingOne Recognize.\n\n## Update (2026-11-23)\n\nPing Identity announced the acquisition in October 2025 and completed it in January 2026.",
 "sources": [
-"https://www.pingidentity.com/en/product/pingone-recognize.html"
+"https://www.pingidentity.com/en/product/pingone-recognize.html",
+"https://press.pingidentity.com/2026-01-07-Ping-Identity-Marks-Digital-Trust-Milestone-with-Zero-Knowledge-Biometrics-in-the-Age-of-AI"
 ]
 },
 {
@@ -3407,8 +3415,8 @@
 "techniques": [
 "MPC"
 ],
-"status": "Unclear",
-"status_code": "unclear",
+"status": "Active (website live)",
+"status_code": "active",
 "website_verified": true,
 "verified_url": "https://www.linksight.nl",
 "website_checked": "2026-11-23",
@@ -3508,7 +3516,7 @@
 "website": "https://mdclone.com",
 "hq": "Israel",
 "hq_country": "Israel",
-"description": "Synthetic Data for Healthcare Unlock Collaboration Potential by Protecting Patient Privacy While Preserving Maximum Data Utility Enable collaboration across teams, organizations, and even external third-parties with the use of synthetic data so they can dive deeper into the information they need, when they need it.",
+"description": "Healthcare data platform that generates synthetic patient data, so hospitals and researchers can share and analyse it without exposing patient records.",
 "primary_category": "health_data",
 "privacy_relevance": "core",
 "techniques": [
@@ -3553,7 +3561,7 @@
 "website": "https://www.mineos.ai",
 "hq": "Israel",
 "hq_country": "Israel",
-"description": "Keeping your data secure, keeping it yours and yours only. At Mine, we believe that trust is earned. This is why we put trust and transparency at the core of everything that we do, with you - the user, at the center. We’ve worked hard to create a technology dedicated to collecting the bare minimum of data needed to provide you with maximum value.",
+"description": "Privacy and AI governance platform (MineOS) for data mapping, data subject requests and compliance; its consumer app was sold to McAfee.",
 "primary_category": "dsr_mapping",
 "privacy_relevance": "core",
 "status": "Active",
@@ -3618,13 +3626,13 @@
 "techniques": [
 "synthetic data"
 ],
-"status": "Active",
-"status_code": "active",
+"status": "Assets acquired by Syntho (2026)",
+"status_code": "acquired",
+"acquirer": "Syntho",
 "website_verified": true,
 "verified_url": "https://mostly.ai",
-"verification_note": "Website now reads 'MOSTLY AI powered by Syntho'; possible merger with Syntho. Check.",
 "website_checked": "2026-11-23",
-"body": "## Summary\n\nSynthetic tabular data; open-sourced its SDK.",
+"body": "## Summary\n\nSynthetic tabular data; open-sourced its SDK.\n\n## Update (2026-11-23)\n\nIn June 2026 Syntho acquired the MOSTLY AI trademark and related assets; the brand continues as 'MOSTLY AI, powered by Syntho'. One database lists the original company as having ceased operations in March 2026.",
 "sources": [
 "Website: https://mostly.ai"
 ]
@@ -3655,7 +3663,7 @@
 "website": "https://myprivacy.io",
 "hq": "Israel",
 "hq_country": "Israel",
-"description": "MyPrivacy is a suite of privacy products that were designed to help you easily maintain your digital privacy. With MyPrivacy, you can hide your personal information from unauthorized parties. Each product you can find in MyPrivacy is designed to help you maintain a different aspect of your digital privacy, in a very easy and simple way.",
+"description": "Suite of consumer privacy tools for removing personal information online and controlling what apps can access.",
 "primary_category": "consumer",
 "privacy_relevance": "core",
 "status": "Unclear",
@@ -3674,7 +3682,7 @@
 "website": "https://wandz.ai",
 "hq": "Israel",
 "hq_country": "Israel",
-"description": "Customer Hijacking Prevention autonomously analyzes how every journey interruption impacts your business",
+"description": "E-commerce customer-journey platform, rebranded as Wandz.ai, that began by blocking unauthorised ads and scripts injected into shoppers' browsers; acquired by AB Tasty.",
 "primary_category": "other",
 "privacy_relevance": "adjacent",
 "status": "Acquired by AB Tasty (2025)",
@@ -3841,8 +3849,8 @@
 "description": "Privacy-preserving computation platform for healthcare and biotech. Founded 2019.",
 "primary_category": "pec",
 "privacy_relevance": "core",
-"status": "Unclear",
-"status_code": "unclear",
+"status": "Active (website live)",
+"status_code": "active",
 "website_verified": true,
 "verified_url": "https://nvxclouds.com",
 "website_checked": "2026-11-23",
@@ -3935,7 +3943,6 @@
 "status_code": "active",
 "website_verified": true,
 "verified_url": "https://www.oblivious.com",
-"verification_note": "Website now presents a different product (Blatent); possible pivot. Check.",
 "website_checked": "2026-11-23",
 "body": "## Summary\n\nDifferential privacy and secure enclaves; featured at FPF PETs workshop (Apr 2025).",
 "sources": [
@@ -4402,6 +4409,7 @@
 "privacy_relevance": "core",
 "status": "Acquired by Borneo (2022, reported)",
 "status_code": "acquired",
+"acquirer": "Borneo",
 "website_verified": false,
 "verification_note": "No website found; reported acquired by Borneo (Oct 2022, single source).",
 "website_checked": "2026-11-23",
@@ -4456,7 +4464,10 @@
 },
 {
 "slug": "privacera",
-"name": "Privacera",
+"name": "Trust3 AI",
+"former_names": [
+"Privacera"
+],
 "website": "https://privacera.com",
 "hq": "Fremont, CA, USA",
 "hq_country": "USA",
@@ -4468,12 +4479,12 @@
 "status_code": "active",
 "website_verified": true,
 "verified_url": "https://trust3.ai/",
-"verification_note": "Website now redirects to trust3.ai (renamed Trust3 AI).",
 "website_checked": "2026-11-23",
-"body": "## Summary\n\nData access governance built on Apache Ranger.",
+"body": "## Summary\n\nData access governance built on Apache Ranger.\n\n## Update (2026-11-23)\n\nPrivacera rebranded as Trust3 AI on 9 March 2026, extending its data governance platform to AI agents.",
 "sources": [
 "Website: https://privacera.com",
-"https://trust3.ai/"
+"https://trust3.ai/",
+"https://privacera.com/newsroom/press-releases/meet-trust3-ai/"
 ]
 },
 {
@@ -4551,8 +4562,8 @@
 "description": "Data privacy between consumers and businesses. Founded 2018; first round led by BBVA (2019).",
 "primary_category": "consumer",
 "privacy_relevance": "core",
-"status": "Unclear",
-"status_code": "unclear",
+"status": "Active (website live)",
+"status_code": "active",
 "website_verified": true,
 "verified_url": "https://privacycloud.com",
 "website_checked": "2026-11-23",
@@ -4647,7 +4658,10 @@
 },
 {
 "slug": "private-ai",
-"name": "Private AI",
+"name": "Limina",
+"former_names": [
+"Private AI"
+],
 "website": "https://www.private-ai.com",
 "hq": "Toronto, Canada",
 "hq_country": "Canada",
@@ -4662,9 +4676,8 @@
 "status_code": "active",
 "website_verified": true,
 "verified_url": "https://www.getlimina.ai/en",
-"verification_note": "Website now redirects to getlimina.ai (renamed Limina).",
 "website_checked": "2026-11-23",
-"body": "## Summary\n\nPII detection and redaction for text, audio and LLM pipelines.",
+"body": "## Summary\n\nPII detection and redaction for text, audio and LLM pipelines.\n\n## Update (2026-11-23)\n\nPrivate AI now operates as Limina; its PII detection and redaction products continue under the new name.",
 "sources": [
 "Website: https://www.private-ai.com",
 "https://www.getlimina.ai/en"
@@ -4875,8 +4888,8 @@
 "techniques": [
 "zero-knowledge"
 ],
-"status": "Unclear",
-"status_code": "unclear",
+"status": "Active (website live)",
+"status_code": "active",
 "website_verified": true,
 "verified_url": "https://qed-it.com",
 "website_checked": "2026-11-23",
@@ -5170,8 +5183,8 @@
 "techniques": [
 "differential privacy"
 ],
-"status": "Unclear",
-"status_code": "unclear",
+"status": "Active (website live)",
+"status_code": "active",
 "website_verified": true,
 "verified_url": "https://www.sarus.tech",
 "website_checked": "2026-11-23",
@@ -5591,8 +5604,8 @@
 "description": "Automated detection of privacy risks in data flows for GDPR/CCPA. $6.5M seed led by Firstminute Capital (date unverified).",
 "primary_category": "privacy_eng",
 "privacy_relevance": "core",
-"status": "Unclear",
-"status_code": "unclear",
+"status": "Active (website live)",
+"status_code": "active",
 "website_verified": true,
 "verified_url": "https://soveren.io",
 "website_checked": "2026-11-23",
@@ -5806,8 +5819,8 @@
 "description": "GDPR compliance virtual assistant; €300k (2018) and a SeedBlink campaign (2021); 100+ customers across CEE.",
 "primary_category": "program_mgmt",
 "privacy_relevance": "core",
-"status": "Unclear",
-"status_code": "unclear",
+"status": "Active (website live)",
+"status_code": "active",
 "website_verified": true,
 "verified_url": "https://www.sypher.eu",
 "website_checked": "2026-11-23",
@@ -6105,8 +6118,8 @@
 "techniques": [
 "MPC"
 ],
-"status": "Unclear",
-"status_code": "unclear",
+"status": "Active (website live)",
+"status_code": "active",
 "website_verified": true,
 "verified_url": "https://tripleblind.com",
 "website_checked": "2026-11-23",
@@ -6126,8 +6139,8 @@
 "description": "Consent management platform for the DPDP Act. No funding information found.",
 "primary_category": "consent",
 "privacy_relevance": "core",
-"status": "Unclear",
-"status_code": "unclear",
+"status": "Active (website live)",
+"status_code": "active",
 "website_verified": true,
 "verified_url": "https://truconsent.io",
 "website_checked": "2026-11-23",
@@ -6231,8 +6244,8 @@
 "techniques": [
 "differential privacy"
 ],
-"status": "Unclear",
-"status_code": "unclear",
+"status": "Active (website live)",
+"status_code": "active",
 "website_verified": true,
 "verified_url": "https://www.tmlt.io",
 "website_checked": "2026-11-23",
@@ -6379,7 +6392,7 @@
 "name": "Velotix",
 "website": "https://www.velotix.ai/",
 "hq_country": "Israel",
-"description": "An Israeli startup. Empower Your Enterprise with Data Access Grant data access on the attribute level and make faster decisions with AI policy recommendations.",
+"description": "AI-driven data access governance platform for granting policy-based, attribute-level access to sensitive data.",
 "primary_category": "access_governance",
 "privacy_relevance": "core",
 "status": "Active",
