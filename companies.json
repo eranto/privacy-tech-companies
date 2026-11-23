@@ -386,25 +386,6 @@
 ]
 },
 {
-"slug": "armo",
-"name": "ARMO",
-"website": "https://www.armosec.io",
-"hq": "Tel-Aviv, Israel",
-"hq_country": "Israel",
-"description": "Provides a platform for DevSecOps and Kubernetes security, helping developers ship secure and private cloud-native applications.",
-"primary_category": "other",
-"privacy_relevance": "adjacent",
-"status": "Active",
-"status_code": "active",
-"website_verified": true,
-"verified_url": "https://www.armosec.io",
-"website_checked": "2026-11-23",
-"body": "## Notes\n\nKubescape was promoted to CNCF Incubating status in Jan 2025 and Kubescape 4.0 shipped in March 2026 with runtime threat detection and AI-agent scanning; ARMO also launched a Cloud Application Detection & Response (CADR) platform in March 2026. Last disclosed funding was a $30M Series A (Tiger Global, 2022).",
-"sources": [
-"Website: https://www.armosec.io"
-]
-},
-{
 "slug": "attestable",
 "name": "Attestable",
 "website": "https://attestable.com",
@@ -2336,25 +2317,6 @@
 "body": "## Notes\n\nRaised $15M Series A led by Hack VC (2023; $22M+ total), took a strategic investment from Offchain Labs' Tandem (March 2025), and acquired FHE developer Sunscreen (July 2026) to build quantum-safe privacy layers across networks including Base and Arbitrum.",
 "sources": [
 "Website: https://www.fhenix.io/"
-]
-},
-{
-"slug": "findhelp",
-"name": "Findhelp",
-"website": "https://www.findhelp.org/",
-"hq": "Austin, Texas",
-"hq_country": "USA",
-"description": "Provides health and social care coordination and technology solutions.",
-"primary_category": "other",
-"privacy_relevance": "adjacent",
-"status": "Active",
-"status_code": "active",
-"website_verified": true,
-"verified_url": "https://www.findhelp.org/",
-"website_checked": "2026-11-23",
-"body": "## Notes\n\nWent live powering New York's Medicaid 1115 HRSN Social Care Networks (Jan 2025), earned 'Best in KLAS' for SDoH networks a fourth straight year (2025), acquired and integrated Uno Health for Medicaid compliance tooling (2025), and partnered with SimplePractice on behavioral health access (Jan 2026).",
-"sources": [
-"Website: https://www.findhelp.org/"
 ]
 },
 {
@@ -5134,25 +5096,6 @@
 ]
 },
 {
-"slug": "sailpoint",
-"name": "SailPoint",
-"website": "https://www.sailpoint.com/",
-"hq": "Austin, Texas",
-"hq_country": "USA",
-"description": "Empowers organizations to seamlessly manage and secure access to applications and data through identity.",
-"primary_category": "other",
-"privacy_relevance": "adjacent",
-"status": "IPO (Nasdaq, 2025)",
-"status_code": "ipo",
-"website_verified": true,
-"verified_url": "https://www.sailpoint.com/",
-"website_checked": "2026-11-23",
-"body": "## Notes\n\nReturned to public markets Feb 2025 under ticker SAIL, raising ~$1.38B in an upsized IPO (60M shares at $23) after Thoma Bravo's $6.9B take-private in 2022; Thoma Bravo retained ~88% ownership post-IPO.",
-"sources": [
-"Website: https://www.sailpoint.com/"
-]
-},
-{
 "slug": "samooha",
 "name": "Samooha",
 "hq": "USA",
@@ -5534,25 +5477,6 @@
 "sources": [
 "https://ecosistemastartup.com/?p=85050",
 "https://www.snap-compliance.com"
-]
-},
-{
-"slug": "snyk",
-"name": "Snyk",
-"website": "https://snyk.io/",
-"hq": "London",
-"hq_country": "UK",
-"description": "Offers a software development security platform using open-source code to find and fix vulnerabilities.",
-"primary_category": "other",
-"privacy_relevance": "adjacent",
-"status": "Active",
-"status_code": "active",
-"website_verified": true,
-"verified_url": "https://snyk.io/",
-"website_checked": "2026-11-23",
-"body": "## Notes\n\nStill private with its long-anticipated IPO repeatedly delayed; 2025-2026 reports say it held talks with private equity firms without reaching a deal. Acquired AI-security startup Invariant Labs (June 2025) and keeps shipping agentic/AI security products through July 2026.",
-"sources": [
-"Website: https://snyk.io/"
 ]
 },
 {
