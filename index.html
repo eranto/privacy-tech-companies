@@ -298,7 +298,7 @@ function renderStats(){
   const acq = V.filter(c => c.status_code === "acquired").length;
   const items = [
     [V.length, "startups", "./"],
-    [new Set(V.map(country)).size, "countries", "stats.html"],
+    [new Set(V.map(country).filter(k => k !== "Unknown" && k !== "Global")).size, "countries", "stats.html"],
     [new Set(V.map(c => c.primary_category)).size, "categories", "stats.html"],
     [acq, "acquired so far", "#status=acquired"]
   ];

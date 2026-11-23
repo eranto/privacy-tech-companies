@@ -165,7 +165,7 @@ function render(){
     (F.unv || c.website_verified));
   const n = list.length;
   const acq = list.filter(c => c.status_code === "acquired");
-  const countries = new Set(list.map(country)).size;
+  const countries = new Set(list.map(country).filter(k => k !== "Unknown" && k !== "Global")).size;
   const pct = x => n ? Math.round(100*x/n) + "%" : "–";
   $("tiles").innerHTML = [
     [n, "startups"], [countries, "countries"],
