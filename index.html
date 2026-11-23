@@ -79,10 +79,8 @@ footer{max-width:1200px;margin:0 auto;padding:0 16px 32px;color:var(--muted);fon
 <main>
   <div class="controls" role="search">
     <input class="q" id="q" type="search" placeholder="Search name, description, technique, location…" aria-label="Search">
-    <select id="f-isr" aria-label="Israel">
+    <select id="f-isr" aria-label="Country">
       <option value="">All countries</option>
-      <option value="il">Israeli-linked</option>
-      <option value="non">Non-Israeli</option>
     </select>
     <select id="f-status" aria-label="Status"><option value="">Any status</option></select>
     <select id="f-rel" aria-label="Relevance">
@@ -126,6 +124,8 @@ const STATUS = {active:"Active", acquired:"Acquired", pending:"Pending acquisiti
   "merged/pivoted":"Merged / pivoted", "shut down":"Shut down", unclear:"Unclear"};
 const ISR = {founded:"Founded in Israel", founders:"Israeli founders / R&D", none:"No Israeli link"};
 const isIL = c => c.israel_presence === "founded" || c.israel_presence === "founders";
+const country = c => c.hq_country || "Unknown";
+const inCountry = c => !state.isr || country(c) === state.isr;
 const $ = id => document.getElementById(id);
 const esc = s => String(s ?? "").replace(/[&<>"']/g, ch => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));
 let ALL = [], state = {q:"", cat:"", isr:"", status:"", rel:"", basis:"", sort:"name"};
@@ -163,7 +163,7 @@ function filtered(){
   const terms = state.q.toLowerCase().split(/\s+/).filter(Boolean);
   let out = ALL.filter(c =>
     (!state.cat || c.primary_category === state.cat) &&
-    (!state.isr || (state.isr === "il" ? isIL(c) : !isIL(c))) &&
+    inCountry(c) &&
     (!state.status || c.status_code === state.status) &&
     (!state.rel || c.privacy_relevance === state.rel) &&
     (!state.basis || (state.basis === "model" ? c.basis === "model" : c.basis !== "model")) &&
@@ -179,7 +179,7 @@ function filtered(){
 
 function renderChips(){
   const base = ALL.filter(c =>
-    (!state.isr || (state.isr === "il" ? isIL(c) : !isIL(c))) &&
+    inCountry(c) &&
     (!state.status || c.status_code === state.status) &&
     (!state.rel || c.privacy_relevance === state.rel));
   const counts = {};
@@ -201,7 +201,7 @@ function render(){
       <div class="tags">
         <span class="tag">${esc(CATS[c.primary_category] || c.primary_category)}</span>
         ${statusTag(c)}
-        ${isIL(c) ? '<span class="tag il">Israel</span>' : ""}
+        <span class="tag il">${esc(country(c))}</span>
         ${c.basis === "model" ? '<span class="tag unv">unverified</span>' : ""}
       </div>
     </button>`).join("") : `<div class="empty">No companies match these filters.</div>`;
@@ -221,7 +221,8 @@ function openCompany(slug){
     <dl class="facts">
       ${row("Website", c.website ? `<a href="${esc(c.website)}" target="_blank" rel="noopener">${esc(c.website)}</a>` : "")}
       ${row("HQ", esc(c.hq))}
-      ${row("Israel", esc(ISR[c.israel_presence] || c.israel_presence))}
+      ${row("Country", esc(country(c)))}
+      ${c.israel_presence === "founders" ? row("Israel link", "Israeli founders / R&amp;D in Israel") : ""}
       ${row("Status", esc(c.status))}
       ${row("Acquirer", esc(c.acquirer))}
       ${row("Techniques", c.techniques)}
@@ -259,6 +260,11 @@ async function init(){
   const data = await res.json();
   ALL = data.companies.map(c => ({...c, _hay: hay(c)}));
   $("gen").textContent = `Last updated ${data.generated}.`;
+  const cc = {};
+  ALL.forEach(c => cc[country(c)] = (cc[country(c)] || 0) + 1);
+  $("f-isr").innerHTML += Object.keys(cc)
+    .sort((a,b) => (a === "Unknown") - (b === "Unknown") || cc[b] - cc[a] || a.localeCompare(b))
+    .map(k => `<option value="${esc(k)}">${esc(k)} (${cc[k]})</option>`).join("");
   const present = new Set(ALL.map(c => c.status_code));
   $("f-status").innerHTML += Object.keys(STATUS).filter(k => present.has(k))
     .map(k => `<option value="${k}">${STATUS[k]}</option>`).join("");
