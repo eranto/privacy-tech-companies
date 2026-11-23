@@ -752,6 +752,29 @@
 ]
 },
 {
+"slug": "camotext",
+"name": "CamoText",
+"website": "https://camotext.ai",
+"hq": "Silver Spring, MD, USA",
+"hq_country": "USA",
+"company_type": "startup",
+"description": "Offline desktop software that anonymises and redacts personal data in text and documents before they are shared or used with AI tools.",
+"primary_category": "deid_vault",
+"privacy_relevance": "core",
+"techniques": [
+"de-identification"
+],
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://camotext.ai",
+"website_checked": "2026-11-23",
+"body": "## Summary\n\nOffline desktop software that anonymises and redacts personal data in text and documents before they are shared or used with AI tools.",
+"sources": [
+"https://camotext.ai"
+]
+},
+{
 "slug": "cape",
 "name": "Cape",
 "website": "https://www.cape.co",
@@ -812,6 +835,50 @@
 "body": "## Summary\n\nImage/video anonymization.",
 "sources": [
 "Website: https://www.celantur.com"
+]
+},
+{
+"slug": "celatum",
+"name": "Celatum",
+"website": "https://celatum.ch",
+"hq": "Switzerland",
+"hq_country": "Switzerland",
+"company_type": "startup",
+"description": "Offline desktop application for anonymising and pseudonymising documents (by Salvioni Digital Solutions).",
+"primary_category": "deid_vault",
+"privacy_relevance": "core",
+"techniques": [
+"de-identification",
+"pseudonymization"
+],
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://celatum.ch",
+"website_checked": "2026-11-23",
+"body": "## Summary\n\nOffline desktop application for anonymising and pseudonymising documents (by Salvioni Digital Solutions).",
+"sources": [
+"https://celatum.ch"
+]
+},
+{
+"slug": "cesar",
+"name": "CÉSAR",
+"website": "https://cesarok.cl",
+"hq": "Chile",
+"hq_country": "Chile",
+"company_type": "startup",
+"description": "Software that guides lawyers advising clients on personal-data protection compliance in Chile.",
+"primary_category": "program_mgmt",
+"privacy_relevance": "core",
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://cesarok.cl",
+"website_checked": "2026-11-23",
+"body": "## Summary\n\nSoftware that guides lawyers advising clients on personal-data protection compliance in Chile.",
+"sources": [
+"https://cesarok.cl"
 ]
 },
 {
@@ -1361,6 +1428,26 @@
 "sources": [
 "https://coverager.com/d-id-raises-13-5-million/",
 "https://www.d-id.com"
+]
+},
+{
+"slug": "d-pdpa",
+"name": "D-PDPA",
+"website": "https://www.osd.co.th/d-pdpa/",
+"hq": "Thailand",
+"hq_country": "Thailand",
+"company_type": "startup",
+"description": "PDPA compliance platform from the Thai software company OSD.",
+"primary_category": "program_mgmt",
+"privacy_relevance": "core",
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://www.osd.co.th/d-pdpa/",
+"website_checked": "2026-11-23",
+"body": "## Summary\n\nPDPA compliance platform from the Thai software company OSD.",
+"sources": [
+"https://www.osd.co.th/d-pdpa/"
 ]
 },
 {
@@ -2407,6 +2494,23 @@
 ]
 },
 {
+"slug": "gdpr-auto",
+"name": "GDPR Auto",
+"hq": "Naxxar, Malta",
+"hq_country": "Malta",
+"company_type": "startup",
+"description": "Compliance platform for automating GDPR obligations.",
+"primary_category": "program_mgmt",
+"privacy_relevance": "core",
+"status": "Unclear",
+"status_code": "unclear",
+"website_verified": false,
+"verification_note": "gdprauto.com has an invalid TLS certificate.",
+"website_checked": "2026-11-23",
+"body": "## Summary\n\nCompliance platform for automating GDPR obligations.",
+"sources": []
+},
+{
 "slug": "gdpr-register",
 "name": "GDPR Register",
 "website": "https://www.gdprregister.eu",
@@ -2424,6 +2528,26 @@
 "body": "## Summary\n\nData compliance software for GDPR and privacy management. Founded 2018.",
 "sources": [
 "https://www.gdprregister.eu"
+]
+},
+{
+"slug": "getmysar",
+"name": "GetMySAR",
+"website": "https://getmysar.com",
+"hq": "UK",
+"hq_country": "UK",
+"company_type": "startup",
+"description": "Service that prepares, submits and follows up UK subject access requests on behalf of individuals.",
+"primary_category": "consumer",
+"privacy_relevance": "core",
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://getmysar.com",
+"website_checked": "2026-11-23",
+"body": "## Summary\n\nService that prepares, submits and follows up UK subject access requests on behalf of individuals.",
+"sources": [
+"https://getmysar.com"
 ]
 },
 {
@@ -3160,6 +3284,23 @@
 ]
 },
 {
+"slug": "kinnari",
+"name": "Kinnari",
+"hq": "Thailand",
+"hq_country": "Thailand",
+"company_type": "startup",
+"description": "PDPA compliance product for Thai businesses that scans public-facing websites.",
+"primary_category": "program_mgmt",
+"privacy_relevance": "core",
+"status": "Unclear",
+"status_code": "unclear",
+"website_verified": false,
+"verification_note": "kinnari.ai does not resolve.",
+"website_checked": "2026-11-23",
+"body": "## Summary\n\nPDPA compliance product for Thai businesses that scans public-facing websites.",
+"sources": []
+},
+{
 "slug": "kiteworks",
 "name": "Kiteworks",
 "website": "https://www.kiteworks.com",
@@ -3196,6 +3337,46 @@
 "body": "## Notes\n\nFounded 2023 by Gadi Evron and Sounil Yu; ~$19.3M raised incl. $11M (Mar 2025) and $5M after RSAC Innovation Sandbox top-10 finish (Apr 2025).",
 "sources": [
 "Website: https://www.knostic.ai"
+]
+},
+{
+"slug": "komplyza",
+"name": "KomplyZA",
+"website": "https://www.komplyza.com",
+"hq": "South Africa",
+"hq_country": "South Africa",
+"company_type": "startup",
+"description": "POPIA compliance platform that shows organisations where they stand and what is missing.",
+"primary_category": "program_mgmt",
+"privacy_relevance": "core",
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://www.komplyza.com",
+"website_checked": "2026-11-23",
+"body": "## Summary\n\nPOPIA compliance platform that shows organisations where they stand and what is missing.",
+"sources": [
+"https://www.komplyza.com"
+]
+},
+{
+"slug": "kopasa",
+"name": "KopaSA",
+"website": "https://kopa.co.za/",
+"hq": "South Africa",
+"hq_country": "South Africa",
+"company_type": "startup",
+"description": "Forensic technology and POPIA compliance software for South African businesses.",
+"primary_category": "dlp",
+"privacy_relevance": "adjacent",
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://kopa.co.za/",
+"website_checked": "2026-11-23",
+"body": "## Summary\n\nForensic technology and POPIA compliance software for South African businesses.",
+"sources": [
+"https://kopa.co.za/"
 ]
 },
 {
@@ -4216,6 +4397,26 @@
 ]
 },
 {
+"slug": "pdpa-core",
+"name": "PDPA Core",
+"website": "https://pdpacore.com/en",
+"hq": "Thailand",
+"hq_country": "Thailand",
+"company_type": "startup",
+"description": "PDPA compliance software combined with implementation services for Thai organisations.",
+"primary_category": "program_mgmt",
+"privacy_relevance": "core",
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://pdpacore.com/en",
+"website_checked": "2026-11-23",
+"body": "## Summary\n\nPDPA compliance software combined with implementation services for Thai organisations.",
+"sources": [
+"https://pdpacore.com/en"
+]
+},
+{
 "slug": "permission-slip",
 "name": "Permission Slip",
 "hq": "USA",
@@ -4942,6 +5143,29 @@
 "https://entrackr.com/snippets/redacto-raises-rs-12-cr-in-seed-round-led-by-peercapital-10606066",
 "https://www.ciol.com/funding-acquistion-merger/redacto-raises-12-crore-to-build-indias-privacy-infrastructure-10607084",
 "https://redacto.ai"
+]
+},
+{
+"slug": "redactvault",
+"name": "RedactVault",
+"website": "https://www.redactvault.com",
+"hq": "Dublin, Ireland",
+"hq_country": "Ireland",
+"company_type": "startup",
+"description": "Browser-based document redaction that works without uploading files, with checks that redacted content is really removed.",
+"primary_category": "deid_vault",
+"privacy_relevance": "core",
+"techniques": [
+"de-identification"
+],
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://www.redactvault.com",
+"website_checked": "2026-11-23",
+"body": "## Summary\n\nBrowser-based document redaction that works without uploading files, with checks that redacted content is really removed.",
+"sources": [
+"https://www.redactvault.com"
 ]
 },
 {
