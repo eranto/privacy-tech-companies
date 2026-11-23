@@ -46,9 +46,8 @@ h1,h2,h3{font-family:var(--head)}
 .mark{background:linear-gradient(transparent 58%, var(--hi) 58%, var(--hi) 92%, transparent 92%);padding:0 .08em;color:inherit}
 .hero p{font-size:clamp(16px,2vw,19px);max-width:640px;color:var(--muted);margin:18px 0 0}
 .doodle{position:absolute;pointer-events:none}
-.d-circle{right:8%;top:10px;width:170px;opacity:.9}
 .d-star{right:2%;bottom:6px;width:90px}
-@media (max-width:760px){.d-circle{width:110px;right:-20px;top:0}.d-star{display:none}}
+@media (max-width:760px){.d-star{display:none}}
 .stats{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
 .stat{border:2px solid var(--line);border-radius:14px;padding:8px 14px;background:var(--panel)}
 .stat b{font-family:var(--head);font-size:26px;font-weight:800;letter-spacing:-.02em;display:block;line-height:1.1}
@@ -140,9 +139,6 @@ footer b{color:var(--ink);font-family:var(--head)}
 </div>
 
 <section class="hero">
-  <svg class="doodle d-circle" viewBox="0 0 200 160" fill="none" aria-hidden="true">
-    <path d="M150 22C120 6 60 8 32 36 6 62 14 112 56 132c40 19 104 12 124-22 18-31 0-70-38-86-24-10-58-10-80 0" stroke="var(--red)" stroke-width="4" stroke-linecap="round"/>
-  </svg>
   <svg class="doodle d-star" viewBox="0 0 100 100" aria-hidden="true">
     <g stroke="var(--hi)" stroke-width="9" stroke-linecap="round"><path d="M50 8v84"/><path d="M14 28l72 44"/><path d="M14 72l72-44"/></g>
   </svg>
