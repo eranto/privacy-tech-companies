@@ -117,6 +117,72 @@
 ]
 },
 {
+"slug": "adopt",
+"name": "AdOpt",
+"website": "https://goadopt.io",
+"hq": "Brazil",
+"hq_country": "Brazil",
+"company_type": "startup",
+"description": "LGPD-focused consent management platform and cookie banner used on tens of thousands of sites.",
+"primary_category": "consent",
+"privacy_relevance": "core",
+"status": "Acquired by Axeptio (2025)",
+"status_code": "acquired",
+"acquirer": "Axeptio",
+"website_verified": true,
+"verified_url": "https://goadopt.io",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nLGPD-focused consent management platform and cookie banner used on tens of thousands of sites.",
+"sources": [
+"https://goadopt.io",
+"https://www.exchangewire.com/blog/2025/02/13/axeptio-acquires-adopt-to-strengthen-global-expansion/ (evidence, 2026-11-24)"
+]
+},
+{
+"slug": "affinidi",
+"name": "Affinidi",
+"website": "https://www.affinidi.com/",
+"hq": "Singapore",
+"hq_country": "Singapore",
+"company_type": "startup",
+"description": "Privacy-first decentralized identity infrastructure for verifiable credentials and user-held data (Temasek-backed).",
+"primary_category": "identity",
+"privacy_relevance": "core",
+"techniques": [
+"verifiable credentials",
+"DID"
+],
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://www.affinidi.com/",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nPrivacy-first decentralized identity infrastructure for verifiable credentials and user-held data (Temasek-backed).",
+"sources": [
+"https://www.affinidi.com/"
+]
+},
+{
+"slug": "aiara-privacy-suite",
+"name": "Aiara Privacy Suite",
+"website": "https://www.aiara.ch/",
+"hq": "Switzerland",
+"hq_country": "Switzerland",
+"company_type": "startup",
+"description": "Swiss cookie banner and privacy-compliance suite for websites.",
+"primary_category": "consent",
+"privacy_relevance": "core",
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://www.aiara.ch/",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nSwiss cookie banner and privacy-compliance suite for websites.",
+"sources": [
+"https://www.aiara.ch/"
+]
+},
+{
 "slug": "aidatacy",
 "name": "AIDATACY",
 "website": "https://aidatacy.com",
@@ -177,6 +243,53 @@
 ]
 },
 {
+"slug": "aleo",
+"name": "Aleo",
+"website": "https://aleo.org/",
+"hq": "United States (Aleo Network Foundation)",
+"hq_country": "USA",
+"company_type": "startup",
+"description": "Zero-knowledge layer-1 blockchain for private programmable applications and private stablecoin payments.",
+"primary_category": "privacy_chain",
+"privacy_relevance": "core",
+"techniques": [
+"ZK"
+],
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://aleo.org/",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nZero-knowledge layer-1 blockchain for private programmable applications and private stablecoin payments.",
+"sources": [
+"https://aleo.org/"
+]
+},
+{
+"slug": "algemetric",
+"name": "Algemetric",
+"website": "https://www.algemetric.com/",
+"hq": "Colorado Springs, USA",
+"hq_country": "USA",
+"company_type": "startup",
+"description": "Deep-tech cryptography company building MPC and homomorphic-encryption solutions for computing on protected data.",
+"primary_category": "pec",
+"privacy_relevance": "core",
+"techniques": [
+"MPC",
+"FHE"
+],
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://www.algemetric.com/",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nDeep-tech cryptography company building MPC and homomorphic-encryption solutions for computing on protected data.",
+"sources": [
+"https://www.algemetric.com/"
+]
+},
+{
 "slug": "alien",
 "name": "Alien",
 "website": "https://alien.id",
@@ -194,6 +307,32 @@
 "body": "## Summary\n\nDecentralized identity verification for humans and AI agents.",
 "sources": [
 "https://alien.id"
+]
+},
+{
+"slug": "altr",
+"name": "ALTR",
+"website": "https://altr.com",
+"hq": "Melbourne (FL), USA",
+"hq_country": "USA",
+"company_type": "startup",
+"description": "Data access control, masking and format-preserving tokenization for cloud data warehouses, notably Snowflake.",
+"primary_category": "access_governance",
+"privacy_relevance": "core",
+"techniques": [
+"tokenization",
+"format-preserving encryption",
+"dynamic masking"
+],
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://altr.com",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nData access control, masking and format-preserving tokenization for cloud data warehouses, notably Snowflake.",
+"sources": [
+"https://altr.com",
+"https://www.altr.com/in-the-news/altr-snowflake-native-format-preserving-data-protection-snowpark (evidence, 2026-11-24)"
 ]
 },
 {
@@ -321,6 +460,29 @@
 ]
 },
 {
+"slug": "antimatter",
+"name": "Antimatter",
+"hq": "Oakland, USA",
+"hq_country": "USA",
+"company_type": "startup",
+"description": "Data control plane that kept sensitive data protected and governed as it flowed into SaaS and AI applications.",
+"primary_category": "dlp",
+"privacy_relevance": "adjacent",
+"techniques": [
+"encryption"
+],
+"status": "Acquired by Databricks (2025)",
+"status_code": "acquired",
+"acquirer": "Databricks",
+"website_verified": true,
+"verified_url": "https://techcrunch.com/2026/03/24/databricks-buys-two-startups-lakewatch-antimatter-siftd-ai-security/",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nData control plane that kept sensitive data protected and governed as it flowed into SaaS and AI applications.",
+"sources": [
+"https://techcrunch.com/2026/03/24/databricks-buys-two-startups-lakewatch-antimatter-siftd-ai-security/"
+]
+},
+{
 "slug": "apex-security",
 "name": "Apex Security",
 "website": "https://www.apexsecurity.ai",
@@ -386,6 +548,26 @@
 ]
 },
 {
+"slug": "ardent-privacy",
+"name": "Ardent Privacy",
+"website": "https://www.ardentprivacy.ai",
+"hq_country": "USA",
+"company_type": "startup",
+"description": "Privacy compliance automation: data discovery, assessments, consent, data-principal rights and data minimisation (DPDPA, GDPR and others).",
+"primary_category": "program_mgmt",
+"privacy_relevance": "core",
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://www.ardentprivacy.ai",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nPrivacy compliance automation: data discovery, assessments, consent, data-principal rights and data minimisation (DPDPA, GDPR and others).",
+"sources": [
+"https://www.ardentprivacy.ai",
+"https://www.ardentprivacy.ai/blog/ardent-privacy-joins-sap-startup-studio-cohort-2026-to-help-sap-customers-address-privacy-compliance-ai-security-and-ai-governance-challenges/ (evidence, 2026-11-24)"
+]
+},
+{
 "slug": "attestable",
 "name": "Attestable",
 "website": "https://attestable.com",
@@ -447,6 +629,47 @@
 "body": "## Summary\n\nConsumer protection against identity theft, with credit monitoring and online privacy tools.",
 "sources": [
 "https://www.aura.com"
+]
+},
+{
+"slug": "avacy",
+"name": "Avacy (Weave Srl)",
+"website": "https://avacysolution.com/",
+"hq": "Italy",
+"hq_country": "Italy",
+"company_type": "startup",
+"description": "Cookie banner, consent mode and privacy policy platform for SMEs and agencies.",
+"primary_category": "consent",
+"privacy_relevance": "core",
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://avacysolution.com/",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nCookie banner, consent mode and privacy policy platform for SMEs and agencies.",
+"sources": [
+"https://avacysolution.com/"
+]
+},
+{
+"slug": "axeptio",
+"name": "Axeptio",
+"website": "https://www.axept.io",
+"hq": "Montpellier, France",
+"hq_country": "France",
+"company_type": "startup",
+"description": "Consent management platform for websites and apps (GDPR, Law 25, nFADP).",
+"primary_category": "consent",
+"privacy_relevance": "core",
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://www.axept.io",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nConsent management platform for websites and apps (GDPR, Law 25, nFADP).",
+"sources": [
+"https://www.axept.io",
+"https://axept.io/blog/axeptio-adopt-brazil (evidence, 2026-11-24)"
 ]
 },
 {
@@ -516,6 +739,32 @@
 "body": "## Notes\n\nThe Mimblewimble/Lelantus privacy blockchain remains under active community development into 2026 — Hard Fork 6 security upgrade, the BeamTerminal confidential-DeFi dApp, and biweekly dev updates through June 2026 — though it is a niche project delisted from most major exchanges.",
 "sources": [
 "Website: https://beam.mw"
+]
+},
+{
+"slug": "bearer",
+"name": "Bearer",
+"website": "https://www.bearer.com",
+"hq": "Paris, France",
+"hq_country": "France",
+"company_type": "startup",
+"description": "Static code scanner that maps sensitive-data flows in source code and flags security and privacy risks.",
+"primary_category": "privacy_eng",
+"privacy_relevance": "core",
+"techniques": [
+"code scanning",
+"data-flow analysis"
+],
+"status": "Acquired by Cycode (2024)",
+"status_code": "acquired",
+"acquirer": "Cycode",
+"website_verified": true,
+"verified_url": "https://www.bearer.com",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nStatic code scanner that maps sensitive-data flows in source code and flags security and privacy risks.",
+"sources": [
+"https://www.bearer.com",
+"https://techcrunch.com/2024/03/05/cycode-acquires-bearer-to-accelerate-its-move-into-ai-enhanced-security-remediation/ (evidence, 2026-11-24)"
 ]
 },
 {
@@ -629,6 +878,30 @@
 ]
 },
 {
+"slug": "blackcloak",
+"name": "BlackCloak",
+"website": "https://blackcloak.io",
+"hq": "Lake Mary, USA",
+"hq_country": "USA",
+"company_type": "startup",
+"description": "Personal cybersecurity and digital privacy protection for executives, including removing their data from data brokers.",
+"primary_category": "consumer",
+"privacy_relevance": "adjacent",
+"techniques": [
+"data-broker removal"
+],
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://blackcloak.io",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nPersonal cybersecurity and digital privacy protection for executives, including removing their data from data brokers.",
+"sources": [
+"https://blackcloak.io",
+"https://blackcloak.io/ (evidence, 2026-11-24)"
+]
+},
+{
 "slug": "block-party",
 "name": "Block Party",
 "website": "https://www.blockpartyapp.com",
@@ -648,6 +921,71 @@
 "sources": [
 "https://www.yorba.co/yorblog/who-owns-your-privacy-tool-in-2026",
 "https://www.blockpartyapp.com"
+]
+},
+{
+"slug": "blyss",
+"name": "Blyss",
+"website": "https://blyss.dev",
+"hq": "San Francisco, USA",
+"hq_country": "USA",
+"company_type": "startup",
+"description": "Started as a homomorphic-encryption SDK for private key-value lookups, later an AI model provider running inference in GPU secure enclaves.",
+"primary_category": "pec",
+"privacy_relevance": "core",
+"techniques": [
+"FHE",
+"TEE"
+],
+"status": "Unclear",
+"status_code": "unclear",
+"website_verified": true,
+"verified_url": "https://blyss.dev",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nStarted as a homomorphic-encryption SDK for private key-value lookups, later an AI model provider running inference in GPU secure enclaves.",
+"sources": [
+"https://blyss.dev"
+]
+},
+{
+"slug": "bonfy-ai",
+"name": "Bonfy.AI",
+"website": "https://www.bonfy.ai",
+"hq": "Israel / USA",
+"hq_country": "Israel",
+"company_type": "startup",
+"description": "Content security for GenAI that detects oversharing, privacy breaches and non-compliant content in AI and human communications.",
+"primary_category": "dlp",
+"privacy_relevance": "adjacent",
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://www.bonfy.ai",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nContent security for GenAI that detects oversharing, privacy breaches and non-compliant content in AI and human communications.",
+"sources": [
+"https://www.bonfy.ai",
+"https://www.securityweek.com/bonfy-ai-raises-9-5-million-for-adaptive-content-security-platform/ (evidence, 2026-11-24)"
+]
+},
+{
+"slug": "borlabs",
+"name": "Borlabs",
+"website": "https://borlabs.io/",
+"hq": "Hamburg, Germany",
+"hq_country": "Germany",
+"company_type": "startup",
+"description": "Cookie consent plugin (Borlabs Cookie) for WordPress sites.",
+"primary_category": "consent",
+"privacy_relevance": "core",
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://borlabs.io/",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nCookie consent plugin (Borlabs Cookie) for WordPress sites.",
+"sources": [
+"https://borlabs.io/"
 ]
 },
 {
@@ -775,6 +1113,49 @@
 ]
 },
 {
+"slug": "canarybit",
+"name": "CanaryBit",
+"website": "https://www.canarybit.eu/",
+"hq": "Stockholm, Sweden",
+"hq_country": "Sweden",
+"company_type": "startup",
+"description": "Confidential-computing platform (TEE attestation and policy) for processing and sharing sensitive data in the cloud while keeping it private.",
+"primary_category": "pec",
+"privacy_relevance": "core",
+"techniques": [
+"TEE"
+],
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://www.canarybit.eu/",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nConfidential-computing platform (TEE attestation and policy) for processing and sharing sensitive data in the cloud while keeping it private.",
+"sources": [
+"https://www.canarybit.eu/"
+]
+},
+{
+"slug": "candor",
+"name": "Candor",
+"website": "https://candor.security",
+"hq": "San Francisco, USA",
+"hq_country": "USA",
+"company_type": "startup",
+"description": "AI-based data loss prevention and insider-risk platform that detects sensitive data moving out of the company, including into AI tools.",
+"primary_category": "dlp",
+"privacy_relevance": "adjacent",
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://candor.security",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nAI-based data loss prevention and insider-risk platform that detects sensitive data moving out of the company, including into AI tools.",
+"sources": [
+"https://candor.security"
+]
+},
+{
 "slug": "cape",
 "name": "Cape",
 "website": "https://www.cape.co",
@@ -795,6 +1176,31 @@
 ]
 },
 {
+"slug": "cape-privacy",
+"name": "Cape Privacy",
+"website": "https://capeprivacy.com",
+"hq": "New York, USA",
+"hq_country": "USA",
+"company_type": "startup",
+"description": "Encrypted-learning platform (MPC/HE) for running ML models and predictions on encrypted data, e.g. inside Snowflake.",
+"primary_category": "pec",
+"privacy_relevance": "core",
+"techniques": [
+"MPC",
+"HE"
+],
+"status": "Merged/pivoted: became Cape AI, an agentic-AI business tool (2024)",
+"status_code": "merged/pivoted",
+"website_verified": true,
+"verified_url": "https://capeprivacy.com",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nEncrypted-learning platform (MPC/HE) for running ML models and predictions on encrypted data, e.g. inside Snowflake.",
+"sources": [
+"https://capeprivacy.com",
+"https://techcrunch.com/2021/04/20/cape-privacy-announces-20m-series-a-to-help-companies-securely-share-data (evidence, 2026-11-24)"
+]
+},
+{
 "slug": "captain-compliance",
 "name": "Captain Compliance",
 "website": "https://captaincompliance.com",
@@ -812,6 +1218,50 @@
 "body": "",
 "sources": [
 "https://captaincompliance.com/education/gartners-first-magic-quadrant-for-privacy-ux-what-it-says-and-what-it-means-for-buyers/"
+]
+},
+{
+"slug": "caution",
+"name": "Caution",
+"website": "https://caution.co/",
+"hq": "Cayman Islands (SEZC; unconfirmed operating base)",
+"hq_country": "Cayman Islands",
+"company_type": "startup",
+"description": "Verifiable compute platform for deploying workloads to TEEs so anyone can attest what code handles sensitive data.",
+"primary_category": "pec",
+"privacy_relevance": "core",
+"techniques": [
+"TEE"
+],
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://caution.co/",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nVerifiable compute platform for deploying workloads to TEEs so anyone can attest what code handles sensitive data.",
+"sources": [
+"https://caution.co/"
+]
+},
+{
+"slug": "ccm19",
+"name": "CCM19 (Papoo Software & Media)",
+"website": "https://www.ccm19.de/",
+"hq": "Bonn, Germany",
+"hq_country": "Germany",
+"company_type": "startup",
+"description": "Cookie consent manager (CCM19) for websites, hosted in Europe.",
+"primary_category": "consent",
+"privacy_relevance": "core",
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://www.ccm19.de/",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nCookie consent manager (CCM19) for websites, hosted in Europe.",
+"sources": [
+"https://www.ccm19.de/",
+"https://www.ccm19.de/impressum.html (evidence, 2026-11-24)"
 ]
 },
 {
@@ -904,6 +1354,54 @@
 ]
 },
 {
+"slug": "cheqd",
+"name": "cheqd",
+"website": "https://cheqd.io/",
+"hq": "London, UK",
+"hq_country": "UK",
+"company_type": "startup",
+"description": "Decentralized identity network with payment rails for verifiable credentials and trusted data.",
+"primary_category": "identity",
+"privacy_relevance": "core",
+"techniques": [
+"verifiable credentials",
+"DID"
+],
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://cheqd.io/",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nDecentralized identity network with payment rails for verifiable credentials and trusted data.",
+"sources": [
+"https://cheqd.io/"
+]
+},
+{
+"slug": "ciphercloud",
+"name": "CipherCloud",
+"hq": "San Jose, USA",
+"hq_country": "USA",
+"company_type": "startup",
+"description": "Cloud access security broker that encrypted or tokenized sensitive data before it reached SaaS applications.",
+"primary_category": "deid_vault",
+"privacy_relevance": "adjacent",
+"techniques": [
+"encryption",
+"tokenization"
+],
+"status": "Acquired by Lookout (2021)",
+"status_code": "acquired",
+"acquirer": "Lookout",
+"website_verified": true,
+"verified_url": "https://www.prnewswire.com/news-releases/lookout-acquires-ciphercloud-to-deliver-security-from-endpoint-to-cloud-301246849.html",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nCloud access security broker that encrypted or tokenized sensitive data before it reached SaaS applications.",
+"sources": [
+"https://www.prnewswire.com/news-releases/lookout-acquires-ciphercloud-to-deliver-security-from-endpoint-to-cloud-301246849.html"
+]
+},
+{
 "slug": "cipherstash",
 "name": "CipherStash",
 "website": "https://cipherstash.com",
@@ -928,6 +1426,47 @@
 ]
 },
 {
+"slug": "civic-computing",
+"name": "Civic Computing (Cookie Control)",
+"website": "https://cookiecontrol.com/",
+"hq": "Edinburgh, UK",
+"hq_country": "UK",
+"company_type": "startup",
+"description": "Cookie consent tool (Cookie Control) for websites, from a UK software firm.",
+"primary_category": "consent",
+"privacy_relevance": "core",
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://cookiecontrol.com/",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nCookie consent tool (Cookie Control) for websites, from a UK software firm.",
+"sources": [
+"https://cookiecontrol.com/",
+"https://www.civicuk.com/cookie-control/ (evidence, 2026-11-24)"
+]
+},
+{
+"slug": "clarip",
+"name": "Clarip",
+"website": "https://www.clarip.com/",
+"hq": "Philadelphia, USA",
+"hq_country": "USA",
+"company_type": "startup",
+"description": "Enterprise privacy platform: consent and preference management, DSRs, data mapping.",
+"primary_category": "program_mgmt",
+"privacy_relevance": "core",
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://www.clarip.com/",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nEnterprise privacy platform: consent and preference management, DSRs, data mapping.",
+"sources": [
+"https://www.clarip.com/"
+]
+},
+{
 "slug": "clearconsent",
 "name": "ClearConsent",
 "website": "https://clearconsent.in",
@@ -948,6 +1487,26 @@
 ]
 },
 {
+"slug": "clearly-ai",
+"name": "Clearly AI",
+"website": "https://clearly-ai.com",
+"hq": "Seattle, USA",
+"hq_country": "USA",
+"company_type": "startup",
+"description": "Uses AI to automate security and privacy design reviews and threat modelling of new software features.",
+"primary_category": "privacy_eng",
+"privacy_relevance": "adjacent",
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://clearly-ai.com",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nUses AI to automate security and privacy design reviews and threat modelling of new software features.",
+"sources": [
+"https://clearly-ai.com"
+]
+},
+{
 "slug": "cloaked",
 "name": "Cloaked",
 "website": "https://www.cloaked.com",
@@ -965,6 +1524,26 @@
 "body": "## Summary\n\nConsumer identity masking (aliases for email/phone) and data removal.",
 "sources": [
 "https://www.cloaked.com"
+]
+},
+{
+"slug": "cloud-compliance",
+"name": "Cloud Compliance",
+"website": "https://cloudcompliance.app",
+"hq": "Chicago, USA",
+"hq_country": "USA",
+"company_type": "startup",
+"description": "Salesforce-native app that automates data subject requests, right to be forgotten, retention, consent records and sandbox masking.",
+"primary_category": "dsr_mapping",
+"privacy_relevance": "core",
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://cloudcompliance.app",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nSalesforce-native app that automates data subject requests, right to be forgotten, retention, consent records and sandbox masking.",
+"sources": [
+"https://cloudcompliance.app"
 ]
 },
 {
@@ -1049,6 +1628,94 @@
 ]
 },
 {
+"slug": "comforte-ag",
+"name": "comforte AG",
+"website": "https://www.comforte.com",
+"hq": "Wiesbaden, Germany",
+"hq_country": "Germany",
+"company_type": "startup",
+"description": "Data-centric protection platform that tokenizes and encrypts sensitive data across on-prem, cloud and analytics systems.",
+"primary_category": "deid_vault",
+"privacy_relevance": "core",
+"techniques": [
+"tokenization",
+"format-preserving encryption"
+],
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://www.comforte.com",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nData-centric protection platform that tokenizes and encrypts sensitive data across on-prem, cloud and analytics systems.",
+"sources": [
+"https://www.comforte.com"
+]
+},
+{
+"slug": "commanders-act",
+"name": "Commanders Act",
+"website": "https://www.commandersact.com/",
+"hq": "Paris, France",
+"hq_country": "France",
+"company_type": "startup",
+"description": "Marketing data platform combining tag management, server-side data collection and a consent management module (TrustCommander).",
+"primary_category": "consent",
+"privacy_relevance": "adjacent",
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://www.commandersact.com/",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nMarketing data platform combining tag management, server-side data collection and a consent management module (TrustCommander).",
+"sources": [
+"https://www.commandersact.com/"
+]
+},
+{
+"slug": "compliant-llm",
+"name": "compliant-llm",
+"website": "https://compliantllm.com/",
+"hq": "San Francisco, USA",
+"hq_country": "USA",
+"company_type": "startup",
+"description": "Monitors employee use of third-party GenAI tools to detect sensitive data leaking into them.",
+"primary_category": "ai_privacy",
+"privacy_relevance": "adjacent",
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://compliantllm.com/",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nMonitors employee use of third-party GenAI tools to detect sensitive data leaking into them.",
+"sources": [
+"https://compliantllm.com/",
+"https://www.compliantllm.com (evidence, 2026-11-24)"
+]
+},
+{
+"slug": "complianz",
+"name": "Complianz",
+"website": "https://complianz.io",
+"hq": "Groningen, Netherlands",
+"hq_country": "Netherlands",
+"company_type": "startup",
+"description": "Cookie consent and privacy-compliance plugin and app for WordPress and Shopify with cookie scanning and TCF support.",
+"primary_category": "consent",
+"privacy_relevance": "core",
+"status": "Acquired by team.blue (2023)",
+"status_code": "acquired",
+"acquirer": "team.blue",
+"website_verified": true,
+"verified_url": "https://complianz.io",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nCookie consent and privacy-compliance plugin and app for WordPress and Shopify with cookie scanning and TCF support.",
+"sources": [
+"https://complianz.io",
+"https://press.team.blue/232693-really-simple-ssl-and-complianz-join-the-team-blue-family (2026-11-24)",
+"https://complianz.io/complianz-has-joined-the-iubenda-group (2026-11-24)"
+]
+},
+{
 "slug": "complycloud",
 "name": "ComplyCloud",
 "website": "https://www.complycloud.com",
@@ -1090,6 +1757,178 @@
 ]
 },
 {
+"slug": "concord",
+"name": "Concord",
+"website": "https://www.concord.tech/",
+"hq": "Portland, Oregon, USA",
+"hq_country": "USA",
+"company_type": "startup",
+"description": "Consent management and trust-center platform.",
+"primary_category": "consent",
+"privacy_relevance": "core",
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://www.concord.tech/",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nConsent management and trust-center platform.",
+"sources": [
+"https://www.concord.tech/",
+"https://www.concord.tech/about (evidence, 2026-11-24)"
+]
+},
+{
+"slug": "concordium",
+"name": "Concordium",
+"website": "https://www.concordium.com/",
+"hq": "Zug, Switzerland",
+"hq_country": "Switzerland",
+"company_type": "startup",
+"description": "Layer-1 blockchain with protocol-level identity and zero-knowledge proofs (e.g., age proofs without revealing identity).",
+"primary_category": "privacy_chain",
+"privacy_relevance": "core",
+"techniques": [
+"ZK"
+],
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://www.concordium.com/",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nLayer-1 blockchain with protocol-level identity and zero-knowledge proofs (e.g., age proofs without revealing identity).",
+"sources": [
+"https://www.concordium.com/"
+]
+},
+{
+"slug": "confident-security",
+"name": "Confident Security",
+"website": "https://confident.security",
+"hq": "San Francisco, USA",
+"hq_country": "USA",
+"company_type": "startup",
+"description": "Provably private AI inference (CONFSEC, OpenPCC) modelled on Apple's Private Cloud Compute, so prompts are not visible to the AI provider.",
+"primary_category": "ai_privacy",
+"privacy_relevance": "core",
+"techniques": [
+"TEE",
+"confidential computing"
+],
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://confident.security",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nProvably private AI inference (CONFSEC, OpenPCC) modelled on Apple's Private Cloud Compute, so prompts are not visible to the AI provider.",
+"sources": [
+"https://confident.security",
+"https://techcrunch.com/2025/07/17/confident-security-the-signal-for-ai-comes-out-of-stealth-with-4-2m (evidence, 2026-11-24)"
+]
+},
+{
+"slug": "consent-desk",
+"name": "Consent Desk",
+"website": "https://www.consentdesk.com/",
+"hq": "Radnor, Pennsylvania, USA",
+"hq_country": "USA",
+"company_type": "startup",
+"description": "Consent management service for websites.",
+"primary_category": "consent",
+"privacy_relevance": "core",
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://www.consentdesk.com/",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nConsent management service for websites.",
+"sources": [
+"https://www.consentdesk.com/",
+"https://consentdesk.com/contact-us (evidence, 2026-11-24)"
+]
+},
+{
+"slug": "consentbit",
+"name": "ConsentBit (Seattle New Media)",
+"website": "https://www.consentbit.com/",
+"hq": "Seattle, USA",
+"hq_country": "USA",
+"company_type": "startup",
+"description": "Cookie consent CMP for Webflow and other sites.",
+"primary_category": "consent",
+"privacy_relevance": "core",
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://www.consentbit.com/",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nCookie consent CMP for Webflow and other sites.",
+"sources": [
+"https://www.consentbit.com/"
+]
+},
+{
+"slug": "consentik",
+"name": "Consentik",
+"website": "https://consentik.com/",
+"company_type": "startup",
+"description": "Cookie consent CMP for Shopify, Wix, WordPress and other site builders.",
+"primary_category": "consent",
+"privacy_relevance": "core",
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://consentik.com/",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nCookie consent CMP for Shopify, Wix, WordPress and other site builders.",
+"sources": [
+"https://consentik.com/",
+"https://consentik.com/about-us/ (evidence, 2026-11-24)"
+]
+},
+{
+"slug": "consentmanager",
+"name": "consentmanager",
+"website": "https://www.consentmanager.net",
+"hq": "Västerås, Sweden",
+"hq_country": "Sweden",
+"company_type": "startup",
+"description": "IAB TCF consent management platform for websites and apps.",
+"primary_category": "consent",
+"privacy_relevance": "core",
+"status": "Acquired by iubenda (2022)",
+"status_code": "acquired",
+"acquirer": "iubenda",
+"website_verified": true,
+"verified_url": "https://www.consentmanager.net",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nIAB TCF consent management platform for websites and apps.",
+"sources": [
+"https://www.consentmanager.net",
+"https://www.consentmanager.net/en/about-us/ (2026-11-24)"
+]
+},
+{
+"slug": "consentmo",
+"name": "Consentmo",
+"website": "https://www.consentmo.com",
+"hq": "Sofia, Bulgaria",
+"hq_country": "Bulgaria",
+"company_type": "startup",
+"description": "Shopify consent management app with geo-targeted cookie banners, Google Consent Mode and data subject request pages.",
+"primary_category": "consent",
+"privacy_relevance": "core",
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://www.consentmo.com",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nShopify consent management app with geo-targeted cookie banners, Google Consent Mode and data subject request pages.",
+"sources": [
+"https://www.consentmo.com",
+"https://www.consentmo.com/about-us (evidence, 2026-11-24)"
+]
+},
+{
 "slug": "consentskin",
 "name": "Consentskin",
 "hq": "Tel Aviv, Israel",
@@ -1105,6 +1944,66 @@
 "website_checked": "2026-11-23",
 "body": "## Summary\n\nAI-driven consent management for GDPR/CCPA (directory listing only; no funding info).",
 "sources": []
+},
+{
+"slug": "conzent",
+"name": "Conzent",
+"website": "https://getconzent.com/",
+"hq": "Copenhagen, Denmark",
+"hq_country": "Denmark",
+"company_type": "startup",
+"description": "Cookie consent banner and CMP for websites.",
+"primary_category": "consent",
+"privacy_relevance": "core",
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://getconzent.com/",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nCookie consent banner and CMP for websites.",
+"sources": [
+"https://getconzent.com/"
+]
+},
+{
+"slug": "cookie-information",
+"name": "Cookie Information",
+"website": "https://cookieinformation.com",
+"hq": "Copenhagen, Denmark",
+"hq_country": "Denmark",
+"company_type": "startup",
+"description": "Consent management platform for websites and apps with Consent Mode v2 support.",
+"primary_category": "consent",
+"privacy_relevance": "core",
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://cookieinformation.com",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nConsent management platform for websites and apps with Consent Mode v2 support.",
+"sources": [
+"https://cookieinformation.com",
+"https://cookieinformation.com/ (evidence, 2026-11-24)"
+]
+},
+{
+"slug": "cookiebeam",
+"name": "CookieBeam",
+"website": "https://cookiebeam.com/",
+"company_type": "startup",
+"description": "Google-certified cookie consent banners with Consent Mode support.",
+"primary_category": "consent",
+"privacy_relevance": "core",
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://cookiebeam.com/",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nGoogle-certified cookie consent banners with Consent Mode support.",
+"sources": [
+"https://cookiebeam.com/",
+"https://cookiebeam.com/about (evidence, 2026-11-24)"
+]
 },
 {
 "slug": "cookiefacil",
@@ -1124,6 +2023,133 @@
 "body": "## Summary\n\nBrazilian consent management platform built for the LGPD (vendor claim: only Brazilian-native CMP).",
 "sources": [
 "https://cookiefacil.com.br"
+]
+},
+{
+"slug": "cookiefirst",
+"name": "CookieFirst",
+"website": "https://cookiefirst.com/",
+"hq": "Amsterdam, Netherlands",
+"hq_country": "Netherlands",
+"company_type": "startup",
+"description": "Cookie consent management platform for websites.",
+"primary_category": "consent",
+"privacy_relevance": "core",
+"status": "Acquired by iubenda (2025)",
+"status_code": "acquired",
+"acquirer": "iubenda",
+"website_verified": true,
+"verified_url": "https://cookiefirst.com/",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nCookie consent management platform for websites.",
+"sources": [
+"https://cookiefirst.com/",
+"https://press.team.blue/246127-team-blue-brand-iubenda-acquires-cookiefirst (2026-11-24)",
+"https://cookiefirst.com/legal/privacy-policy/ (evidence, 2026-11-24)"
+]
+},
+{
+"slug": "cookiehub",
+"name": "CookieHub",
+"website": "https://www.cookiehub.com",
+"hq": "Iceland",
+"hq_country": "Iceland",
+"company_type": "startup",
+"description": "Cookie consent management platform with automatic cookie scanning and Google Consent Mode support.",
+"primary_category": "consent",
+"privacy_relevance": "core",
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://www.cookiehub.com",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nCookie consent management platform with automatic cookie scanning and Google Consent Mode support.",
+"sources": [
+"https://www.cookiehub.com",
+"https://www.cookiehub.com/ (evidence, 2026-11-24)"
+]
+},
+{
+"slug": "cookielet",
+"name": "CookieLet",
+"website": "https://www.cookielet.com/",
+"hq": "London, UK",
+"hq_country": "UK",
+"company_type": "startup",
+"description": "Cookie consent management platform for websites.",
+"primary_category": "consent",
+"privacy_relevance": "core",
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://www.cookielet.com/",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nCookie consent management platform for websites.",
+"sources": [
+"https://www.cookielet.com/",
+"https://cookielet.com/about (evidence, 2026-11-24)"
+]
+},
+{
+"slug": "cookieman",
+"name": "CookieMan (ML Informatica)",
+"website": "https://cookieman.net/",
+"hq": "Lecco, Italy",
+"hq_country": "Italy",
+"company_type": "startup",
+"description": "Consent management platform for websites.",
+"primary_category": "consent",
+"privacy_relevance": "core",
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://cookieman.net/",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nConsent management platform for websites.",
+"sources": [
+"https://cookieman.net/"
+]
+},
+{
+"slug": "cookiescript",
+"name": "CookieScript",
+"website": "https://cookie-script.com",
+"hq": "Vilnius, Lithuania",
+"hq_country": "Lithuania",
+"company_type": "startup",
+"description": "Cookie consent management platform with cookie scanning and consent logging for GDPR, CCPA and ePrivacy.",
+"primary_category": "consent",
+"privacy_relevance": "core",
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://cookie-script.com",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nCookie consent management platform with cookie scanning and consent logging for GDPR, CCPA and ePrivacy.",
+"sources": [
+"https://cookie-script.com",
+"https://cookie-script.com/ (evidence, 2026-11-24)"
+]
+},
+{
+"slug": "cookiewave",
+"name": "CookieWave",
+"website": "https://www.cookiewave.com/",
+"hq": "Wilmington, Delaware, USA",
+"hq_country": "USA",
+"company_type": "startup",
+"description": "Cookie consent and compliance tool for websites.",
+"primary_category": "consent",
+"privacy_relevance": "core",
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://www.cookiewave.com/",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nCookie consent and compliance tool for websites.",
+"sources": [
+"https://www.cookiewave.com/",
+"https://cookiewave.com/privacy (evidence, 2026-11-24)"
 ]
 },
 {
@@ -1347,6 +2373,70 @@
 ]
 },
 {
+"slug": "cyberhaven",
+"name": "Cyberhaven",
+"website": "https://www.cyberhaven.com",
+"hq": "San Jose, USA",
+"hq_country": "USA",
+"company_type": "startup",
+"description": "Data security platform combining DLP, DSPM and insider-risk controls using data lineage to track sensitive data, including into AI tools.",
+"primary_category": "dlp",
+"privacy_relevance": "adjacent",
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://www.cyberhaven.com",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nData security platform combining DLP, DSPM and insider-risk controls using data lineage to track sensitive data, including into AI tools.",
+"sources": [
+"https://www.cyberhaven.com",
+"https://www.cyberhaven.com/ (evidence, 2026-11-24)"
+]
+},
+{
+"slug": "cybernetica",
+"name": "Cybernetica",
+"website": "https://cyber.ee/",
+"hq": "Tallinn, Estonia",
+"hq_country": "Estonia",
+"company_type": "startup",
+"description": "Estonian R&D company behind Sharemind MPC for privacy-preserving data analysis, plus e-government and identity systems.",
+"primary_category": "pec",
+"privacy_relevance": "core",
+"techniques": [
+"MPC"
+],
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://cyber.ee/",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nEstonian R&D company behind Sharemind MPC for privacy-preserving data analysis, plus e-government and identity systems.",
+"sources": [
+"https://cyber.ee/"
+]
+},
+{
+"slug": "cybexo",
+"name": "CYBEXO",
+"website": "https://cybexo.com/",
+"hq": "New York, USA",
+"hq_country": "USA",
+"company_type": "startup",
+"description": "Consent runtime, scanning and governance platform for websites and Shopify stores.",
+"primary_category": "consent",
+"privacy_relevance": "core",
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://cybexo.com/",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nConsent runtime, scanning and governance platform for websites and Shopify stores.",
+"sources": [
+"https://cybexo.com/"
+]
+},
+{
 "slug": "cyera",
 "name": "Cyera",
 "website": "https://www.cyera.com",
@@ -1451,6 +2541,30 @@
 ]
 },
 {
+"slug": "danube-tech",
+"name": "Danube Tech",
+"website": "https://danubetech.com/",
+"hq": "Vienna, Austria",
+"hq_country": "Austria",
+"company_type": "startup",
+"description": "Decentralized identity (DID/SSI) infrastructure and services, maintainers of the Universal Resolver.",
+"primary_category": "identity",
+"privacy_relevance": "core",
+"techniques": [
+"DID",
+"verifiable credentials"
+],
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://danubetech.com/",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nDecentralized identity (DID/SSI) infrastructure and services, maintainers of the Universal Resolver.",
+"sources": [
+"https://danubetech.com/"
+]
+},
+{
 "slug": "darrow",
 "name": "Darrow",
 "website": "https://www.darrow.ai/",
@@ -1466,6 +2580,30 @@
 "body": "## Notes\n\nCash-flow positive since 2023 after a $35M Series B (2023); ~$26M revenue in 2024 with ~80 law firm customers, and launched a Portfolio Platform (May 2026) letting plaintiffs' firms manage litigation like an investment portfolio.",
 "sources": [
 "Website: https://www.darrow.ai/"
+]
+},
+{
+"slug": "dasera",
+"name": "Dasera",
+"hq": "Mountain View, USA",
+"hq_country": "USA",
+"company_type": "startup",
+"description": "Data security posture and governance platform that discovered sensitive data and monitored its use across cloud data stores.",
+"primary_category": "discovery_dspm",
+"privacy_relevance": "core",
+"techniques": [
+"data discovery",
+"classification"
+],
+"status": "Acquired by Netskope (2024)",
+"status_code": "acquired",
+"acquirer": "Netskope",
+"website_verified": true,
+"verified_url": "https://www.wilmerhale.com/en/insights/news/20241016-dasera-closes-acquisition-by-netskope",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nData security posture and governance platform that discovered sensitive data and monitored its use across cloud data stores.",
+"sources": [
+"https://www.wilmerhale.com/en/insights/news/20241016-dasera-closes-acquisition-by-netskope"
 ]
 },
 {
@@ -1508,6 +2646,30 @@
 "sources": [
 "https://www.entrepreneur.com/en-in/news-and-trends/data-safeguard-bhagva-and-lets-try-raise-fresh-funding/489762",
 "https://www.datasafeguard.ai"
+]
+},
+{
+"slug": "data443-risk-mitigation",
+"name": "Data443 Risk Mitigation",
+"website": "https://data443.com",
+"hq": "Research Triangle Park, USA",
+"hq_country": "USA",
+"company_type": "startup",
+"description": "Data security and privacy software including data classification, archiving and a GDPR compliance framework plugin.",
+"primary_category": "dlp",
+"privacy_relevance": "adjacent",
+"techniques": [
+"data classification"
+],
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://data443.com",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nData security and privacy software including data classification, archiving and a GDPR compliance framework plugin.",
+"sources": [
+"https://data443.com",
+"https://www.data443.com/gdpr-framework/ (evidence, 2026-11-24)"
 ]
 },
 {
@@ -1641,6 +2803,26 @@
 ]
 },
 {
+"slug": "datareporter",
+"name": "DataReporter",
+"website": "https://www.datareporter.eu/",
+"hq": "Austria",
+"hq_country": "Austria",
+"company_type": "startup",
+"description": "Data-protection compliance software (records of processing, consent banner).",
+"primary_category": "program_mgmt",
+"privacy_relevance": "core",
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://www.datareporter.eu/",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nData-protection compliance software (records of processing, consent banner).",
+"sources": [
+"https://www.datareporter.eu/"
+]
+},
+{
 "slug": "dataships",
 "name": "Dataships",
 "website": "https://www.dataships.io",
@@ -1659,6 +2841,31 @@
 "sources": [
 "https://tech.eu/tag/gdpr/",
 "https://www.dataships.io"
+]
+},
+{
+"slug": "datasunrise",
+"name": "DataSunrise",
+"website": "https://www.datasunrise.com",
+"hq": "Seattle, USA",
+"hq_country": "USA",
+"company_type": "startup",
+"description": "Database security suite with sensitive-data discovery, dynamic and static masking, auditing and compliance reporting.",
+"primary_category": "dlp",
+"privacy_relevance": "adjacent",
+"techniques": [
+"data masking",
+"data discovery"
+],
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://www.datasunrise.com",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nDatabase security suite with sensitive-data discovery, dynamic and static masking, auditing and compliance reporting.",
+"sources": [
+"https://www.datasunrise.com",
+"https://www.datasunrise.com/ (evidence, 2026-11-24)"
 ]
 },
 {
@@ -1823,6 +3030,29 @@
 ]
 },
 {
+"slug": "demox-labs",
+"name": "Demox Labs",
+"website": "https://demoxlabs.xyz",
+"hq": "San Francisco, USA",
+"hq_country": "USA",
+"company_type": "startup",
+"description": "Privacy infrastructure for zero-knowledge blockchains, including the Leo Wallet for Aleo.",
+"primary_category": "privacy_chain",
+"privacy_relevance": "core",
+"techniques": [
+"ZK"
+],
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://demoxlabs.xyz",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nPrivacy infrastructure for zero-knowledge blockchains, including the Leo Wallet for Aleo.",
+"sources": [
+"https://demoxlabs.xyz"
+]
+},
+{
 "slug": "deploy-law",
 "name": "deploy.law",
 "website": "https://deploy.law",
@@ -1865,6 +3095,27 @@
 "sources": [
 "https://www.digitaltoday.co.kr/en/view/51406/desilo-launches-commercial-homomorphic-encryption-software-based-on-gl-scheme",
 "https://desilo.ai"
+]
+},
+{
+"slug": "devowl-io",
+"name": "devowl.io (Real Cookie Banner)",
+"website": "https://devowl.io/",
+"hq": "Grafling, Germany",
+"hq_country": "Germany",
+"company_type": "startup",
+"description": "Cookie consent plugin (Real Cookie Banner) for WordPress.",
+"primary_category": "consent",
+"privacy_relevance": "core",
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://devowl.io/",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nCookie consent plugin (Real Cookie Banner) for WordPress.",
+"sources": [
+"https://devowl.io/",
+"https://devowl.io/legal-notice/ (evidence, 2026-11-24)"
 ]
 },
 {
@@ -1947,6 +3198,50 @@
 "sources": [
 "https://yourstory.com/companies/digital-anumati",
 "https://digitalanumati.com"
+]
+},
+{
+"slug": "disconnect",
+"name": "Disconnect",
+"website": "https://disconnect.me/",
+"hq": "San Francisco, USA",
+"hq_country": "USA",
+"company_type": "startup",
+"description": "Tracker-blocking apps for consumers and businesses plus a privacy-intelligence API on hidden tracking.",
+"primary_category": "consumer",
+"privacy_relevance": "core",
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://disconnect.me/",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nTracker-blocking apps for consumers and businesses plus a privacy-intelligence API on hidden tracking.",
+"sources": [
+"https://disconnect.me/"
+]
+},
+{
+"slug": "dock-labs",
+"name": "Dock Labs (Truvera)",
+"website": "https://www.dock.io/",
+"hq": "Zug, Switzerland (unconfirmed)",
+"hq_country": "Switzerland",
+"company_type": "startup",
+"description": "Verifiable-credential platform (Truvera) for issuing and verifying reusable digital identity credentials.",
+"primary_category": "identity",
+"privacy_relevance": "core",
+"techniques": [
+"verifiable credentials",
+"selective disclosure"
+],
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://www.dock.io/",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nVerifiable-credential platform (Truvera) for issuing and verifying reusable digital identity credentials.",
+"sources": [
+"https://www.dock.io/"
 ]
 },
 {
@@ -2105,6 +3400,26 @@
 ]
 },
 {
+"slug": "efilli",
+"name": "Efilli",
+"website": "https://efilli.com/",
+"hq": "Istanbul, Türkiye",
+"hq_country": "Türkiye",
+"company_type": "startup",
+"description": "Cookie consent management platform for KVKK and GDPR compliance.",
+"primary_category": "consent",
+"privacy_relevance": "core",
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://efilli.com/",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nCookie consent management platform for KVKK and GDPR compliance.",
+"sources": [
+"https://efilli.com/"
+]
+},
+{
 "slug": "element",
 "name": "Element",
 "website": "https://element.io",
@@ -2230,6 +3545,54 @@
 ]
 },
 {
+"slug": "eperi",
+"name": "eperi",
+"website": "https://eperi.com",
+"hq": "Pfungstadt, Germany",
+"hq_country": "Germany",
+"company_type": "startup",
+"description": "Encryption and tokenization gateway that protects personal data in SaaS/cloud applications with customer-held keys, aimed at GDPR compliance.",
+"primary_category": "deid_vault",
+"privacy_relevance": "core",
+"techniques": [
+"encryption",
+"tokenization"
+],
+"status": "Active (management buy-out after Equistone majority stake, 2022)",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://eperi.com",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nEncryption and tokenization gateway that protects personal data in SaaS/cloud applications with customer-held keys, aimed at GDPR compliance.",
+"sources": [
+"https://eperi.com",
+"https://www.msspalert.com/news/private-equity-firm-acquires-cloud-app-cybersecurity-company-eperi (evidence, 2026-11-24)"
+]
+},
+{
+"slug": "esatus",
+"name": "esatus",
+"website": "https://esatus.com/",
+"hq": "Langen, Germany",
+"hq_country": "Germany",
+"company_type": "startup",
+"description": "Identity firm connecting the EU Digital Identity Wallet and SSI credentials to existing IAM and KYC systems.",
+"primary_category": "identity",
+"privacy_relevance": "core",
+"techniques": [
+"verifiable credentials"
+],
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://esatus.com/",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nIdentity firm connecting the EU Digital Identity Wallet and SSI credentials to existing IAM and KYC systems.",
+"sources": [
+"https://esatus.com/"
+]
+},
+{
 "slug": "espresso-systems",
 "name": "Espresso Systems",
 "website": "https://www.espressosys.com",
@@ -2318,6 +3681,27 @@
 ]
 },
 {
+"slug": "evidon",
+"name": "Evidon",
+"hq": "New York, USA",
+"hq_country": "USA",
+"company_type": "startup",
+"description": "Consent and tracker-governance tools for websites (later Crownpeak Universal Consent).",
+"primary_category": "consent",
+"privacy_relevance": "core",
+"status": "Acquired by Crownpeak (2017)",
+"status_code": "acquired",
+"acquirer": "Crownpeak",
+"website_verified": true,
+"verified_url": "https://www.globenewswire.com/press-release/saas-based-digital-experience-management-company-crownpeak-acquires-leading-digital-2228449.htm",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nConsent and tracker-governance tools for websites (later Crownpeak Universal Consent).",
+"sources": [
+"https://www.globenewswire.com/press-release/saas-based-digital-experience-management-company-crownpeak-acquires-leading-digital-2228449.htm",
+"https://www.crownpeak.com/ (evidence, 2026-11-24)"
+]
+},
+{
 "slug": "exterro",
 "name": "Exterro",
 "website": "https://www.exterro.com",
@@ -2336,6 +3720,30 @@
 "sources": [
 "https://www.forrester.com/report/the-forrester-wave-privacy-management-software-q4-2021/RES176607",
 "https://www.exterro.com"
+]
+},
+{
+"slug": "extrimian",
+"name": "Extrimian",
+"website": "https://extrimian.io/",
+"hq": "Buenos Aires, Argentina",
+"hq_country": "Argentina",
+"company_type": "startup",
+"description": "Decentralized digital identity (SSI) and verifiable-credential solutions.",
+"primary_category": "identity",
+"privacy_relevance": "core",
+"techniques": [
+"DID",
+"verifiable credentials"
+],
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://extrimian.io/",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nDecentralized digital identity (SSI) and verifiable-credential solutions.",
+"sources": [
+"https://extrimian.io/"
 ]
 },
 {
@@ -2382,6 +3790,29 @@
 "body": "## Notes\n\nFounded 2021 by Samuel Cohen (LSE PhD); ~$10.5M raised incl. $8M seed led by Maverick Ventures Israel (May 2024); partnerships with IFOP and BVA; customers incl. L'Oreal, T-Mobile.",
 "sources": [
 "Website: https://fairgen.ai"
+]
+},
+{
+"slug": "feroot-security",
+"name": "Feroot Security",
+"website": "https://www.feroot.com",
+"hq": "Toronto, Canada",
+"hq_country": "Canada",
+"company_type": "startup",
+"description": "Monitors client-side scripts and trackers on websites to keep them compliant with privacy and security rules (CCPA, CIPA, HIPAA, PCI DSS).",
+"primary_category": "privacy_eng",
+"privacy_relevance": "core",
+"techniques": [
+"tracker auditing"
+],
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://www.feroot.com",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nMonitors client-side scripts and trackers on websites to keep them compliant with privacy and security rules (CCPA, CIPA, HIPAA, PCI DSS).",
+"sources": [
+"https://www.feroot.com"
 ]
 },
 {
@@ -2434,6 +3865,50 @@
 "https://www.prnewswire.com/news-releases/tandem-by-offchain-labs-makes-strategic-investment-in-fhenix-bringing-fhe-to-blockchain-302411501.html (Tandem strategic investment, Mar 2025, 2026-11-24)",
 "https://finbold.com/fhenix-acquires-sunscreen-and-names-founder-ravital-solomon-to-lead-research/ (Sunscreen acquisition, Jul 2026, 2026-11-24)",
 "https://www.fhenix.io/blog/what-is-fhenix (company facts: HQ, team size, founders, investors, 2026-11-24)"
+]
+},
+{
+"slug": "finema",
+"name": "Finema",
+"website": "https://finema.co/",
+"hq": "Bangkok, Thailand",
+"hq_country": "Thailand",
+"company_type": "startup",
+"description": "Decentralized identity and verifiable-credential platform for citizen and enterprise services in Thailand.",
+"primary_category": "identity",
+"privacy_relevance": "core",
+"techniques": [
+"verifiable credentials"
+],
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://finema.co/",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nDecentralized identity and verifiable-credential platform for citizen and enterprise services in Thailand.",
+"sources": [
+"https://finema.co/"
+]
+},
+{
+"slug": "flexyconsent",
+"name": "FlexyConsent (Westcoast Technology Ltd)",
+"website": "https://flexyconsent.com/",
+"hq": "London, UK",
+"hq_country": "UK",
+"company_type": "startup",
+"description": "Cookie consent management platform supporting GDPR, CCPA, IAB TCF and GPP.",
+"primary_category": "consent",
+"privacy_relevance": "core",
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://flexyconsent.com/",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nCookie consent management platform supporting GDPR, CCPA, IAB TCF and GPP.",
+"sources": [
+"https://flexyconsent.com/",
+"https://flexyconsent.com/privacy-policy/ (evidence, 2026-11-24)"
 ]
 },
 {
@@ -2501,6 +3976,29 @@
 "body": "## Summary\n\nConfidential computing and key management.",
 "sources": [
 "Website: https://www.fortanix.com"
+]
+},
+{
+"slug": "fr0ntierx",
+"name": "Fr0ntierX",
+"website": "https://www.fr0ntierx.com/",
+"hq": "Lisbon, Portugal (unconfirmed; US entity Fr0ntierX Inc.)",
+"hq_country": "Portugal",
+"company_type": "startup",
+"description": "Polaris confidential-computing platform that keeps AI and data workloads encrypted in use inside TEEs.",
+"primary_category": "pec",
+"privacy_relevance": "core",
+"techniques": [
+"TEE"
+],
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://www.fr0ntierx.com/",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nPolaris confidential-computing platform that keeps AI and data workloads encrypted in use inside TEEs.",
+"sources": [
+"https://www.fr0ntierx.com/"
 ]
 },
 {
@@ -2578,6 +4076,27 @@
 "body": "## Summary\n\nService that prepares, submits and follows up UK subject access requests on behalf of individuals.",
 "sources": [
 "https://getmysar.com"
+]
+},
+{
+"slug": "getterms",
+"name": "GetTerms",
+"website": "https://getterms.io/",
+"hq": "USA",
+"hq_country": "USA",
+"company_type": "startup",
+"description": "Cookie consent manager and privacy-policy generator for websites and apps.",
+"primary_category": "consent",
+"privacy_relevance": "core",
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://getterms.io/",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nCookie consent manager and privacy-policy generator for websites and apps.",
+"sources": [
+"https://getterms.io/",
+"https://getterms.io/about-us (evidence, 2026-11-24)"
 ]
 },
 {
@@ -2660,6 +4179,26 @@
 "body": "## Summary\n\nPrivacy- and security-hardened mobile operating system, developed as a nonprofit project.",
 "sources": [
 "https://grapheneos.org"
+]
+},
+{
+"slug": "gravito",
+"name": "Gravito",
+"website": "https://www.gravito.net/",
+"hq": "Helsinki, Finland",
+"hq_country": "Finland",
+"company_type": "startup",
+"description": "Consent management platform with first-party data and identity management.",
+"primary_category": "consent",
+"privacy_relevance": "core",
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://www.gravito.net/",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nConsent management platform with first-party data and identity management.",
+"sources": [
+"https://www.gravito.net/"
 ]
 },
 {
@@ -2769,6 +4308,31 @@
 ]
 },
 {
+"slug": "hashid",
+"name": "hashID",
+"website": "https://hashid.eu/",
+"hq": "Crevillent, Spain",
+"hq_country": "Spain",
+"company_type": "startup",
+"description": "EUDI-compatible identity wallet with one-bit age checks and an end-to-end encrypted messenger (Desteba Productions S.L.).",
+"primary_category": "identity",
+"privacy_relevance": "core",
+"techniques": [
+"verifiable credentials",
+"selective disclosure",
+"E2EE"
+],
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://hashid.eu/",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nEUDI-compatible identity wallet with one-bit age checks and an end-to-end encrypted messenger (Desteba Productions S.L.).",
+"sources": [
+"https://hashid.eu/"
+]
+},
+{
 "slug": "hazy",
 "name": "Hazy",
 "hq": "London",
@@ -2810,6 +4374,75 @@
 "sources": [
 "https://www.eu-startups.com/2022/09/berlin-based-heydata-welcomes-e3-3-million-investment-to-scale-its-compliance-software-solution/",
 "https://heydata.eu/en"
+]
+},
+{
+"slug": "horizen-labs",
+"name": "Horizen Labs",
+"website": "https://horizenlabs.io/",
+"hq": "New York, United States (offices Milan; unconfirmed)",
+"hq_country": "USA",
+"company_type": "startup",
+"description": "Builds privacy and verification systems for institutions using ZK proofs and TEEs.",
+"primary_category": "privacy_chain",
+"privacy_relevance": "core",
+"techniques": [
+"ZK",
+"TEE"
+],
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://horizenlabs.io/",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nBuilds privacy and verification systems for institutions using ZK proofs and TEEs.",
+"sources": [
+"https://horizenlabs.io/"
+]
+},
+{
+"slug": "hounddog-ai",
+"name": "HoundDog.ai",
+"website": "https://hounddog.ai",
+"hq": "San Francisco, USA",
+"hq_country": "USA",
+"company_type": "startup",
+"description": "Privacy code scanner that finds personal and sensitive data flows in source code and generates data-map evidence for privacy compliance.",
+"primary_category": "privacy_eng",
+"privacy_relevance": "core",
+"techniques": [
+"static analysis"
+],
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://hounddog.ai",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nPrivacy code scanner that finds personal and sensitive data flows in source code and generates data-map evidence for privacy compliance.",
+"sources": [
+"https://hounddog.ai",
+"https://hounddog.ai/ (evidence, 2026-11-24)"
+]
+},
+{
+"slug": "hu-manity-co",
+"name": "Hu-manity.co (Cookie Compliance)",
+"website": "https://hu-manity.co",
+"hq": "Princeton, USA",
+"hq_country": "USA",
+"company_type": "startup",
+"description": "Consent management platform (Cookie Compliance, formerly Cookie Notice) from a company focused on individuals' data rights.",
+"primary_category": "consent",
+"privacy_relevance": "core",
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://hu-manity.co",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nConsent management platform (Cookie Compliance, formerly Cookie Notice) from a company focused on individuals' data rights.",
+"sources": [
+"https://hu-manity.co",
+"https://cookie-compliance.co/ (evidence, 2026-11-24)"
 ]
 },
 {
@@ -2907,6 +4540,26 @@
 ]
 },
 {
+"slug": "identos",
+"name": "IDENTOS",
+"website": "https://www.identos.com/",
+"hq": "Toronto, Canada",
+"hq_country": "Canada",
+"company_type": "startup",
+"description": "Access-policy and real-time consent/delegation platform for healthcare and public-sector data access.",
+"primary_category": "health_data",
+"privacy_relevance": "core",
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://www.identos.com/",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nAccess-policy and real-time consent/delegation platform for healthcare and public-sector data access.",
+"sources": [
+"https://www.identos.com/"
+]
+},
+{
 "slug": "idfy",
 "name": "IDfy (Privy)",
 "website": "https://www.idfy.com",
@@ -2925,6 +4578,70 @@
 "sources": [
 "https://m.thewire.in/article/ptiprnews/idfy-wins-meity-negd-dpdp-innovation-challenge-as-india-moves-closer-to-privacy-enforcement",
 "https://www.idfy.com"
+]
+},
+{
+"slug": "idx",
+"name": "IDX",
+"website": "https://idx.us",
+"hq": "Portland, USA",
+"hq_country": "USA",
+"company_type": "startup",
+"description": "Consumer identity theft protection, privacy and data-breach response services.",
+"primary_category": "consumer",
+"privacy_relevance": "adjacent",
+"status": "Acquired by ZeroFox (2022)",
+"status_code": "acquired",
+"acquirer": "ZeroFox",
+"website_verified": true,
+"verified_url": "https://idx.us",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nConsumer identity theft protection, privacy and data-breach response services.",
+"sources": [
+"https://idx.us"
+]
+},
+{
+"slug": "iexec",
+"name": "iExec",
+"website": "https://iex.ec/",
+"hq": "Lyon, France",
+"hq_country": "France",
+"company_type": "startup",
+"description": "Blockchain-based confidential computing protocol that runs applications on data inside hardware enclaves without exposing it.",
+"primary_category": "privacy_chain",
+"privacy_relevance": "core",
+"techniques": [
+"TEE"
+],
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://iex.ec/",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nBlockchain-based confidential computing protocol that runs applications on data inside hardware enclaves without exposing it.",
+"sources": [
+"https://iex.ec/"
+]
+},
+{
+"slug": "illow",
+"name": "illow",
+"hq": "Argentina",
+"hq_country": "Argentina",
+"company_type": "startup",
+"description": "Cookie consent platform for small businesses.",
+"primary_category": "consent",
+"privacy_relevance": "core",
+"status": "Acquired by BigID",
+"status_code": "acquired",
+"acquirer": "BigID",
+"website_verified": true,
+"verified_url": "https://illow.freshdesk.com/support/solutions/articles/73000645014-illow-services-to-cease-as-of-january-31-2025",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nCookie consent platform for small businesses.",
+"sources": [
+"https://illow.freshdesk.com/support/solutions/articles/73000645014-illow-services-to-cease-as-of-january-31-2025"
 ]
 },
 {
@@ -2965,6 +4682,31 @@
 "body": "## Summary\n\nData and application security, including database activity monitoring and data discovery.",
 "sources": [
 "Website: https://www.imperva.com"
+]
+},
+{
+"slug": "inco",
+"name": "Inco",
+"website": "https://www.inco.org/",
+"hq": "New York, United States (some sources: Miami)",
+"hq_country": "USA",
+"company_type": "startup",
+"description": "Confidentiality layer for blockchains enabling private transactions and smart contracts via encrypted computation (FHE, now also TEE).",
+"primary_category": "privacy_chain",
+"privacy_relevance": "core",
+"techniques": [
+"FHE",
+"TEE"
+],
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://www.inco.org/",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nConfidentiality layer for blockchains enabling private transactions and smart contracts via encrypted computation (FHE, now also TEE).",
+"sources": [
+"https://www.inco.org/",
+"https://www.theblock.co/post/278316/inco-raise-testnet (evidence, 2026-11-24)"
 ]
 },
 {
@@ -3142,6 +4884,27 @@
 ]
 },
 {
+"slug": "inth",
+"name": "Inth (Consent Management Inc.)",
+"website": "https://inth.com/",
+"hq": "San Francisco, USA",
+"hq_country": "USA",
+"company_type": "startup",
+"description": "Developer-oriented consent management platform.",
+"primary_category": "consent",
+"privacy_relevance": "core",
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://inth.com/",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nDeveloper-oriented consent management platform.",
+"sources": [
+"https://inth.com/",
+"https://inth.com/legals/privacy-policy (evidence, 2026-11-24)"
+]
+},
+{
 "slug": "ironvest",
 "name": "IronVest",
 "website": "https://ironvest.com",
@@ -3224,6 +4987,30 @@
 "https://en.globes.co.il/en/article-1001537099",
 "https://www.bloomberg.com/news/articles/2026-03-10/israel-s-jazz-raises-61-million-for-ai-data-loss-prevention",
 "https://jazz.security"
+]
+},
+{
+"slug": "k-id",
+"name": "k-ID",
+"website": "https://k-id.com",
+"hq": "Singapore",
+"hq_country": "Singapore",
+"company_type": "startup",
+"description": "Compliance platform for games and apps that handles age assurance, parental consent and age-appropriate settings across jurisdictions without retaining age-check data.",
+"primary_category": "identity",
+"privacy_relevance": "core",
+"techniques": [
+"age assurance"
+],
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://k-id.com",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nCompliance platform for games and apps that handles age assurance, parental consent and age-appropriate settings across jurisdictions without retaining age-check data.",
+"sources": [
+"https://k-id.com",
+"https://www.geekwire.com/2024/digital-youth-safety-startup-k-id-raises-45m-to-help-developers-comply-with-age-regulations/ (evidence, 2026-11-24)"
 ]
 },
 {
@@ -3537,6 +5324,26 @@
 ]
 },
 {
+"slug": "lawwwing",
+"name": "Lawwwing",
+"website": "https://lawwwing.com/",
+"hq": "Barcelona, Spain",
+"hq_country": "Spain",
+"company_type": "startup",
+"description": "Cookie banner CMP and website legal-text generator.",
+"primary_category": "consent",
+"privacy_relevance": "core",
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://lawwwing.com/",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nCookie banner CMP and website legal-text generator.",
+"sources": [
+"https://lawwwing.com/"
+]
+},
+{
 "slug": "layerx",
 "name": "LayerX",
 "website": "https://layerxsecurity.com",
@@ -3554,6 +5361,87 @@
 "body": "## Summary\n\nBrowser-extension security, including GenAI data leakage prevention.",
 "sources": [
 "Website: https://layerxsecurity.com"
+]
+},
+{
+"slug": "leaksignal",
+"name": "LeakSignal",
+"hq_country": "USA",
+"company_type": "startup",
+"description": "Inline classification and policy enforcement for sensitive data in transit through APIs and service meshes.",
+"primary_category": "dlp",
+"privacy_relevance": "adjacent",
+"techniques": [
+"data classification"
+],
+"status": "Acquired by F5 (2025)",
+"status_code": "acquired",
+"acquirer": "F5",
+"website_verified": true,
+"verified_url": "https://www.f5.com/company/blog/strengthening-data-protection-and-governance-for-ai-applications",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nInline classification and policy enforcement for sensitive data in transit through APIs and service meshes.",
+"sources": [
+"https://www.f5.com/company/blog/strengthening-data-protection-and-governance-for-ai-applications"
+]
+},
+{
+"slug": "legalblink",
+"name": "LegalBlink (Law-Tech srl)",
+"website": "https://legalblink.it/",
+"hq": "Italy",
+"hq_country": "Italy",
+"company_type": "startup",
+"description": "Website legal-compliance tools including a cookie consent CMP.",
+"primary_category": "consent",
+"privacy_relevance": "core",
+"status": "Active",
+"status_code": "active",
+"website_verified": false,
+"verification_note": "legalblink.it serves a certificate for another domain (storeden.com).",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nWebsite legal-compliance tools including a cookie consent CMP.",
+"sources": []
+},
+{
+"slug": "legally-ok",
+"name": "Legally ok",
+"website": "https://www.legally-ok.com/",
+"hq": "Switzerland",
+"hq_country": "Switzerland",
+"company_type": "startup",
+"description": "Swiss all-in-one website privacy tool: cookie banner, privacy policy and imprint generator.",
+"primary_category": "consent",
+"privacy_relevance": "core",
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://www.legally-ok.com/",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nSwiss all-in-one website privacy tool: cookie banner, privacy policy and imprint generator.",
+"sources": [
+"https://www.legally-ok.com/"
+]
+},
+{
+"slug": "legalweb-io",
+"name": "legalweb.io",
+"website": "https://legalweb.io",
+"hq": "Salzburg, Austria",
+"hq_country": "Austria",
+"company_type": "startup",
+"description": "GDPR compliance packages for websites and shops: cookie popup, privacy policy generator, and staff privacy training.",
+"primary_category": "program_mgmt",
+"privacy_relevance": "core",
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://legalweb.io",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nGDPR compliance packages for websites and shops: cookie popup, privacy policy generator, and staff privacy training.",
+"sources": [
+"https://legalweb.io",
+"https://legalweb.io/en/imprint/ (evidence, 2026-11-24)"
 ]
 },
 {
@@ -3600,6 +5488,52 @@
 ]
 },
 {
+"slug": "lissi",
+"name": "Lissi",
+"website": "https://www.lissi.id/",
+"hq": "Germany",
+"hq_country": "Germany",
+"company_type": "startup",
+"description": "EUDI wallet connector software letting businesses request and verify credentials from EU digital identity wallets.",
+"primary_category": "identity",
+"privacy_relevance": "core",
+"techniques": [
+"verifiable credentials"
+],
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://www.lissi.id/",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nEUDI wallet connector software letting businesses request and verify credentials from EU digital identity wallets.",
+"sources": [
+"https://www.lissi.id/"
+]
+},
+{
+"slug": "logosguard",
+"name": "LogosGuard",
+"website": "https://logosguard.com",
+"hq": "San Francisco, USA",
+"hq_country": "USA",
+"company_type": "startup",
+"description": "Local tool that replaces names, addresses and account numbers with placeholders before a prompt is sent to AI chat tools.",
+"primary_category": "ai_privacy",
+"privacy_relevance": "core",
+"techniques": [
+"PII redaction"
+],
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://logosguard.com",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nLocal tool that replaces names, addresses and account numbers with placeholders before a prompt is sent to AI chat tools.",
+"sources": [
+"https://logosguard.com"
+]
+},
+{
 "slug": "london-quantum-group",
 "name": "London Quantum Group",
 "website": "https://www.londonquantumgroup.com",
@@ -3617,6 +5551,31 @@
 "body": "## Summary\n\nPrivacy technology for health data used in AI; >$1.2M pre-seed.",
 "sources": [
 "https://www.londonquantumgroup.com"
+]
+},
+{
+"slug": "lorica-cybersecurity",
+"name": "Lorica Cybersecurity",
+"website": "https://lorica.ai/",
+"hq": "Toronto, Canada",
+"hq_country": "Canada",
+"company_type": "startup",
+"description": "Encrypted-computing platform for running AI and analytics on sensitive data while it stays encrypted.",
+"primary_category": "pec",
+"privacy_relevance": "core",
+"techniques": [
+"FHE",
+"TEE"
+],
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://lorica.ai/",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nEncrypted-computing platform for running AI and analytics on sensitive data while it stays encrypted.",
+"sources": [
+"https://lorica.ai/",
+"https://entrepreneurs.utoronto.ca/?p=46074 (evidence, 2026-11-24)"
 ]
 },
 {
@@ -3684,6 +5643,51 @@
 ]
 },
 {
+"slug": "malloc",
+"name": "Malloc",
+"website": "https://mallocprivacy.com",
+"hq": "Nicosia, Cyprus",
+"hq_country": "Cyprus",
+"company_type": "startup",
+"description": "Mobile app that uses on-device AI to detect spyware and stalkerware and block apps from secretly recording or transmitting data.",
+"primary_category": "consumer",
+"privacy_relevance": "core",
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://mallocprivacy.com",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nMobile app that uses on-device AI to detect spyware and stalkerware and block apps from secretly recording or transmitting data.",
+"sources": [
+"https://mallocprivacy.com"
+]
+},
+{
+"slug": "mattr",
+"name": "MATTR",
+"website": "https://mattr.global/",
+"hq": "Auckland, New Zealand",
+"hq_country": "New Zealand",
+"company_type": "startup",
+"description": "Verifiable credentials and mobile driver's licence platform with privacy-preserving selective disclosure.",
+"primary_category": "identity",
+"privacy_relevance": "core",
+"techniques": [
+"verifiable credentials",
+"selective disclosure",
+"mDL"
+],
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://mattr.global/",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nVerifiable credentials and mobile driver's licence platform with privacy-preserving selective disclosure.",
+"sources": [
+"https://mattr.global/"
+]
+},
+{
 "slug": "mdclone",
 "name": "MDClone",
 "website": "https://mdclone.com",
@@ -3703,6 +5707,93 @@
 "body": "## Notes\n\nContinues to operate its healthcare synthetic-data/ADAMS platform with ~$104M raised (last round: $63M Series C, 2022). Active through 2025-2026, sponsoring the 2025 Synthetic Data Summit and expanding its health-system research network in the US, Canada and Israel.",
 "sources": [
 "Website: https://mdclone.com"
+]
+},
+{
+"slug": "meeco",
+"name": "Meeco",
+"website": "https://www.meeco.me/",
+"hq": "Melbourne, Australia",
+"hq_country": "Australia",
+"company_type": "startup",
+"description": "Verifiable-credential and personal-data wallet platform (SVX) for issuing, holding and verifying credentials.",
+"primary_category": "identity",
+"privacy_relevance": "core",
+"techniques": [
+"verifiable credentials"
+],
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://www.meeco.me/",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nVerifiable-credential and personal-data wallet platform (SVX) for issuing, holding and verifying credentials.",
+"sources": [
+"https://www.meeco.me/"
+]
+},
+{
+"slug": "meru-data",
+"name": "Meru Data",
+"website": "https://www.merudata.com/",
+"hq": "Houston, Texas, USA",
+"hq_country": "USA",
+"company_type": "startup",
+"description": "Data privacy and information governance platform: data mapping, consent, DSRs.",
+"primary_category": "program_mgmt",
+"privacy_relevance": "core",
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://www.merudata.com/",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nData privacy and information governance platform: data mapping, consent, DSRs.",
+"sources": [
+"https://www.merudata.com/",
+"https://www.merudata.com/about (evidence, 2026-11-24)"
+]
+},
+{
+"slug": "metomic",
+"name": "Metomic",
+"website": "https://www.metomic.io",
+"hq": "London, UK",
+"hq_country": "UK",
+"company_type": "startup",
+"description": "SaaS and GenAI data security platform that finds and redacts sensitive and personal data in tools like Slack, Google Drive and ChatGPT.",
+"primary_category": "dlp",
+"privacy_relevance": "adjacent",
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://www.metomic.io",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nSaaS and GenAI data security platform that finds and redacts sensitive and personal data in tools like Slack, Google Drive and ChatGPT.",
+"sources": [
+"https://www.metomic.io",
+"https://www.securityweek.com/metomic-lands-20-series-a-for-data-security-platform/ (evidence, 2026-11-24)"
+]
+},
+{
+"slug": "miden",
+"name": "Miden",
+"website": "https://www.miden.xyz",
+"company_type": "startup",
+"description": "Zero-knowledge blockchain with client-side execution that keeps transactions private with selective disclosure; spun out of Polygon Labs in 2025.",
+"primary_category": "privacy_chain",
+"privacy_relevance": "core",
+"techniques": [
+"ZK"
+],
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://www.miden.xyz",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nZero-knowledge blockchain with client-side execution that keeps transactions private with selective disclosure; spun out of Polygon Labs in 2025.",
+"sources": [
+"https://www.miden.xyz",
+"https://www.theblock.co/post/352342/polygon-miden-funding-blockchain (evidence, 2026-11-24)"
 ]
 },
 {
@@ -3726,6 +5817,29 @@
 "https://en.globes.co.il/en/article-israeli-data-loss-prevention-co-mind-raises-30m-1001511987",
 "https://www.ynetnews.com/tech-and-digital/article/ryh8nuktzl",
 "https://mind.io"
+]
+},
+{
+"slug": "mind-network",
+"name": "Mind Network",
+"website": "https://mindnetwork.xyz/",
+"hq": "Singapore",
+"hq_country": "Singapore",
+"company_type": "startup",
+"description": "FHE infrastructure for encrypted computation in web3 and AI agents (encrypted restaking, confidential payments).",
+"primary_category": "privacy_chain",
+"privacy_relevance": "core",
+"techniques": [
+"FHE"
+],
+"status": "Active",
+"status_code": "active",
+"website_verified": false,
+"verification_note": "mindnetwork.xyz fails TLS certificate verification.",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nFHE infrastructure for encrypted computation in web3 and AI agents (encrypted restaking, confidential payments).",
+"sources": [
+"https://hotfix.coindesk.com/press-release/2024/09/26/mind-network-secures-10-million-in-pre-a-round-funding-to-continually-build-fhe-fully-homomorphic-encryption-layer (evidence, 2026-11-24)"
 ]
 },
 {
@@ -3764,6 +5878,31 @@
 "website_checked": "2026-11-23",
 "body": "## Summary\n\nAI information governance for unstructured data across file shares and cloud. ~$11.7M raised (CB Insights). Aggregators list it as alive; no recent news found.",
 "sources": []
+},
+{
+"slug": "mobilecoin",
+"name": "MobileCoin (Sentz)",
+"website": "https://www.sentz.com",
+"hq": "San Francisco, USA",
+"hq_country": "USA",
+"company_type": "startup",
+"description": "Privacy-focused cryptocurrency (MOB) and payments network used inside Signal; rebranded as Sentz, a stablecoin wallet.",
+"primary_category": "privacy_chain",
+"privacy_relevance": "core",
+"techniques": [
+"SGX",
+"ring signatures"
+],
+"status": "Merged/pivoted: renamed Sentz, a stablecoin payments app (2025)",
+"status_code": "merged/pivoted",
+"website_verified": true,
+"verified_url": "https://www.sentz.com",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nPrivacy-focused cryptocurrency (MOB) and payments network used inside Signal; rebranded as Sentz, a stablecoin wallet.",
+"sources": [
+"https://www.sentz.com",
+"https://en.wikipedia.org/wiki/MobileCoin (evidence, 2026-11-24)"
+]
 },
 {
 "slug": "modelyo",
@@ -3831,6 +5970,26 @@
 ]
 },
 {
+"slug": "my-agile-privacy",
+"name": "My Agile Privacy (Formula Agile SRL)",
+"website": "https://www.myagileprivacy.com/",
+"hq": "Dogana, San Marino",
+"hq_country": "San Marino",
+"company_type": "startup",
+"description": "Cookie consent and privacy plugin/CMP for WordPress.",
+"primary_category": "consent",
+"privacy_relevance": "core",
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://www.myagileprivacy.com/",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nCookie consent and privacy plugin/CMP for WordPress.",
+"sources": [
+"https://www.myagileprivacy.com/"
+]
+},
+{
 "slug": "myprivacy",
 "name": "MyPrivacy",
 "website": "https://myprivacy.io",
@@ -3867,6 +6026,54 @@
 "body": "## Notes\n\nRebranded to Wandz.ai in 2024, pivoting from customer-hijacking prevention to an AI adaptive customer-experience platform, then was sold to France's AB Tasty in November 2025 for an estimated $20-40M — well below the $84M it had raised. The product continues under AB Tasty for real-time personalization of anonymous visitors.",
 "sources": [
 "Website: https://wandz.ai"
+]
+},
+{
+"slug": "near-ai",
+"name": "NEAR AI",
+"website": "https://near.ai/",
+"hq": "San Francisco, United States (unconfirmed)",
+"hq_country": "USA",
+"company_type": "startup",
+"description": "Confidential AI inference service running open-weight models in Intel TDX and NVIDIA GPU TEEs with attestation per response (Jasnah Inc. dba NEAR AI).",
+"primary_category": "ai_privacy",
+"privacy_relevance": "core",
+"techniques": [
+"TEE"
+],
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://near.ai/",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nConfidential AI inference service running open-weight models in Intel TDX and NVIDIA GPU TEEs with attestation per response (Jasnah Inc. dba NEAR AI).",
+"sources": [
+"https://near.ai/"
+]
+},
+{
+"slug": "neosync",
+"name": "Neosync",
+"hq": "San Francisco, USA",
+"hq_country": "USA",
+"company_type": "startup",
+"description": "Open-source platform for anonymising production data and generating synthetic data for test and ML environments, including PII detection in free text.",
+"primary_category": "synthetic",
+"privacy_relevance": "core",
+"techniques": [
+"anonymization",
+"synthetic data"
+],
+"status": "Acquired by Grow Therapy (2025)",
+"status_code": "acquired",
+"acquirer": "Grow Therapy",
+"website_verified": true,
+"verified_url": "https://github.com/nucleuscloud/neosync",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nOpen-source platform for anonymising production data and generating synthetic data for test and ML environments, including PII detection in free text.",
+"sources": [
+"https://github.com/nucleuscloud/neosync",
+"https://www.trysignalbase.com/news/acquisitions/neosync-acquired-by-grow-therapy-acquisition (evidence, 2026-11-24)"
 ]
 },
 {
@@ -3911,6 +6118,32 @@
 ]
 },
 {
+"slug": "nillion",
+"name": "Nillion",
+"website": "https://nillion.com/",
+"hq": "Zug, Switzerland",
+"hq_country": "Switzerland",
+"company_type": "startup",
+"description": "'Blind computer' network that stores and computes on private data with MPC and other PETs without decrypting it.",
+"primary_category": "privacy_chain",
+"privacy_relevance": "core",
+"techniques": [
+"MPC",
+"FHE",
+"TEE"
+],
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://nillion.com/",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\n'Blind computer' network that stores and computes on private data with MPC and other PETs without decrypting it.",
+"sources": [
+"https://nillion.com/",
+"https://www.theblock.co/post/347691/nillion-network-launches-on-mainnet-providing-privacy-focused-blind-computation-for-dapps (evidence, 2026-11-24)"
+]
+},
+{
 "slug": "niobium",
 "name": "Niobium",
 "website": "https://niobium.co",
@@ -3952,6 +6185,30 @@
 "body": "## Summary\n\nOpen-source engine for running AI on-device and on-premises.",
 "sources": [
 "https://www.nobodywho.ai"
+]
+},
+{
+"slug": "nocturne-labs",
+"name": "Nocturne Labs",
+"website": "https://nocturne.xyz",
+"hq": "San Francisco, USA",
+"hq_country": "USA",
+"company_type": "startup",
+"description": "Protocol for private accounts and transactions on Ethereum.",
+"primary_category": "privacy_chain",
+"privacy_relevance": "core",
+"techniques": [
+"ZK"
+],
+"status": "Shut down (2024)",
+"status_code": "shut down",
+"website_verified": true,
+"verified_url": "https://nocturne.xyz",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nProtocol for private accounts and transactions on Ethereum.",
+"sources": [
+"https://nocturne.xyz",
+"https://cointelegraph.com/news/vitalik-buterin-nocturne-labs-shuts-down (evidence, 2026-11-24)"
 ]
 },
 {
@@ -4147,6 +6404,31 @@
 ]
 },
 {
+"slug": "odaseva",
+"name": "Odaseva",
+"website": "https://www.odaseva.com",
+"hq": "San Francisco, USA",
+"hq_country": "USA",
+"company_type": "startup",
+"description": "Data security and management for Salesforce data (backup, archiving) with privacy modules for erasure requests and sandbox anonymization.",
+"primary_category": "dlp",
+"privacy_relevance": "adjacent",
+"techniques": [
+"anonymization",
+"data masking"
+],
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://www.odaseva.com",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nData security and management for Salesforce data (backup, archiving) with privacy modules for erasure requests and sandbox anonymization.",
+"sources": [
+"https://www.odaseva.com",
+"https://www.odaseva.com/products/salesforce-data-privacy (evidence, 2026-11-24)"
+]
+},
+{
 "slug": "okara",
 "name": "Okara",
 "website": "https://okara.ai",
@@ -4208,6 +6490,27 @@
 ]
 },
 {
+"slug": "onesecondbefore",
+"name": "Onesecondbefore",
+"website": "https://www.onesecondbefore.com/",
+"hq": "Netherlands",
+"hq_country": "Netherlands",
+"company_type": "startup",
+"description": "First-party data collection and consent management platform.",
+"primary_category": "consent",
+"privacy_relevance": "adjacent",
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://www.onesecondbefore.com/",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nFirst-party data collection and consent management platform.",
+"sources": [
+"https://www.onesecondbefore.com/",
+"https://www.onesecondbefore.com/about/ (evidence, 2026-11-24)"
+]
+},
+{
 "slug": "onetrust",
 "name": "OneTrust",
 "website": "https://www.onetrust.com",
@@ -4250,6 +6553,29 @@
 "https://securityweek.com/anthropic-acquires-confidential-ai-startup-opaque-systems",
 "https://constellationr.com/insights/news/anthropic-licenses-releases-opaque-acquihire",
 "https://www.opaque.co"
+]
+},
+{
+"slug": "open-raven",
+"name": "Open Raven",
+"hq": "Los Angeles, USA",
+"hq_country": "USA",
+"company_type": "startup",
+"description": "Cloud data security platform that inventories and classifies sensitive data in data lakes and warehouses to prevent leaks and support compliance.",
+"primary_category": "discovery_dspm",
+"privacy_relevance": "core",
+"techniques": [
+"data classification"
+],
+"status": "Acquired by Formstack (2024)",
+"status_code": "acquired",
+"acquirer": "Formstack",
+"website_verified": true,
+"verified_url": "https://www.businesswire.com/news/home/20240611165409/en/Formstack-Acquires-Open-Raven",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nCloud data security platform that inventories and classifies sensitive data in data lakes and warehouses to prevent leaks and support compliance.",
+"sources": [
+"https://www.businesswire.com/news/home/20240611165409/en/Formstack-Acquires-Open-Raven"
 ]
 },
 {
@@ -4342,6 +6668,27 @@
 ]
 },
 {
+"slug": "optsens",
+"name": "OptSens",
+"website": "https://optsens.com/",
+"hq": "Serbia",
+"hq_country": "Serbia",
+"company_type": "startup",
+"description": "Consent management platform for websites.",
+"primary_category": "consent",
+"privacy_relevance": "core",
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://optsens.com/",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nConsent management platform for websites.",
+"sources": [
+"https://optsens.com/",
+"https://optsens.com/privacy-policy/ (evidence, 2026-11-24)"
+]
+},
+{
 "slug": "orion-security",
 "name": "Orion Security",
 "website": "https://www.orionsec.io",
@@ -4404,6 +6751,27 @@
 ]
 },
 {
+"slug": "pandectes",
+"name": "Pandectes",
+"website": "https://pandectes.io",
+"hq": "Kuusalu, Estonia",
+"hq_country": "Estonia",
+"company_type": "startup",
+"description": "Consent banner and GDPR/CCPA compliance app for Shopify stores, IAB TCF certified, with data request handling.",
+"primary_category": "consent",
+"privacy_relevance": "core",
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://pandectes.io",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nConsent banner and GDPR/CCPA compliance app for Shopify stores, IAB TCF certified, with data request handling.",
+"sources": [
+"https://pandectes.io",
+"https://pandectes.io/about-us/ (evidence, 2026-11-24)"
+]
+},
+{
 "slug": "partisia",
 "name": "Partisia",
 "website": "https://partisia.com",
@@ -4424,6 +6792,27 @@
 "body": "## Summary\n\nMPC products and MPC-based blockchain.",
 "sources": [
 "Website: https://partisia.com"
+]
+},
+{
+"slug": "passiro",
+"name": "Passiro",
+"website": "https://passiro.com/",
+"hq": "Frederiksberg, Denmark",
+"hq_country": "Denmark",
+"company_type": "startup",
+"description": "Free cookie banner and consent management platform.",
+"primary_category": "consent",
+"privacy_relevance": "core",
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://passiro.com/",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nFree cookie banner and consent management platform.",
+"sources": [
+"https://passiro.com/",
+"https://passiro.com/en-eu/about (evidence, 2026-11-24)"
 ]
 },
 {
@@ -4486,6 +6875,50 @@
 "body": "## Summary\n\nPrivacy-safe publisher audience platform.",
 "sources": [
 "Website: https://permutive.com"
+]
+},
+{
+"slug": "phala",
+"name": "Phala",
+"website": "https://phala.com/",
+"hq": "Singapore (US subsidiary in San Francisco)",
+"hq_country": "Singapore",
+"company_type": "startup",
+"description": "Confidential AI cloud running private LLM inference and agents on TEE-protected CPUs and GPUs (formerly Phala Network; operated by Hashforest Technology).",
+"primary_category": "ai_privacy",
+"privacy_relevance": "core",
+"techniques": [
+"TEE"
+],
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://phala.com/",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nConfidential AI cloud running private LLM inference and agents on TEE-protected CPUs and GPUs (formerly Phala Network; operated by Hashforest Technology).",
+"sources": [
+"https://phala.com/",
+"https://www.businesswire.com/news/home/20250904696127/en/Hashforest-Announces-Phala-Networks-Rebrand-to-phala.com-to-Power-AI-People-Can-Trust (evidence, 2026-11-24)"
+]
+},
+{
+"slug": "pieeye",
+"name": "PieEye",
+"website": "https://www.pii.ai/",
+"hq": "USA",
+"hq_country": "USA",
+"company_type": "startup",
+"description": "Privacy compliance software for e-commerce: consent management and data subject request automation.",
+"primary_category": "consent",
+"privacy_relevance": "core",
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://www.pii.ai/",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nPrivacy compliance software for e-commerce: consent management and data subject request automation.",
+"sources": [
+"https://www.pii.ai/"
 ]
 },
 {
@@ -4589,6 +7022,29 @@
 "body": "## Notes\n\nFounded 2021 by Guy Shanny and Roey Yaacovi; raised $8.5M seed; acquired May 2023 for est. $60M, integrated into IBM Guardium Insights.",
 "sources": [
 "Website: https://www.polar.security"
+]
+},
+{
+"slug": "prem-ai",
+"name": "Prem AI",
+"website": "https://www.premai.io/",
+"hq": "Lugano, Switzerland",
+"hq_country": "Switzerland",
+"company_type": "startup",
+"description": "Private/sovereign AI platform that runs models on encrypted GPUs (confidential computing) for enterprises.",
+"primary_category": "ai_privacy",
+"privacy_relevance": "core",
+"techniques": [
+"TEE"
+],
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://www.premai.io/",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nPrivate/sovereign AI platform that runs models on encrypted GPUs (confidential computing) for enterprises.",
+"sources": [
+"https://www.premai.io/"
 ]
 },
 {
@@ -4746,6 +7202,52 @@
 ]
 },
 {
+"slug": "privacy-dynamics",
+"name": "Privacy Dynamics",
+"website": "https://privacydynamics.io",
+"hq": "Seattle, USA",
+"hq_country": "USA",
+"company_type": "startup",
+"description": "Anonymizes production databases for use in lower environments by replacing direct identifiers and micro-aggregating quasi-identifiers.",
+"primary_category": "deid_vault",
+"privacy_relevance": "core",
+"techniques": [
+"anonymization",
+"k-anonymity/micro-aggregation"
+],
+"status": "Acquired by Xata (2026)",
+"status_code": "acquired",
+"acquirer": "Xata",
+"website_verified": true,
+"verified_url": "https://privacydynamics.io",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nAnonymizes production databases for use in lower environments by replacing direct identifiers and micro-aggregating quasi-identifiers.",
+"sources": [
+"https://privacydynamics.io",
+"https://xata.io/blog/xata-acquires-privacy-dynamics (evidence, 2026-11-24)"
+]
+},
+{
+"slug": "privacy-pillar",
+"name": "Privacy Pillar",
+"website": "https://privacypillar.com/",
+"hq": "USA",
+"hq_country": "USA",
+"company_type": "startup",
+"description": "Consent management platform with data subject request and data mapping tools.",
+"primary_category": "consent",
+"privacy_relevance": "core",
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://privacypillar.com/",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nConsent management platform with data subject request and data mapping tools.",
+"sources": [
+"https://privacypillar.com/"
+]
+},
+{
 "slug": "privacycloud",
 "name": "PrivacyCloud",
 "website": "https://privacycloud.com",
@@ -4850,6 +7352,29 @@
 ]
 },
 {
+"slug": "privasea",
+"name": "Privasea",
+"website": "https://www.privasea.ai/",
+"hq": "Gothenburg, Sweden (unconfirmed)",
+"hq_country": "Sweden",
+"company_type": "startup",
+"description": "FHE-based decentralized network for machine learning on encrypted data, with an FHE proof-of-human ID app.",
+"primary_category": "privacy_chain",
+"privacy_relevance": "core",
+"techniques": [
+"FHE"
+],
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://www.privasea.ai/",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nFHE-based decentralized network for machine learning on encrypted data, with an FHE proof-of-human ID app.",
+"sources": [
+"https://www.privasea.ai/"
+]
+},
+{
 "slug": "private-ai",
 "name": "Limina",
 "former_names": [
@@ -4874,6 +7399,55 @@
 "sources": [
 "Website: https://www.private-ai.com",
 "https://www.getlimina.ai/en"
+]
+},
+{
+"slug": "private-identity",
+"name": "Private Identity",
+"website": "https://privateid.com/",
+"hq": "Washington DC, USA",
+"hq_country": "USA",
+"company_type": "startup",
+"description": "On-device, privacy-preserving biometric authentication and identity verification (IEEE 2410 biometric privacy).",
+"primary_category": "identity",
+"privacy_relevance": "adjacent",
+"techniques": [
+"on-device biometrics",
+"encrypted biometrics"
+],
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://privateid.com/",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nOn-device, privacy-preserving biometric authentication and identity verification (IEEE 2410 biometric privacy).",
+"sources": [
+"https://privateid.com/"
+]
+},
+{
+"slug": "privatecore",
+"name": "PrivateCore",
+"website": "https://privatecore.com",
+"hq": "Palo Alto, USA",
+"hq_country": "USA",
+"company_type": "startup",
+"description": "vCage software that encrypted server memory and attested servers to protect data in use on commodity x86 hardware.",
+"primary_category": "pec",
+"privacy_relevance": "core",
+"techniques": [
+"memory encryption",
+"attestation"
+],
+"status": "Acquired by Facebook (2014)",
+"status_code": "acquired",
+"acquirer": "Facebook",
+"website_verified": true,
+"verified_url": "https://privatecore.com",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nvCage software that encrypted server memory and attested servers to protect data in use on commodity x86 hardware.",
+"sources": [
+"https://privatecore.com"
 ]
 },
 {
@@ -4918,6 +7492,27 @@
 "body": "## Notes\n\nAcquired by Informatica in July 2023 (once valued at ~$400M); the standalone platform was absorbed into Informatica's Intelligent Data Management Cloud (IDMC) as data access management/privacy capabilities by 2024. Informatica itself agreed to be acquired by Salesforce in a ~$8B deal announced May 2025.",
 "sources": [
 "Website: https://www.informatica.com"
+]
+},
+{
+"slug": "privo",
+"name": "PRIVO",
+"website": "https://www.privo.com/",
+"hq": "USA",
+"hq_country": "USA",
+"company_type": "startup",
+"description": "Children's privacy compliance (COPPA, age-appropriate design): age assurance, verifiable parental consent and kids' privacy certification.",
+"primary_category": "consent",
+"privacy_relevance": "core",
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://www.privo.com/",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nChildren's privacy compliance (COPPA, age-appropriate design): age assurance, verifiable parental consent and kids' privacy certification.",
+"sources": [
+"https://www.privo.com/",
+"https://www.privo.com/home (evidence, 2026-11-24)"
 ]
 },
 {
@@ -5069,6 +7664,29 @@
 ]
 },
 {
+"slug": "pyte",
+"name": "Pyte",
+"website": "https://www.pyte.ai/",
+"hq": "Los Angeles, USA",
+"hq_country": "USA",
+"company_type": "startup",
+"description": "Secure multiparty computation platform (SecureMatch) for running analytics and ML on encrypted data across organizations.",
+"primary_category": "pec",
+"privacy_relevance": "core",
+"techniques": [
+"MPC"
+],
+"status": "Unclear",
+"status_code": "unclear",
+"website_verified": false,
+"verification_note": "pyte.ai fails the TLS handshake.",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nSecure multiparty computation platform (SecureMatch) for running analytics and ML on encrypted data across organizations.",
+"sources": [
+"https://siliconangle.com/2024/06/12/pyte-secures-5m-expand-secure-computation-regulated-industries/ (evidence, 2026-11-24)"
+]
+},
+{
 "slug": "qedit",
 "name": "QEDIT",
 "website": "https://qed-it.com",
@@ -5113,6 +7731,27 @@
 ]
 },
 {
+"slug": "radarfirst",
+"name": "RadarFirst (formerly RADAR)",
+"website": "https://www.radarfirst.com",
+"hq": "Portland, USA",
+"hq_country": "USA",
+"company_type": "startup",
+"description": "Platform for assessing privacy and AI incidents against breach-notification laws and managing regulatory reporting.",
+"primary_category": "program_mgmt",
+"privacy_relevance": "core",
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://www.radarfirst.com",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nPlatform for assessing privacy and AI incidents against breach-notification laws and managing regulatory reporting.",
+"sources": [
+"https://www.radarfirst.com",
+"https://www.radarfirst.com/blog/radar-wins-2017-hpe-iapp-innovation-award-for-privacy-technology-at-p-s-r/ (evidence, 2026-11-24)"
+]
+},
+{
 "slug": "ray-security",
 "name": "Ray Security",
 "website": "https://raysecurity.io",
@@ -5151,6 +7790,30 @@
 "body": "## Summary\n\nEncrypted private wireless carrier.",
 "sources": [
 "https://www.really.com"
+]
+},
+{
+"slug": "reclaim-protocol",
+"name": "Reclaim Protocol",
+"website": "https://www.reclaimprotocol.org",
+"hq": "Hyderabad, India",
+"hq_country": "India",
+"company_type": "startup",
+"description": "Lets users prove facts (education, employment, loyalty status) from existing web accounts via zkTLS proofs without sharing the underlying data.",
+"primary_category": "identity",
+"privacy_relevance": "core",
+"techniques": [
+"ZK",
+"zkTLS"
+],
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://www.reclaimprotocol.org",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nLets users prove facts (education, employment, loyalty status) from existing web accounts via zkTLS proofs without sharing the underlying data.",
+"sources": [
+"https://www.reclaimprotocol.org"
 ]
 },
 {
@@ -5460,6 +8123,30 @@
 ]
 },
 {
+"slug": "scrt-labs",
+"name": "SCRT Labs (Secret Network)",
+"website": "https://scrt.network/",
+"hq": "United States (Daly City or Chicago, unconfirmed)",
+"hq_country": "USA",
+"company_type": "startup",
+"description": "Core developer of Secret Network, a privacy blockchain with encrypted smart contracts running in TEEs (formerly Enigma).",
+"primary_category": "privacy_chain",
+"privacy_relevance": "core",
+"techniques": [
+"TEE"
+],
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://scrt.network/",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nCore developer of Secret Network, a privacy blockchain with encrypted smart contracts running in TEEs (formerly Enigma).",
+"sources": [
+"https://scrt.network/",
+"https://docs.scrt.network/secret-network-documentation/overview-ecosystem-and-technology/ecosystem-overview/contributors-and-entities/secret-labs (evidence, 2026-11-24)"
+]
+},
+{
 "slug": "scytale",
 "name": "Scytale",
 "website": "https://scytale.ai",
@@ -5525,6 +8212,27 @@
 ]
 },
 {
+"slug": "secure-privacy",
+"name": "Secure Privacy",
+"website": "https://secureprivacy.ai/",
+"hq": "Vedbæk, Denmark",
+"hq_country": "Denmark",
+"company_type": "startup",
+"description": "Cookie consent and privacy compliance platform for websites and apps.",
+"primary_category": "consent",
+"privacy_relevance": "core",
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://secureprivacy.ai/",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nCookie consent and privacy compliance platform for websites and apps.",
+"sources": [
+"https://secureprivacy.ai/",
+"https://secureprivacy.ai/contact-us (evidence, 2026-11-24)"
+]
+},
+{
 "slug": "securepii",
 "name": "SecurePII",
 "website": "https://www.securepii.cloud",
@@ -5568,6 +8276,27 @@
 ]
 },
 {
+"slug": "seers",
+"name": "Seers",
+"website": "https://seers.ai",
+"hq": "UK",
+"hq_country": "UK",
+"company_type": "startup",
+"description": "Consent and privacy management platform (cookie consent, DSAR, policies) that took part in the UK ICO regulatory sandbox.",
+"primary_category": "consent",
+"privacy_relevance": "core",
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://seers.ai",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nConsent and privacy management platform (cookie consent, DSAR, policies) that took part in the UK ICO regulatory sandbox.",
+"sources": [
+"https://seers.ai",
+"https://cy.ico.org.uk/media2/migrated/4018590/seers-regulatory-sandbox-final-report-final.pdf (evidence, 2026-11-24)"
+]
+},
+{
 "slug": "sentra",
 "name": "Sentra",
 "website": "https://www.sentra.io",
@@ -5584,6 +8313,27 @@
 "body": "## Notes\n\nFounded 2021 by ex-Unit 8200 cyber chief Yoav Regev; $30M Series A (Jan 2023), $50M Series B led by Key1 Capital (2025); ~$103M total raised.",
 "sources": [
 "Website: https://www.sentra.io"
+]
+},
+{
+"slug": "sfbx",
+"name": "SFBX (AppConsent)",
+"website": "https://sfbx.io/",
+"hq": "Bordeaux, France",
+"hq_country": "France",
+"company_type": "startup",
+"description": "Consent management platform (AppConsent) for web, mobile apps and CTV, plus consent-data exchange tools.",
+"primary_category": "consent",
+"privacy_relevance": "core",
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://sfbx.io/",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nConsent management platform (AppConsent) for web, mobile apps and CTV, plus consent-data exchange tools.",
+"sources": [
+"https://sfbx.io/",
+"https://sfbx.io/en/entreprise (evidence, 2026-11-24)"
 ]
 },
 {
@@ -5604,6 +8354,30 @@
 "body": "## Summary\n\nAgentless data protection that fragments and distributes data across storage locations.",
 "sources": [
 "https://shardsecure.com"
+]
+},
+{
+"slug": "sharering",
+"name": "ShareRing",
+"website": "https://sharering.network/",
+"hq": "Australia (unconfirmed)",
+"hq_country": "Australia",
+"company_type": "startup",
+"description": "Privacy-first reusable identity: self-sovereign credentials and reusable KYC shared selectively with businesses.",
+"primary_category": "identity",
+"privacy_relevance": "core",
+"techniques": [
+"verifiable credentials",
+"selective disclosure"
+],
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://sharering.network/",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nPrivacy-first reusable identity: self-sovereign credentials and reusable KYC shared selectively with businesses.",
+"sources": [
+"https://sharering.network/"
 ]
 },
 {
@@ -5630,6 +8404,29 @@
 ]
 },
 {
+"slug": "shielded-technologies",
+"name": "Shielded Technologies",
+"website": "https://www.shielded.io/",
+"hq": "New York, United States / Cayman Islands (unconfirmed)",
+"hq_country": "USA",
+"company_type": "startup",
+"description": "Core developer of the Midnight privacy blockchain (zero-knowledge, data-protection smart contracts); spun out of Input Output.",
+"primary_category": "privacy_chain",
+"privacy_relevance": "core",
+"techniques": [
+"ZK"
+],
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://www.shielded.io/",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nCore developer of the Midnight privacy blockchain (zero-knowledge, data-protection smart contracts); spun out of Input Output.",
+"sources": [
+"https://www.shielded.io/"
+]
+},
+{
 "slug": "signal-foundation",
 "name": "Signal Foundation",
 "website": "https://signal.org",
@@ -5647,6 +8444,29 @@
 "body": "## Summary\n\nNonprofit end-to-end encrypted messenger.",
 "sources": [
 "Website: https://signal.org"
+]
+},
+{
+"slug": "silence-laboratories",
+"name": "Silence Laboratories",
+"website": "https://silencelaboratories.com/",
+"hq": "Singapore",
+"hq_country": "Singapore",
+"company_type": "startup",
+"description": "MPC-based private computing for keys and data collaboration (Silent Compute, Silent Shard) without exposing raw data.",
+"primary_category": "pec",
+"privacy_relevance": "core",
+"techniques": [
+"MPC"
+],
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://silencelaboratories.com/",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nMPC-based private computing for keys and data collaboration (Silent Compute, Silent Shard) without exposing raw data.",
+"sources": [
+"https://silencelaboratories.com/"
 ]
 },
 {
@@ -5687,6 +8507,27 @@
 "body": "## Summary\n\nPrivate, encrypted messenger without any user identifiers.",
 "sources": [
 "https://simplex.chat"
+]
+},
+{
+"slug": "sitetrust",
+"name": "SiteTrust",
+"website": "https://sitetrust.com/",
+"hq": "Fairlawn, Ohio, USA",
+"hq_country": "USA",
+"company_type": "startup",
+"description": "Cookie consent and AI-disclosure banners for websites.",
+"primary_category": "consent",
+"privacy_relevance": "core",
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://sitetrust.com/",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nCookie consent and AI-disclosure banners for websites.",
+"sources": [
+"https://sitetrust.com/",
+"https://sitetrust.com/privacy (evidence, 2026-11-24)"
 ]
 },
 {
@@ -5816,6 +8657,50 @@
 ]
 },
 {
+"slug": "specterx",
+"name": "SpecterX",
+"website": "https://specterx.com",
+"hq": "Tel Aviv, Israel",
+"hq_country": "Israel",
+"company_type": "startup",
+"description": "Keeps files shared outside the organisation governed, tracked and revocable wherever they travel.",
+"primary_category": "dlp",
+"privacy_relevance": "adjacent",
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://specterx.com",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nKeeps files shared outside the organisation governed, tracked and revocable wherever they travel.",
+"sources": [
+"https://specterx.com"
+]
+},
+{
+"slug": "sphereon",
+"name": "Sphereon",
+"website": "https://sphereon.com/",
+"hq": "Amsterdam, Netherlands",
+"hq_country": "Netherlands",
+"company_type": "startup",
+"description": "SSI and verifiable-credential software (wallets, issuers, verifiers) for trusted digital interactions.",
+"primary_category": "identity",
+"privacy_relevance": "core",
+"techniques": [
+"verifiable credentials",
+"DID"
+],
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://sphereon.com/",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nSSI and verifiable-credential software (wallets, issuers, verifiers) for trusted digital interactions.",
+"sources": [
+"https://sphereon.com/"
+]
+},
+{
 "slug": "spruce-id",
 "name": "Spruce ID",
 "website": "https://spruceid.com",
@@ -5925,6 +8810,30 @@
 ]
 },
 {
+"slug": "strac",
+"name": "Strac",
+"website": "https://www.strac.io",
+"hq": "Seattle, USA",
+"hq_country": "USA",
+"company_type": "startup",
+"description": "Agentless data discovery, classification and DLP for SaaS, cloud, endpoints and GenAI that finds and redacts or masks sensitive personal data.",
+"primary_category": "discovery_dspm",
+"privacy_relevance": "core",
+"techniques": [
+"PII redaction",
+"data classification"
+],
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://www.strac.io",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nAgentless data discovery, classification and DLP for SaaS, cloud, endpoints and GenAI that finds and redacts or masks sensitive personal data.",
+"sources": [
+"https://www.strac.io"
+]
+},
+{
 "slug": "symmetry-systems",
 "name": "Symmetry Systems",
 "website": "https://www.symmetry-systems.com",
@@ -6010,6 +8919,27 @@
 ]
 },
 {
+"slug": "syrenis",
+"name": "Syrenis (Cassie)",
+"website": "https://syrenis.com/",
+"hq": "Warrington, UK",
+"hq_country": "UK",
+"company_type": "startup",
+"description": "Enterprise consent and preference management platform (Cassie).",
+"primary_category": "consent",
+"privacy_relevance": "core",
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://syrenis.com/",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nEnterprise consent and preference management platform (Cassie).",
+"sources": [
+"https://syrenis.com/",
+"https://syrenis.com/contact-us/ (evidence, 2026-11-24)"
+]
+},
+{
 "slug": "taceo",
 "name": "TACEO",
 "website": "https://taceo.io",
@@ -6032,6 +8962,27 @@
 "sources": [
 "https://tech.eu/2025/07/31/taceo-raises-55m-seed-to-scale-encrypted-data-collaboration-platform/",
 "https://taceo.io"
+]
+},
+{
+"slug": "tarteaucitron-io",
+"name": "tarteaucitron.io",
+"website": "https://tarteaucitron.io",
+"hq": "France",
+"hq_country": "France",
+"company_type": "startup",
+"description": "French GDPR cookie consent manager, available as open-source script and hosted service.",
+"primary_category": "consent",
+"privacy_relevance": "core",
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://tarteaucitron.io",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nFrench GDPR cookie consent manager, available as open-source script and hosted service.",
+"sources": [
+"https://tarteaucitron.io",
+"https://tarteaucitron.io/ (evidence, 2026-11-24)"
 ]
 },
 {
@@ -6072,6 +9023,27 @@
 "body": "## Summary\n\nGDPR-hardened AI inference platform in Europe. Raised $10M.",
 "sources": [
 "https://tensorx.ai"
+]
+},
+{
+"slug": "termageddon",
+"name": "Termageddon",
+"website": "https://termageddon.com",
+"hq": "USA",
+"hq_country": "USA",
+"company_type": "startup",
+"description": "Auto-updating privacy policy generator and cookie consent banner for websites.",
+"primary_category": "program_mgmt",
+"privacy_relevance": "core",
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://termageddon.com",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nAuto-updating privacy policy generator and cookie consent banner for websites.",
+"sources": [
+"https://termageddon.com",
+"https://termageddon.com/about-us/ (evidence, 2026-11-24)"
 ]
 },
 {
@@ -6329,6 +9301,70 @@
 ]
 },
 {
+"slug": "truendo",
+"name": "TRUENDO",
+"website": "https://truendo.com/",
+"hq": "Vienna, Austria",
+"hq_country": "Austria",
+"company_type": "startup",
+"description": "Consent management platform for websites.",
+"primary_category": "consent",
+"privacy_relevance": "core",
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://truendo.com/",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nConsent management platform for websites.",
+"sources": [
+"https://truendo.com/",
+"https://www.truendo.com/en/imprint (evidence, 2026-11-24)"
+]
+},
+{
+"slug": "truevault",
+"name": "TrueVault",
+"website": "https://www.truevault.com",
+"hq": "San Francisco, USA",
+"hq_country": "USA",
+"company_type": "startup",
+"description": "Privacy compliance software for small and e-commerce businesses (privacy notices, data requests, consumer privacy-law compliance).",
+"primary_category": "program_mgmt",
+"privacy_relevance": "core",
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://www.truevault.com",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nPrivacy compliance software for small and e-commerce businesses (privacy notices, data requests, consumer privacy-law compliance).",
+"sources": [
+"https://www.truevault.com"
+]
+},
+{
+"slug": "trust-stamp",
+"name": "Trust Stamp",
+"website": "https://truststamp.ai",
+"hq": "Atlanta, USA",
+"hq_country": "USA",
+"company_type": "startup",
+"description": "Identity verification and biometric authentication that converts biometrics into irreversible tokens to protect privacy.",
+"primary_category": "identity",
+"privacy_relevance": "adjacent",
+"techniques": [
+"biometric tokenization"
+],
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://truststamp.ai",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nIdentity verification and biometric authentication that converts biometrics into irreversible tokens to protect privacy.",
+"sources": [
+"https://truststamp.ai"
+]
+},
+{
 "slug": "trustarc",
 "name": "TrustArc",
 "website": "https://trustarc.com/",
@@ -6522,6 +9558,27 @@
 "sources": []
 },
 {
+"slug": "uniconsent",
+"name": "UniConsent (Transfon Ltd)",
+"website": "https://www.uniconsent.com/",
+"hq": "UK",
+"hq_country": "UK",
+"company_type": "startup",
+"description": "Consent management platform for websites and apps supporting GDPR, US state laws, IAB TCF and GPP.",
+"primary_category": "consent",
+"privacy_relevance": "core",
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://www.uniconsent.com/",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nConsent management platform for websites and apps supporting GDPR, US state laws, IAB TCF and GPP.",
+"sources": [
+"https://www.uniconsent.com/",
+"https://www.uniconsent.com/about (evidence, 2026-11-24)"
+]
+},
+{
 "slug": "usercentrics",
 "name": "Usercentrics",
 "website": "https://usercentrics.com",
@@ -6540,6 +9597,27 @@
 "sources": [
 "https://captaincompliance.com/?p=10276",
 "https://usercentrics.com"
+]
+},
+{
+"slug": "vallonic",
+"name": "Vallonic (Consent Studio)",
+"website": "https://vallonic.com/",
+"hq": "Tilburg, Netherlands",
+"hq_country": "Netherlands",
+"company_type": "startup",
+"description": "Compliance-technology holding whose products include the Consent Studio CMP.",
+"primary_category": "consent",
+"privacy_relevance": "core",
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://vallonic.com/",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nCompliance-technology holding whose products include the Consent Studio CMP.",
+"sources": [
+"https://vallonic.com/",
+"https://vallonic.com/about (evidence, 2026-11-24)"
 ]
 },
 {
@@ -6563,6 +9641,55 @@
 "https://www.proofpoint.com/us/proofpoint-signs-definitive-agreement-to-acquire-varonis",
 "https://www.sec.gov/Archives/edgar/data/0001361113/000121390026109901/ea030861001ex99-1.htm",
 "https://www.varonis.com"
+]
+},
+{
+"slug": "vaultree",
+"name": "Vaultree",
+"website": "https://www.vaultree.com",
+"hq": "Cork, Ireland",
+"hq_country": "Ireland",
+"company_type": "startup",
+"description": "Encryption platform that lets databases and analytics run queries on data while it stays encrypted (data-in-use encryption, FHE-based).",
+"primary_category": "pec",
+"privacy_relevance": "core",
+"techniques": [
+"FHE",
+"searchable encryption"
+],
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://www.vaultree.com",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nEncryption platform that lets databases and analytics run queries on data while it stays encrypted (data-in-use encryption, FHE-based).",
+"sources": [
+"https://www.vaultree.com",
+"https://techcrunch.com/2022/12/07/vaultree-raises-12-8m-to-let-companies-more-easily-work-with-encrypted-data (evidence, 2026-11-24)"
+]
+},
+{
+"slug": "veil-ai",
+"name": "VEIL.AI",
+"website": "https://veil.ai",
+"hq": "Helsinki, Finland",
+"hq_country": "Finland",
+"company_type": "startup",
+"description": "Anonymization engine producing row-level anonymized datasets with privacy and quality reports, focused on health data.",
+"primary_category": "deid_vault",
+"privacy_relevance": "core",
+"techniques": [
+"anonymization"
+],
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://veil.ai",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nAnonymization engine producing row-level anonymized datasets with privacy and quality reports, focused on health data.",
+"sources": [
+"https://veil.ai",
+"https://www.helsinki.fi/en/helsinki-innovation-services/industry-and-investors/commercialisation-projects/veilai-enables-safe-use-sensitive-health-data (evidence, 2026-11-24)"
 ]
 },
 {
@@ -6601,6 +9728,30 @@
 "body": "## Summary\n\nPrivate AI platform offering open models with encrypted API access and no stored conversations.",
 "sources": [
 "https://venice.ai"
+]
+},
+{
+"slug": "vera",
+"name": "Vera",
+"hq": "San Francisco, USA",
+"hq_country": "USA",
+"company_type": "startup",
+"description": "Data-centric security that encrypted files and enforced access policies wherever they were shared.",
+"primary_category": "dlp",
+"privacy_relevance": "adjacent",
+"techniques": [
+"encryption",
+"DRM"
+],
+"status": "Acquired by HelpSystems/Fortra (2020)",
+"status_code": "acquired",
+"acquirer": "HelpSystems/Fortra",
+"website_verified": true,
+"verified_url": "https://www.fortra.com/platform/secure-collaboration",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nData-centric security that encrypted files and enforced access policies wherever they were shared.",
+"sources": [
+"https://www.fortra.com/platform/secure-collaboration"
 ]
 },
 {
@@ -6645,6 +9796,30 @@
 "body": "## Summary\n\nData vault / tokenization, payments focus.",
 "sources": [
 "Website: https://www.verygoodsecurity.com"
+]
+},
+{
+"slug": "vess-labs",
+"name": "VESS Labs",
+"website": "https://www.vess.id/en-us/",
+"hq": "Tokyo, Japan",
+"hq_country": "Japan",
+"company_type": "startup",
+"description": "Startup building DID/verifiable-credential products and consulting on decentralized identity.",
+"primary_category": "identity",
+"privacy_relevance": "core",
+"techniques": [
+"DID",
+"verifiable credentials"
+],
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://www.vess.id/en-us/",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nStartup building DID/verifiable-credential products and consulting on decentralized identity.",
+"sources": [
+"https://www.vess.id/en-us/"
 ]
 },
 {
@@ -6732,6 +9907,51 @@
 "sources": [
 "https://www.techzine.eu/news/privacy-compliance/137383/wodan-ai-raises-e2-million-to-unleash-ai-on-encrypted-data",
 "https://wodan.ai"
+]
+},
+{
+"slug": "wpconsent",
+"name": "WPConsent",
+"website": "https://wpconsent.com/",
+"hq": "USA",
+"hq_country": "USA",
+"company_type": "startup",
+"description": "Cookie consent management plugin for WordPress.",
+"primary_category": "consent",
+"privacy_relevance": "core",
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://wpconsent.com/",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nCookie consent management plugin for WordPress.",
+"sources": [
+"https://wpconsent.com/",
+"https://wpconsent.com/about/ (evidence, 2026-11-24)"
+]
+},
+{
+"slug": "xtendr",
+"name": "xtendr",
+"website": "https://xtendr.io/",
+"hq": "Budapest, Hungary",
+"hq_country": "Hungary",
+"company_type": "startup",
+"description": "Privacy-preserving data collaboration platform letting organizations match and analyse data across sources without sharing it.",
+"primary_category": "clean_room",
+"privacy_relevance": "core",
+"techniques": [
+"MPC",
+"homomorphic encryption"
+],
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://xtendr.io/",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nPrivacy-preserving data collaboration platform letting organizations match and analyse data across sources without sharing it.",
+"sources": [
+"https://xtendr.io/"
 ]
 },
 {
