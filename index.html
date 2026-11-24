@@ -328,7 +328,7 @@ function openCompany(slug){
         ${row("Techniques", c.techniques)}
         ${row("Type", esc(c.company_type))}
         ${row("Founded", esc(c.founded_year))}
-        ${row("Funding (USD)", esc(c.total_funding_usd))}
+        ${row("Funding (USD)", esc(typeof c.total_funding_usd === "number" ? "$" + c.total_funding_usd.toLocaleString("en-US") : c.total_funding_usd))}
         ${row("Investors", c.key_investors)}
         ${c.website_verified && c.verified_url && c.verified_url !== c.website ? row("Confirmed via", `<a href="${esc(c.verified_url)}" target="_blank" rel="noopener">${esc(domain(c.verified_url) || c.verified_url)}</a>`) : ""}
         ${c.website_verified && c.verification_note ? row("Note", esc(c.verification_note)) : ""}

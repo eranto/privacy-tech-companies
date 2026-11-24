@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-23",
+"generated": "2026-11-24",
 "companies": [
 {
 "slug": "1touch-io",
@@ -2388,22 +2388,52 @@
 "slug": "fhenix",
 "name": "Fhenix",
 "website": "https://www.fhenix.io/",
-"hq": "Israel",
+"hq": "Tel Aviv, Israel",
 "hq_country": "Israel",
-"description": "Confidential smart-contract platform for Ethereum built on fully homomorphic encryption.",
+"founded_year": 2023,
+"company_type": "startup",
+"description": "Encrypted computation for Ethereum and other EVM chains using fully homomorphic encryption (FHE). Its CoFHE coprocessor lets smart contracts compute on encrypted data and is live on Ethereum and Arbitrum.",
+"products": [
+"CoFHE (FHE coprocessor for EVM chains)",
+"FHE Solidity libraries"
+],
 "primary_category": "privacy_chain",
 "privacy_relevance": "core",
 "techniques": [
 "FHE"
 ],
+"sector_focus": [
+"blockchain / Web3",
+"DeFi"
+],
 "status": "Active",
 "status_code": "active",
+"total_funding_usd": 22000000,
+"key_investors": [
+"Hack VC",
+"Multicoin Capital",
+"Collider Ventures",
+"Amber Group",
+"Primitive Ventures",
+"GSR",
+"Stake Capital",
+"Dao5",
+"Tandem (Offchain Labs)",
+"BIPROGY"
+],
+"employees_range": "11-50",
 "website_verified": true,
 "verified_url": "https://www.fhenix.io/",
 "website_checked": "2026-11-23",
-"body": "## Notes\n\nRaised $15M Series A led by Hack VC (2023; $22M+ total), took a strategic investment from Offchain Labs' Tandem (March 2025), and acquired FHE developer Sunscreen (July 2026) to build quantum-safe privacy layers across networks including Base and Arbitrum.",
+"body": "## Notes\n\nRaised $15M Series A led by Hack VC (June 2024; $22M total), took a strategic investment from Offchain Labs' Tandem (March 2025), and acquired FHE developer Sunscreen (July 2026) to build quantum-safe privacy layers across networks including Base and Arbitrum.\n\n## Update (2026-11-24)\n\nFhenix was founded in Tel Aviv in 2023 by Guy Zyskind, who also founded Secret Network and is now an assistant professor at the University of Miami. Guy Itzhaki, formerly Intel's director of FHE and blockchain business development, is CEO. Its product is CoFHE, a coprocessor that runs FHE computations off-chain for smart contracts on EVM chains; it is live on Ethereum and Arbitrum mainnet and on Ethereum, Arbitrum and Base test networks.\n\nFunding: a $7M seed round led by Multicoin Capital and Collider Ventures (September 2023), and a $15M Series A led by Hack VC with Amber Group, Primitive Ventures, GSR, Stake Capital, Dao5 and others (June 2024), for $22M announced in total. Tandem, the venture arm of Arbitrum developer Offchain Labs, made an undisclosed strategic investment in March 2025, and the Japanese IT firm BIPROGY is a strategic investor. The company lists about 30 staff.\n\nIn July 2026 Fhenix acquired Sunscreen, an FHE compiler company, and made its founder Ravital Solomon head of research, to work on threshold decryption and quantum-safe privacy. Terms were not disclosed.",
 "sources": [
-"Website: https://www.fhenix.io/"
+"Website: https://www.fhenix.io/",
+"https://www.calcalistech.com/ctechnews/article/hyyvm3tkp (seed round, Sep 2023, 2026-11-24)",
+"https://www.calcalistech.com/ctechnews/article/rj6kurnbc (Series A, Jun 2024, 2026-11-24)",
+"https://www.orrick.com/en/News/2024/07/The-Holy-Grail-of-Cryptography-Fhenix-Raises-15-Million (Series A investors, 2026-11-24)",
+"https://www.prnewswire.com/news-releases/tandem-by-offchain-labs-makes-strategic-investment-in-fhenix-bringing-fhe-to-blockchain-302411501.html (Tandem strategic investment, Mar 2025, 2026-11-24)",
+"https://finbold.com/fhenix-acquires-sunscreen-and-names-founder-ravital-solomon-to-lead-research/ (Sunscreen acquisition, Jul 2026, 2026-11-24)",
+"https://www.fhenix.io/blog/what-is-fhenix (company facts: HQ, team size, founders, investors, 2026-11-24)"
 ]
 },
 {
