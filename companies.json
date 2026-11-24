@@ -117,6 +117,27 @@
 ]
 },
 {
+"slug": "adlane",
+"name": "Adlane",
+"website": "https://adlane.io/",
+"hq": "Burgas, Bulgaria",
+"hq_country": "Bulgaria",
+"company_type": "startup",
+"description": "Consent management platform for publishers (web and CTV), alongside ad monetization services.",
+"primary_category": "consent",
+"privacy_relevance": "core",
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://adlane.io/",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nConsent management platform for publishers (web and CTV), alongside ad monetization services.",
+"sources": [
+"https://adlane.io/",
+"https://adlane.io/contact-us/ (evidence, 2026-11-24)"
+]
+},
+{
 "slug": "adopt",
 "name": "AdOpt",
 "website": "https://goadopt.io",
@@ -160,6 +181,30 @@
 "body": "## Summary\n\nPrivacy-first decentralized identity infrastructure for verifiable credentials and user-held data (Temasek-backed).",
 "sources": [
 "https://www.affinidi.com/"
+]
+},
+{
+"slug": "ageverif",
+"name": "AgeVerif",
+"website": "https://www.ageverif.com/",
+"hq": "France",
+"hq_country": "France",
+"company_type": "startup",
+"description": "Age-verification service for adult platforms offering double-anonymity verification via third-party proof-of-age tokens.",
+"primary_category": "identity",
+"privacy_relevance": "adjacent",
+"techniques": [
+"double anonymity"
+],
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://www.ageverif.com/",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nAge-verification service for adult platforms offering double-anonymity verification via third-party proof-of-age tokens.",
+"sources": [
+"https://www.ageverif.com/",
+"https://www.ageverif.com/compliance-and-policies-framework (evidence, 2026-11-24)"
 ]
 },
 {
@@ -673,6 +718,29 @@
 ]
 },
 {
+"slug": "axis-technology",
+"name": "Axis Technology",
+"website": "https://axistechnologyllc.com",
+"hq": "USA",
+"hq_country": "USA",
+"company_type": "startup",
+"description": "Data privacy consulting plus DMsuite data masking software.",
+"primary_category": "services",
+"privacy_relevance": "core",
+"techniques": [
+"data masking"
+],
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://axistechnologyllc.com",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nData privacy consulting plus DMsuite data masking software.",
+"sources": [
+"https://axistechnologyllc.com"
+]
+},
+{
 "slug": "aztec-labs",
 "name": "Aztec Labs",
 "website": "https://aztec.network",
@@ -1045,6 +1113,27 @@
 "body": "## Summary\n\nPrivacy browser and search.",
 "sources": [
 "Website: https://brave.com"
+]
+},
+{
+"slug": "breachrx",
+"name": "BreachRx",
+"website": "https://www.breachrx.com",
+"hq": "San Francisco, USA",
+"hq_country": "USA",
+"company_type": "startup",
+"description": "Incident response management platform that runs breach response workflows including regulatory/privacy notification obligations.",
+"primary_category": "program_mgmt",
+"privacy_relevance": "adjacent",
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://www.breachrx.com",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nIncident response management platform that runs breach response workflows including regulatory/privacy notification obligations.",
+"sources": [
+"https://www.breachrx.com",
+"https://www.securityweek.com/breachrx-lands-15-million-as-investors-bet-on-breach-workflow-software/ (evidence, 2026-11-24)"
 ]
 },
 {
@@ -1946,6 +2035,26 @@
 "sources": []
 },
 {
+"slug": "consiva",
+"name": "Consiva",
+"website": "https://consiva.ai",
+"hq": "India",
+"hq_country": "India",
+"company_type": "startup",
+"description": "India DPDP Act consent and cookie management platform, offered as SaaS or self-hosted on AWS.",
+"primary_category": "consent",
+"privacy_relevance": "core",
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://consiva.ai",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nIndia DPDP Act consent and cookie management platform, offered as SaaS or self-hosted on AWS.",
+"sources": [
+"https://consiva.ai"
+]
+},
+{
 "slug": "conzent",
 "name": "Conzent",
 "website": "https://getconzent.com/",
@@ -2241,6 +2350,29 @@
 "website_checked": "2026-11-23",
 "body": "## Summary\n\nReal-world health data platform built on de-identified hospital data across Latin America; US$12M pre-seed (Oct 2025).",
 "sources": []
+},
+{
+"slug": "crossbeam",
+"name": "Crossbeam",
+"website": "https://www.crossbeam.com",
+"hq": "Philadelphia, USA",
+"hq_country": "USA",
+"company_type": "startup",
+"description": "Partner-ecosystem platform that matches overlapping customer lists between companies without revealing the full underlying data.",
+"primary_category": "clean_room",
+"privacy_relevance": "adjacent",
+"techniques": [
+"data escrow"
+],
+"status": "Merged with Reveal (2024)",
+"status_code": "merged/pivoted",
+"website_verified": true,
+"verified_url": "https://www.crossbeam.com",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nPartner-ecosystem platform that matches overlapping customer lists between companies without revealing the full underlying data.",
+"sources": [
+"https://www.crossbeam.com"
+]
 },
 {
 "slug": "cryptee",
@@ -4356,6 +4488,29 @@
 ]
 },
 {
+"slug": "hexatier",
+"name": "HexaTier (GreenSQL)",
+"hq": "Tel Aviv, Israel",
+"hq_country": "Israel",
+"company_type": "startup",
+"description": "Database security and dynamic data masking for cloud databases.",
+"primary_category": "access_governance",
+"privacy_relevance": "adjacent",
+"techniques": [
+"masking"
+],
+"status": "Acquired by Huawei (2016)",
+"status_code": "acquired",
+"acquirer": "Huawei",
+"website_verified": true,
+"verified_url": "https://siliconangle.com/2016/12/28/huawei-acquires-israeli-database-security-startup-hexatier-42m/",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nDatabase security and dynamic data masking for cloud databases.",
+"sources": [
+"https://siliconangle.com/2016/12/28/huawei-acquires-israeli-database-security-startup-hexatier-42m/"
+]
+},
+{
 "slug": "heydata",
 "name": "heyData",
 "website": "https://heydata.eu/en",
@@ -4514,6 +4669,30 @@
 "sources": [
 "https://iapp.org/news/b/ai-powered-digital-privacy-company-raises-4-million-in-seed-funding",
 "https://www.gethush.ai"
+]
+},
+{
+"slug": "idakto",
+"name": "IDAKTO",
+"website": "https://www.idakto.com/",
+"hq": "Paris, France",
+"hq_country": "France",
+"company_type": "startup",
+"description": "Digital identity, mobile ID and EUDI wallet solutions for governments and enterprises.",
+"primary_category": "identity",
+"privacy_relevance": "adjacent",
+"techniques": [
+"verifiable credentials",
+"mDL"
+],
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://www.idakto.com/",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nDigital identity, mobile ID and EUDI wallet solutions for governments and enterprises.",
+"sources": [
+"https://www.idakto.com/"
 ]
 },
 {
@@ -4905,6 +5084,30 @@
 ]
 },
 {
+"slug": "iri",
+"name": "IRI (Innovative Routines International)",
+"website": "https://www.iri.com",
+"hq": "Melbourne (FL), USA",
+"hq_country": "USA",
+"company_type": "startup",
+"description": "Data management software maker whose FieldShield/DarkShield products discover and mask PII across databases and files.",
+"primary_category": "access_governance",
+"privacy_relevance": "adjacent",
+"techniques": [
+"data masking",
+"data discovery"
+],
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://www.iri.com",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nData management software maker whose FieldShield/DarkShield products discover and mask PII across databases and files.",
+"sources": [
+"https://www.iri.com"
+]
+},
+{
 "slug": "ironvest",
 "name": "IronVest",
 "website": "https://ironvest.com",
@@ -5034,6 +5237,28 @@
 "body": "## Notes\n\nSecured $15M in growth capital from Trinity Capital in June 2025 to meet demand for agentic-AI data infrastructure (total ~$69M raised), and announced a strategic partnership with Rocket Software in Jan 2026 for mainframe test data management; named a Gartner Magic Quadrant Visionary for data integration for the third straight year in 2025.",
 "sources": [
 "Website: https://www.k2view.com"
+]
+},
+{
+"slug": "keep-network",
+"name": "Keep Network",
+"website": "https://keep.network",
+"company_type": "startup",
+"description": "Privacy layer for Ethereum ('keeps' as off-chain containers for private data); merged with NuCypher into Threshold Network.",
+"primary_category": "privacy_chain",
+"privacy_relevance": "core",
+"techniques": [
+"threshold cryptography"
+],
+"status": "Merged into Threshold Network (2022)",
+"status_code": "merged/pivoted",
+"website_verified": true,
+"verified_url": "https://keep.network",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nPrivacy layer for Ethereum ('keeps' as off-chain containers for private data); merged with NuCypher into Threshold Network.",
+"sources": [
+"https://keep.network",
+"https://keep.network/ (evidence, 2026-11-24)"
 ]
 },
 {
@@ -5386,6 +5611,26 @@
 ]
 },
 {
+"slug": "least-authority",
+"name": "Least Authority",
+"website": "https://leastauthority.com/",
+"hq": "Berlin, Germany",
+"hq_country": "Germany",
+"company_type": "startup",
+"description": "Privacy-focused security consultancy and builder of privacy-respecting tools (security audits, Tahoe-LAFS heritage).",
+"primary_category": "services",
+"privacy_relevance": "adjacent",
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://leastauthority.com/",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nPrivacy-focused security consultancy and builder of privacy-respecting tools (security audits, Tahoe-LAFS heritage).",
+"sources": [
+"https://leastauthority.com/"
+]
+},
+{
 "slug": "legalblink",
 "name": "LegalBlink (Law-Tech srl)",
 "website": "https://legalblink.it/",
@@ -5508,6 +5753,30 @@
 "body": "## Summary\n\nEUDI wallet connector software letting businesses request and verify credentials from EU digital identity wallets.",
 "sources": [
 "https://www.lissi.id/"
+]
+},
+{
+"slug": "lockrmail",
+"name": "lockrMail",
+"website": "https://lockrmail.com/",
+"hq": "New York, USA",
+"hq_country": "USA",
+"company_type": "startup",
+"description": "Browser extension and email-forwarding service that shields users' real inbox from marketers.",
+"primary_category": "consumer",
+"privacy_relevance": "core",
+"techniques": [
+"email aliases"
+],
+"status": "Acquired by Viant Technology (2025)",
+"status_code": "acquired",
+"acquirer": "Viant Technology",
+"website_verified": true,
+"verified_url": "https://lockrmail.com/",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nBrowser extension and email-forwarding service that shields users' real inbox from marketers.",
+"sources": [
+"https://lockrmail.com/"
 ]
 },
 {
@@ -5663,6 +5932,27 @@
 ]
 },
 {
+"slug": "matomo",
+"name": "Matomo (InnoCraft)",
+"website": "https://matomo.org",
+"hq": "Wellington, New Zealand",
+"hq_country": "New Zealand",
+"company_type": "startup",
+"description": "Privacy-focused, self-hostable web analytics platform.",
+"primary_category": "privacy_eng",
+"privacy_relevance": "adjacent",
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://matomo.org",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nPrivacy-focused, self-hostable web analytics platform.",
+"sources": [
+"https://matomo.org",
+"https://matomo.org/ (evidence, 2026-11-24)"
+]
+},
+{
 "slug": "mattr",
 "name": "MATTR",
 "website": "https://mattr.global/",
@@ -5794,6 +6084,30 @@
 "sources": [
 "https://www.miden.xyz",
 "https://www.theblock.co/post/352342/polygon-miden-funding-blockchain (evidence, 2026-11-24)"
+]
+},
+{
+"slug": "mina-protocol",
+"name": "Mina Protocol",
+"website": "https://minaprotocol.com",
+"hq": "San Francisco, USA",
+"hq_country": "USA",
+"company_type": "startup",
+"description": "Succinct blockchain built on recursive zk-SNARKs that supports zkApps for proving facts about private data.",
+"primary_category": "privacy_chain",
+"privacy_relevance": "core",
+"techniques": [
+"ZK"
+],
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://minaprotocol.com",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nSuccinct blockchain built on recursive zk-SNARKs that supports zkApps for proving facts about private data.",
+"sources": [
+"https://minaprotocol.com",
+"https://minaprotocol.com/ (evidence, 2026-11-24)"
 ]
 },
 {
@@ -6049,6 +6363,26 @@
 "body": "## Summary\n\nConfidential AI inference service running open-weight models in Intel TDX and NVIDIA GPU TEEs with attestation per response (Jasnah Inc. dba NEAR AI).",
 "sources": [
 "https://near.ai/"
+]
+},
+{
+"slug": "needemand",
+"name": "Needemand (BorderAge)",
+"website": "https://www.needemand.com/",
+"hq": "Montpellier, France",
+"hq_country": "France",
+"company_type": "startup",
+"description": "Maker of BorderAge, an age-estimation method using hand gestures that processes no identity or face data.",
+"primary_category": "identity",
+"privacy_relevance": "adjacent",
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://www.needemand.com/",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nMaker of BorderAge, an age-estimation method using hand gestures that processes no identity or face data.",
+"sources": [
+"https://www.needemand.com/"
 ]
 },
 {
@@ -6332,6 +6666,29 @@
 "sources": [
 "https://vestbee.com/insights/articles/nymiz-secures-2-m",
 "https://www.nymiz.com"
+]
+},
+{
+"slug": "oasis-protocol",
+"name": "Oasis Protocol",
+"website": "https://oasis.net/",
+"hq": "Cayman Islands (foundation)",
+"hq_country": "Cayman Islands",
+"company_type": "startup",
+"description": "Privacy-enabled blockchain (Sapphire confidential EVM, ROFL) using TEEs to make applications private and verifiable.",
+"primary_category": "privacy_chain",
+"privacy_relevance": "core",
+"techniques": [
+"TEE"
+],
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://oasis.net/",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nPrivacy-enabled blockchain (Sapphire confidential EVM, ROFL) using TEEs to make applications private and verifiable.",
+"sources": [
+"https://oasis.net/"
 ]
 },
 {
@@ -6730,6 +7087,29 @@
 ]
 },
 {
+"slug": "otonomo",
+"name": "Otonomo",
+"hq": "Herzliya, Israel",
+"hq_country": "Israel",
+"company_type": "startup",
+"description": "Connected-car data marketplace with privacy-by-design consent and anonymisation of vehicle data.",
+"primary_category": "other",
+"privacy_relevance": "adjacent",
+"techniques": [
+"anonymisation"
+],
+"status": "Acquired by Urgently (2023)",
+"status_code": "acquired",
+"acquirer": "Urgently",
+"website_verified": true,
+"verified_url": "https://www.nasdaq.com/press-release/urgently-announces-successful-closing-of-merger-with-otonomo-technologies",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nConnected-car data marketplace with privacy-by-design consent and anonymisation of vehicle data.",
+"sources": [
+"https://www.nasdaq.com/press-release/urgently-announces-successful-closing-of-merger-with-otonomo-technologies"
+]
+},
+{
 "slug": "ours-privacy",
 "name": "Ours Privacy",
 "website": "https://oursprivacy.com",
@@ -6769,6 +7149,31 @@
 "sources": [
 "https://pandectes.io",
 "https://pandectes.io/about-us/ (evidence, 2026-11-24)"
+]
+},
+{
+"slug": "pangea",
+"name": "Pangea",
+"website": "https://pangea.cloud",
+"hq": "Palo Alto, USA",
+"hq_country": "USA",
+"company_type": "startup",
+"description": "Security API platform with AI guardrails including PII redaction, data-leak prevention and prompt-injection detection for AI apps.",
+"primary_category": "ai_privacy",
+"privacy_relevance": "adjacent",
+"techniques": [
+"redaction"
+],
+"status": "Acquired by CrowdStrike (2025)",
+"status_code": "acquired",
+"acquirer": "CrowdStrike",
+"website_verified": true,
+"verified_url": "https://pangea.cloud",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nSecurity API platform with AI guardrails including PII redaction, data-leak prevention and prompt-injection detection for AI apps.",
+"sources": [
+"https://pangea.cloud",
+"https://pangea.cloud/ (evidence, 2026-11-24)"
 ]
 },
 {
@@ -6875,6 +7280,29 @@
 "body": "## Summary\n\nPrivacy-safe publisher audience platform.",
 "sources": [
 "Website: https://permutive.com"
+]
+},
+{
+"slug": "perspecsys",
+"name": "PerspecSys",
+"hq": "Toronto, Canada",
+"hq_country": "Canada",
+"company_type": "startup",
+"description": "Cloud data protection gateway that tokenized or encrypted sensitive data before it reached SaaS apps (data residency).",
+"primary_category": "deid_vault",
+"privacy_relevance": "core",
+"techniques": [
+"tokenization"
+],
+"status": "Acquired by Blue Coat (2015)",
+"status_code": "acquired",
+"acquirer": "Blue Coat",
+"website_verified": true,
+"verified_url": "https://www.darkreading.com/cloud/blue-coat-acquires-perspecsys",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nCloud data protection gateway that tokenized or encrypted sensitive data before it reached SaaS apps (data residency).",
+"sources": [
+"https://www.darkreading.com/cloud/blue-coat-acquires-perspecsys"
 ]
 },
 {
@@ -7005,6 +7433,27 @@
 ]
 },
 {
+"slug": "plausible-analytics",
+"name": "Plausible Analytics",
+"website": "https://plausible.io",
+"hq": "Tartu, Estonia",
+"hq_country": "Estonia",
+"company_type": "startup",
+"description": "Cookieless, privacy-friendly website analytics.",
+"primary_category": "privacy_eng",
+"privacy_relevance": "adjacent",
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://plausible.io",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nCookieless, privacy-friendly website analytics.",
+"sources": [
+"https://plausible.io",
+"https://plausible.io/ (evidence, 2026-11-24)"
+]
+},
+{
 "slug": "polar-security",
 "name": "Polar Security",
 "website": "https://www.polar.security",
@@ -7022,6 +7471,25 @@
 "body": "## Notes\n\nFounded 2021 by Guy Shanny and Roey Yaacovi; raised $8.5M seed; acquired May 2023 for est. $60M, integrated into IBM Guardium Insights.",
 "sources": [
 "Website: https://www.polar.security"
+]
+},
+{
+"slug": "preclusio",
+"name": "Preclusio",
+"hq": "San Francisco, USA",
+"hq_country": "USA",
+"company_type": "startup",
+"description": "On-premise platform that mapped what personal data a company collects and where it is stored to support GDPR/CCPA compliance.",
+"primary_category": "dsr_mapping",
+"privacy_relevance": "core",
+"status": "Unclear",
+"status_code": "unclear",
+"website_verified": false,
+"verification_note": "Preclusio's website is gone and no acquisition was found.",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nOn-premise platform that mapped what personal data a company collects and where it is stored to support GDPR/CCPA compliance.",
+"sources": [
+"https://www.geekwire.com/2019/preclusio/ (evidence, 2026-11-24)"
 ]
 },
 {
@@ -8147,6 +8615,26 @@
 ]
 },
 {
+"slug": "scruter",
+"name": "Scruter (1618 Technologies)",
+"website": "https://scruter.net/",
+"hq": "France",
+"hq_country": "France",
+"company_type": "startup",
+"description": "Cookieless privacy-friendly web/app analytics with a CMP module.",
+"primary_category": "privacy_eng",
+"privacy_relevance": "core",
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://scruter.net/",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nCookieless privacy-friendly web/app analytics with a CMP module.",
+"sources": [
+"https://scruter.net/"
+]
+},
+{
 "slug": "scytale",
 "name": "Scytale",
 "website": "https://scytale.ai",
@@ -8164,6 +8652,30 @@
 "body": "## Summary\n\nCompliance automation (SOC 2, ISO 27001, GDPR).",
 "sources": [
 "Website: https://scytale.ai"
+]
+},
+{
+"slug": "scytales",
+"name": "Scytáles",
+"website": "https://www.scytales.com/",
+"hq": "Stockholm, Sweden",
+"hq_country": "Sweden",
+"company_type": "startup",
+"description": "Mobile identity wallets and mobile driver's licences with selective disclosure.",
+"primary_category": "identity",
+"privacy_relevance": "adjacent",
+"techniques": [
+"mDL",
+"selective disclosure"
+],
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://www.scytales.com/",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nMobile identity wallets and mobile driver's licences with selective disclosure.",
+"sources": [
+"https://www.scytales.com/"
 ]
 },
 {
@@ -8313,6 +8825,29 @@
 "body": "## Notes\n\nFounded 2021 by ex-Unit 8200 cyber chief Yoav Regev; $30M Series A (Jan 2023), $50M Series B led by Key1 Capital (2025); ~$103M total raised.",
 "sources": [
 "Website: https://www.sentra.io"
+]
+},
+{
+"slug": "seven-layer",
+"name": "Seven Layer",
+"website": "https://www.sevenlayer.io/",
+"company_type": "startup",
+"description": "Customer-controlled confidential compute (SyntheticCC) combining attestation, threshold MPC, ORAM and ZK proofs to protect AI workloads and keys.",
+"primary_category": "pec",
+"privacy_relevance": "core",
+"techniques": [
+"TEE",
+"MPC",
+"ZK"
+],
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://www.sevenlayer.io/",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nCustomer-controlled confidential compute (SyntheticCC) combining attestation, threshold MPC, ORAM and ZK proofs to protect AI workloads and keys.",
+"sources": [
+"https://www.sevenlayer.io/"
 ]
 },
 {
@@ -8591,6 +9126,27 @@
 "body": "## Notes\n\nPrivate unicorn last valued at $4.5B ($450M Series E, 2021; ~$650M total raised); acquired BNPL data specialist Qlarifi (Nov 2025) and saw public-sector revenue grow ~130% after FedRAMP Moderate authorization (March 2025).",
 "sources": [
 "Website: https://www.socure.com/"
+]
+},
+{
+"slug": "source-defense",
+"name": "Source Defense",
+"website": "https://sourcedefense.com",
+"hq": "Tel Aviv, Israel",
+"hq_country": "Israel",
+"company_type": "startup",
+"description": "Client-side web security that controls third-party scripts to stop skimming and unauthorised collection of customer data on websites.",
+"primary_category": "privacy_eng",
+"privacy_relevance": "adjacent",
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://sourcedefense.com",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nClient-side web security that controls third-party scripts to stop skimming and unauthorised collection of customer data on websites.",
+"sources": [
+"https://sourcedefense.com",
+"https://sourcedefense.com/ (evidence, 2026-11-24)"
 ]
 },
 {
@@ -9085,6 +9641,48 @@
 "body": "## Summary\n\nPolicy generator and consent management for SMBs.",
 "sources": [
 "Website: https://termly.io"
+]
+},
+{
+"slug": "termsfeed",
+"name": "TermsFeed",
+"website": "https://www.termsfeed.com",
+"hq": "Dover, Delaware, USA",
+"hq_country": "USA",
+"company_type": "startup",
+"description": "Legal agreement generator for privacy policies and terms, plus a cookie consent tool.",
+"primary_category": "program_mgmt",
+"privacy_relevance": "core",
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://www.termsfeed.com",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nLegal agreement generator for privacy policies and terms, plus a cookie consent tool.",
+"sources": [
+"https://www.termsfeed.com",
+"https://www.trustpilot.com/review/termsfeed.com (2026-11-24)",
+"https://termsfeed.com/about/ (evidence, 2026-11-24)"
+]
+},
+{
+"slug": "tessian",
+"name": "Tessian",
+"hq": "London, UK",
+"hq_country": "UK",
+"company_type": "startup",
+"description": "Email security that used machine learning to stop misdirected emails and data exfiltration (email DLP).",
+"primary_category": "dlp",
+"privacy_relevance": "adjacent",
+"status": "Acquired by Proofpoint (2023)",
+"status_code": "acquired",
+"acquirer": "Proofpoint",
+"website_verified": true,
+"verified_url": "https://www.proofpoint.com/us/tessian-is-now-proofpoint",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nEmail security that used machine learning to stop misdirected emails and data exfiltration (email DLP).",
+"sources": [
+"https://www.proofpoint.com/us/tessian-is-now-proofpoint"
 ]
 },
 {
@@ -9776,6 +10374,28 @@
 ]
 },
 {
+"slug": "vertebrae",
+"name": "Vertebrae",
+"website": "https://vertebrae.ai/",
+"company_type": "startup",
+"description": "Privacy-first AI meeting notetaker with end-to-end encryption, on-device transcription and confidential-computing processing (Humanlike, Inc.).",
+"primary_category": "ai_privacy",
+"privacy_relevance": "core",
+"techniques": [
+"E2EE",
+"TEE"
+],
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://vertebrae.ai/",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nPrivacy-first AI meeting notetaker with end-to-end encryption, on-device transcription and confidential-computing processing (Humanlike, Inc.).",
+"sources": [
+"https://vertebrae.ai/"
+]
+},
+{
 "slug": "very-good-security",
 "name": "Very Good Security",
 "website": "https://www.verygoodsecurity.com",
@@ -9952,6 +10572,26 @@
 "body": "## Summary\n\nPrivacy-preserving data collaboration platform letting organizations match and analyse data across sources without sharing it.",
 "sources": [
 "https://xtendr.io/"
+]
+},
+{
+"slug": "xuko",
+"name": "xuko",
+"website": "https://xuko.com.au/",
+"hq": "Australia",
+"hq_country": "Australia",
+"company_type": "startup",
+"description": "Consultancy for data privacy, security and the Consumer Data Right / Digital ID frameworks.",
+"primary_category": "services",
+"privacy_relevance": "core",
+"status": "Active",
+"status_code": "active",
+"website_verified": true,
+"verified_url": "https://xuko.com.au/",
+"website_checked": "2026-11-24",
+"body": "## Summary\n\nConsultancy for data privacy, security and the Consumer Data Right / Digital ID frameworks.",
+"sources": [
+"https://xuko.com.au/"
 ]
 },
 {
